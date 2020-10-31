@@ -1,0 +1,162 @@
+@import '@/styles/scss/_vars.scss';
+@import '@/styles/scss/_fonts.scss';
+@import '@/styles/scss/_global.scss';
+@import '@/styles/scss/sidebar.scss';
+
+// start header
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  z-index: 3;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: $white;
+  padding: 50px 0;
+  transition: all .5s;
+  &__inner-menuAndLogo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 29px;
+    transition: all .5s;
+  }
+  &__logoAndHamburger {
+    display: flex;
+  }
+  &__btn-menu {
+    margin-right: 5px;
+    height: 40px;
+    width: 40px;
+  }
+  &__logo svg {
+    max-width: 364px;
+    width: 100%;
+    transition: all .5s;
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .5s;
+  }
+  &__menu-top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &__buttons {
+      display: flex;
+      align-items: center;
+    }
+    &__buttons li + li {
+      padding-left: 15px;
+    }
+    &__tel {
+      font-size: 18px;
+      line-height: $lh;
+      margin: 0 110px;  
+    }
+    &__city {
+      font-size: 18px;
+      line-height: $lh;
+      position: relative;
+    }
+    &__city::before {
+      content: '';
+      position: absolute;
+      background-image: url('../../assets/images/icon-city.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 25px;
+      left: -28px;
+      top: 0;
+    }
+  }
+  &__menu-bottom {
+    margin-top: 39px;
+    transition: all .5s;
+    & nav ul {
+      display: flex;
+    }
+    & nav ul li + li {
+      padding-left: 22px;
+    }
+    & nav ul li a {
+      font-size: 18px;
+      line-height: $lh;
+    }
+    & nav ul li .red {
+      color: $red;
+    }
+  }
+  &__categories {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid $beige;
+    box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+    transition: all .5s;
+    & li {
+      padding: 23px 12px;
+    }
+    & li a {
+      font-size: 16px;
+      line-height: $lh;
+      text-transform: uppercase;
+    }
+    &-item.active {
+      background-color: $beige;
+      color: $white;
+    }
+  }
+  // Scroll
+  &.sticky {
+    padding: 15px 0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    & .header__inner-menuAndLogo {
+      margin-bottom: 15px;
+    }
+    & .header__logo svg {
+      max-width: 200px;
+      height: 60px;
+    }
+    & .header__menu {
+      justify-content: center;
+    }
+    & .header__menu-bottom {
+      margin-top: 15px;
+    }
+    & .header__categories li {
+      padding: 12px;
+    }
+  }
+}
+// end header
+
+// start slider
+.slider {
+  height: 100vh;
+}
+.slim {
+  height: 100vh;
+}
+// end slider
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import '@/styles/scss/_media.scss';
