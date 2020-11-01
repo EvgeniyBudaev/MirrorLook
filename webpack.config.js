@@ -79,6 +79,7 @@ const plugins = () => {
   const base = [
     new CleanWebpackPlugin(),
     new HTMLWebpackPlugin({
+      filename: 'index.html',
       template: './index.html',
       minify: {
         collapseWhitespace: isProd,

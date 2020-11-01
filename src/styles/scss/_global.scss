@@ -34,6 +34,11 @@ a {
   display: inline-block;
 }
 
+h1, h2, h3, h4, h5, h6,
+p {
+  margin: 0;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,4 +68,28 @@ a {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.container-banner {
+  /*ширина контейнера чистая 970px*/
+  max-width: 1000px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-slider {
+  /*ширина контейнера чистая 1110px*/
+  max-width: 1040px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 22px;
+  lh: $lh;
+  font-family: "Montserrat-Regular";
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }

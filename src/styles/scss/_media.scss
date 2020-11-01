@@ -63,6 +63,9 @@
   .main-menu li a {
     font-size: 12px;
   }
+  .slider {
+    padding: 100px 0 20px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -76,5 +79,11 @@
   }
   .menu.open .header__menu-top__buttons {
     display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .slider__btn-link {
+    padding: 18px 10px;
   }
 }

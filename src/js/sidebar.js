@@ -1,23 +1,27 @@
+import {findParentBySelector} from './utils'
+
 class Sidebar {
   constructor() {
     this.$header = document.querySelector('[data-type="header"]')
-    this.$body = document.querySelector('.body')
+    this.$body = document.querySelector('[data-body=""]')
     this.$hamburger = document.querySelector('[data-type="hamburger"]')
     this.$menu = document.querySelector('[data-type="menu"]')
+    this.$mainMenuItemAll = document.querySelectorAll('li.main-menu-item')
+    this.$headerMenu = document.querySelector('[data-headerMenu=""]')
 
     this.setup()
   }
 
   setup() {
-    this.clickHandler = this.clickHandler.bind(this)
-    this.$hamburger.addEventListener('click', this.clickHandler)
+    this.clickHandlerHamburger = this.clickHandlerHamburger.bind(this)
+    this.$hamburger.addEventListener('click', this.clickHandlerHamburger)
+    this.submenuSetup()
   }
 
-  clickHandler() {
+  clickHandlerHamburger() {
     if (this.$hamburger) {
       this.toggle()
     }
-      this.submenu()
   }
 
   get isOpen() {
@@ -33,6 +37,7 @@ class Sidebar {
     this.$body.classList.add('scrollHidden')
     this.$header.classList.add('noshadow')
     this.$menu.classList.add('open')
+    this.$headerMenu.classList.add('displayOff')
   }
 
   close() {
@@ -41,19 +46,30 @@ class Sidebar {
     this.$hamburger.classList.remove('open')
     this.$body.classList.remove('scrollHidden')
     this.$header.classList.remove('noshadow')
+    this.$headerMenu.classList.remove('displayOff')
 
     setTimeout(() => {
       this.$menu.classList.remove('close')
     }, 500)
   }
 
-  submenu() {
-    this.$menu.addEventListener('click', (event) => {
-      let childrenContainer = event.target.parentNode.querySelector('ul');
-      console.log('childrenContainer', childrenContainer)
-      if (!childrenContainer) return; // нет детей
-      childrenContainer.classList.toggle('visible')
+  submenuSetup() {
+    this.$mainMenuItemAll.forEach(item => {
+      item.addEventListener('click', (event) => {
+        const menuElement = findParentBySelector(event.target, 'li.main-menu-item')
+        let childrenContainer = menuElement.querySelector('ul')
+        if (!childrenContainer) return; // нет детей
+        event.preventDefault()
+        if (menuElement.classList.contains('visible')) {
+          menuElement.classList.remove('visible')
+        } else {
+          this.$mainMenuItemAll.forEach(item => item.classList.remove('visible'))
+          menuElement.classList.add('visible')
+        }
+
+      })
     })
+
   }
 }
 

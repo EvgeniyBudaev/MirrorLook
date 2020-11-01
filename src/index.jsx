@@ -6,6 +6,8 @@ import './styles/scss/index.scss'
 import './js/svg.js'
 import './js/header-scroll.js'
 import './js/sidebar.js'
+import './styles/css/slick.css'
+import './js/slider'
 
 
 

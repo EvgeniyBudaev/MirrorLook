@@ -27,6 +27,19 @@
 }
 
 @font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../../assets/fonts/Montserrat-Medium.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../../assets/fonts/Montserrat-Medium.otf") format("opentype"), /* Open Type Font */
+  url("../../assets/fonts/Montserrat-Medium.svg") format("svg"), /* Legacy iOS */
+  url("../../assets/fonts/Montserrat-Medium.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("../../assets/fonts/Montserrat-Medium.woff") format("woff"), /* Modern Browsers */
+  url("../../assets/fonts/Montserrat-Medium.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Montserrat-Regular";
   src: url("../../assets/fonts/Montserrat-Regular.eot"); /* IE9 Compat Modes */
   src: url("../../assets/fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */

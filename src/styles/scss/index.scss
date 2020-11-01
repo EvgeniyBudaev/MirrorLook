@@ -14,7 +14,7 @@
   overflow-x: hidden;
   overflow-y: hidden;
   background-color: $white;
-  padding: 50px 0;
+  padding: 50px 0 10px;
   transition: all .5s;
   &__inner-menuAndLogo {
     display: flex;
@@ -40,6 +40,9 @@
     flex-direction: column;
     justify-content: space-between;
     transition: all .5s;
+  }
+  &__menu.displayOff {
+    display: none;
   }
   &__menu-top {
     display: flex;
@@ -99,6 +102,7 @@
     transition: all .5s;
     & li {
       padding: 23px 12px;
+      transition: all .5s;
     }
     & li a {
       font-size: 16px;
@@ -134,16 +138,238 @@
 }
 // end header
 
+
 // start slider
-.slider {
-  height: 100vh;
+.slider.sticky {
+  padding: 160px 0 20px;
 }
-.slim {
-  height: 100vh;
+.slider {
+  padding: 250px 0 20px;
+  transition: all .5s;
+  &__item {
+    filter: drop-shadow(2px 6px 4px rgba(0, 0, 0, 0.25));
+  }
+  &__item img {
+    max-width: 100%;
+    height: auto;
+  }
+  &__item.item-nav img {
+    margin: 0;
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    &-link {
+      border: 2px solid $beige;
+      padding: 18px 30px;
+      font-size: 22px;
+      line-height: $lh;
+      cursor: pointer;
+      background-color: $white;
+      background: linear-gradient(270deg, rgba(233,190,106,1), rgba(146,111,52,1), rgba(255,255,255,1), rgba(255,255,255,1));
+      background-position: 1% 50%;
+      background-size: 300% 300%;
+      transition: all 0.7s ease-in-out;
+    }
+    &-link:hover {
+      color: #fff;
+      background-position: 99% 50%;
+    }
+  }
+}
+
+.slider-for {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.slider-for .slick-arrow {
+  border: none;
+  width: 35px;
+  height: 52px;
+  font-size: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+}
+
+.slider-for .slick-prev {
+  background-image: url('../../assets/images/slider-arrow-left.svg');
+  left: 0;
+  margin-left: 15px;
+}
+
+.slider-for .slick-next {
+  background-image: url('../../assets/images/slider-arrow-right.svg');
+  right: 0;
+  margin-right: 15px;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  & li {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  & li.slick-active button {
+    background-color: $beige;
+    outline: none;
+  }
+  & button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    background-color: $gray;
+    border: none;
+    outline: none;
+  }
 }
 // end slider
 
 
+// start products-slider
+.products-slider {
+  padding: 40px 0;
+  font-size: 16px;
+  &__item {
+    max-width: 224px;
+    width: 100%;
+    height: 360px;
+    border: 1px solid $lightGray;
+    padding: 10px;
+  }
+  &__item-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+  }
+  &__item-content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    position: relative;
+    &__favorite {
+      position: absolute;
+      top: 0;
+      right: 15px;
+      width: 20px;
+      height: 20px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+  }
+  &__item-footer {
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      &-basket {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        outline: none;
+      }
+    }
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      &-num {
+        font-family: "Montserrat-SemiBold";
+      }
+      &-status {
+        color: $beige;
+      }
+    }
+  }
+
+// В карточках картинки выравниваем по центру
+.slick-slide img {
+    margin: 0 auto;
+  }
+
+  // Стрелки у слайдера
+  .products-slider__inner {
+    position: relative;
+  }
+  .products-slider__inner .slick-arrow {
+    border: none;
+    width: 35px;
+    height: 52px;
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+  }
+  .products-slider__inner .slick-prev {
+    background-image: url('../../assets/images/icon-arrow-gray-left.svg');
+    background-repeat: no-repeat;
+    left: 0;
+    margin-left: -40px;
+  }
+  .products-slider__inner .slick-next {
+    background-image: url('../../assets/images/icon-arrow-gray-right.svg');
+    background-repeat: no-repeat;
+    right: 0;
+    margin-right: -27px;
+  }
+
+}
+// end products-slider
+
+
+// start banner
+.banner {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__center {
+    &-text {
+      font-size: 30px;
+      lh: $lh;
+      font-family: "Montserrat-Medium";
+      text-transform: uppercase;
+      text-align: center;
+      margin: 49px 0 18px;
+    }
+    &-discount {
+      font-size: 45px;
+      lh: $lh;
+      font-family: "Montserrat-Bold";
+      text-transform: uppercase;
+      color: $red;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    &-info {
+      color: $beige;
+      text-align: end;
+    }
+  }
+}
+// end banner
 
 
 
