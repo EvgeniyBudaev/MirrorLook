@@ -141,7 +141,7 @@
 
 // start slider
 .slider.sticky {
-  padding: 160px 0 20px;
+  padding: 160px 0 0;
 }
 .slider {
   padding: 250px 0 20px;
@@ -235,7 +235,7 @@
 
 // start products-slider
 .products-slider {
-  padding: 40px 0;
+  padding: 50px 0;
   font-size: 16px;
   &__item {
     max-width: 224px;
@@ -243,6 +243,10 @@
     height: 360px;
     border: 1px solid $lightGray;
     padding: 10px;
+    transition: all .5s;
+  }
+  &__item:hover {
+    box-shadow: 0 0 5px 5px rgba(170, 170, 170, 0.7);
   }
   &__item-wrapper {
     display: -webkit-box;
@@ -269,6 +273,10 @@
       background-color: transparent;
       border: none;
       outline: none;
+    }
+    &__title {
+      font-size: 16px;
+      line-height: $lh;
     }
   }
   &__item-footer {
@@ -301,7 +309,10 @@
   }
 
 // В карточках картинки выравниваем по центру
-.slick-slide img {
+  .slick-slide {
+    padding: 1px;
+  }
+  .slick-slide img {
     margin: 0 auto;
   }
 
@@ -348,7 +359,7 @@
   &__center {
     &-text {
       font-size: 30px;
-      lh: $lh;
+      line-height: $lh;
       font-family: "Montserrat-Medium";
       text-transform: uppercase;
       text-align: center;
@@ -356,7 +367,7 @@
     }
     &-discount {
       font-size: 45px;
-      lh: $lh;
+      line-height: $lh;
       font-family: "Montserrat-Bold";
       text-transform: uppercase;
       color: $red;
@@ -370,6 +381,86 @@
   }
 }
 // end banner
+
+
+// start footer
+.footer {
+  background-color: $lightBeige;
+  padding: 35px 0 27px;
+  margin-top: 39px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    & h4 {
+      font-size: 16px;
+      line-height: $lh;
+      font-family: "Montserrat-Medium";
+      margin-bottom: 20px;
+    }
+    & ul li a {
+      font-size: 16px;
+      line-height: $lh;
+      font-family: "Montserrat-Regular";
+      margin-bottom: 7px;
+      transition: all .3s;
+    }
+    & ul li a:hover {
+      color: $gray;
+    }
+    & p {
+      font-family: "Montserrat-Regular";
+    }
+  }
+  &__form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    &-title {
+      font-size: 18px;
+      line-height: $lh;
+      font-family: "Montserrat-Regular";
+      max-width: 311px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    & form {
+      display: flex;
+    }
+    &-input {
+      filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+    }
+    &-button {
+      border: none;
+      background-color: $beige;
+      cursor: pointer;
+      transition: all .3s;
+    }
+    &-button:hover {
+      background-color: $black;
+    }
+  }
+  &__politics {
+    font-size: 14px;
+    line-height: $lh;
+    font-family: "Montserrat-Regular";
+    max-width: 240px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__logoAndSocial {
+    &-socialIcons {
+      float: right;
+    }
+  }
+}
+
+
+
+// end footer
 
 
 

@@ -21,6 +21,12 @@
   }
 }
 
+@media (max-width: 900px) {
+  .banner__inner {
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 768px) {
   .header__menu-top__city,
   .header__menu-top__tel,
@@ -65,6 +71,17 @@
   }
   .slider {
     padding: 100px 0 20px;
+  }
+}
+
+@media (max-width: 735px) {
+  .banner__left,
+  .banner__center,
+  .banner__right {
+    margin: 0 auto;
+  }
+  .banner__center-info {
+    margin-bottom: 49px;
   }
 }
 

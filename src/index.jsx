@@ -7,7 +7,8 @@ import './js/svg.js'
 import './js/header-scroll.js'
 import './js/sidebar.js'
 import './styles/css/slick.css'
-import './js/slider'
+import './js/slider.js'
+import './js/form.js'
 
 
 

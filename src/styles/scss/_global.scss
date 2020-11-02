@@ -93,3 +93,51 @@ p {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+
+
+// start работа с формой
+.form-group {
+  position: relative;
+
+  & + .form-group {
+    margin-left: 12px;
+  }
+}
+
+.form-label {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  background-color: $lightBeige;
+  z-index: 1;
+  transition: transform 150ms ease-out, font-size 150ms ease-out;
+  font-size: 18px;
+  line-height: $lh;
+  font-family: "Montserrat-Regular";
+}
+
+.focused .form-label {
+  left: 0;
+  top: -20px;
+  font-size: .75em;
+  color: $white;
+  background-color: $beige;
+}
+
+.form-input {
+  position: relative;
+  padding: 12px 68px 12px 15px;
+  width: 100%;
+  outline: 0;
+  border: 2px solid $beige;
+  background-color: $lightBeige;
+}
+
+.form-input.filled {
+  box-shadow: 0 2px 0 0 lightgreen;
+}
+
+.form-input.error {
+  box-shadow: 0 2px 0 0 $beige;
+}
+// end работа с формой
