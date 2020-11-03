@@ -284,7 +284,7 @@
     &__favorite {
       position: absolute;
       top: 0;
-      right: 15px;
+      right: 3px;
       width: 20px;
       height: 20px;
       background-color: transparent;
@@ -329,10 +329,10 @@
   .slick-slide {
     padding: 4px !important;
   }
-  .products-slider__item .slick-slide img.products-slider__item-img {
+  .slick-slide img.products-slider__item-img {
     margin: 0 auto !important;
   }
-
+  
   .slick-initialized .slick-slide {
     margin-right: 25px !important;
   }
