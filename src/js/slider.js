@@ -18,6 +18,7 @@ $('.slider-nav').slick({
   dots: true,
   centerMode: false,
   focusOnSelect: true,
+  variableWidth: true,
 });
 
 
@@ -29,13 +30,13 @@ $('.products-slider__inner').slick({
   dots: false,
   responsive: [
     {
-      breakpoint: 1100,
+      breakpoint: 1050,
       settings: {
         slidesToShow: 3,
       }
     },
     {
-      breakpoint: 768,
+      breakpoint: 850,
       settings: {
         slidesToShow: 2,
       }
