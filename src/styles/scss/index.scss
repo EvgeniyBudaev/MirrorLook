@@ -2,6 +2,7 @@
 @import '@/styles/scss/_fonts.scss';
 @import '@/styles/scss/_global.scss';
 @import '@/styles/scss/sidebar.scss';
+@import '@/styles/scss/cardProduct.scss';
 
 // start header
 .header {
@@ -332,7 +333,7 @@
   .slick-slide img.products-slider__item-img {
     margin: 0 auto !important;
   }
-  
+
   .slick-initialized .slick-slide {
     margin-right: 25px !important;
   }
@@ -497,19 +498,5 @@
 
 
 // end footer
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @import '@/styles/scss/_media.scss';

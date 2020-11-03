@@ -85,6 +85,10 @@ const plugins = () => {
         collapseWhitespace: isProd,
       },
     }),
+    new HTMLWebpackPlugin({
+      filename: 'cardProduct.html',
+      template: './cardProduct.html',
+    }),
     new CopyWebpackPlugin({
       patterns: [
         {

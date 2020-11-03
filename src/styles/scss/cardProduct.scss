@@ -1,0 +1,13 @@
+@import '@/styles/scss/_vars.scss';
+@import '@/styles/scss/_fonts.scss';
+@import '@/styles/scss/_global.scss';
+@import '@/styles/scss/sidebar.scss';
+
+// start card-product
+.card-product {
+  height: 100vh;
+  background-color: #ccc;
+}
+// end card-product
+
+@import '@/styles/scss/media_cardproduct.scss';
