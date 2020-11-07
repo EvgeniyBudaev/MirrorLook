@@ -65,3 +65,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Montserrat-ExtraLight";
+  src: url("../../assets/fonts/Montserrat-ExtraLight.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/Montserrat-ExtraLight.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../../assets/fonts/Montserrat-ExtraLight.otf") format("opentype"), /* Open Type Font */
+  url("../../assets/fonts/Montserrat-ExtraLight.svg") format("svg"), /* Legacy iOS */
+  url("../../assets/fonts/Montserrat-ExtraLight.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("../../assets/fonts/Montserrat-ExtraLight.woff") format("woff"), /* Modern Browsers */
+  url("../../assets/fonts/Montserrat-ExtraLight.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+

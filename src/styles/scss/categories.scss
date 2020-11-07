@@ -1,0 +1,54 @@
+@import '@/styles/scss/_vars.scss';
+@import '@/styles/scss/_fonts.scss';
+@import '@/styles/scss/_global.scss';
+@import '@/styles/scss/sidebar.scss';
+
+// start categories
+.categories {
+  padding-bottom: 100px;
+  & h2 {
+    font-family: "Montserrat-Regular";
+    margin-bottom: 20px;
+    max-width: 140px;
+    width: 100%;
+  }
+  &__inner {
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    //grid-auto-rows: minmax(280px, auto);
+    grid-gap: 30px;
+    margin-bottom: 50px;
+  }
+  &__card {
+    max-width: 280px;
+    width: 100%;
+    position: relative;
+    //align-self: center;
+    justify-self: center;
+    &-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      min-height: 100%;
+      overflow-x: hidden;
+    }
+    &-header {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+    }
+    &-content {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      min-height: 280px;
+    }
+  }
+}
+// end categories
+
+@import '@/styles/scss/media_categories.scss';

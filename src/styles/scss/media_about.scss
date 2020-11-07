@@ -1,0 +1,18 @@
+@media (max-width: 950px) {
+  .about__inner {
+    flex-direction: column;
+  }
+  .about__left {
+    padding-right: 0;
+  }
+  .about__right {
+    position: static;
+    top: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .about__right {
+    margin: 0 auto;
+  }
+}

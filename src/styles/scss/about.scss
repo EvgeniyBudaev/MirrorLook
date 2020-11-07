@@ -1,0 +1,69 @@
+@import '@/styles/scss/_vars.scss';
+@import '@/styles/scss/_fonts.scss';
+@import '@/styles/scss/_global.scss';
+@import '@/styles/scss/sidebar.scss';
+
+// start about
+.about {
+  padding-bottom: 100px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left {
+    padding-right: 15px;
+    & h2 {
+      font-family: "Montserrat-Medium";
+    }
+    & p {
+      margin-bottom: 30px;
+    }
+  }
+  &__right {
+    max-width: 312px;
+    width: 100%;
+    &-basket {
+      border: 1px solid $beige;
+      padding: 20px;
+      margin-bottom: 12px;
+      &__title {
+        font-family: "Montserrat-Regular";
+        margin-bottom: 10px;
+      }
+      &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &__box-text {
+        font-family: "Montserrat-ExtraLight";
+        font-size: 16px;
+        line-height: $lh;
+      }
+    }
+    &-viewed {
+      border: 1px solid $beige;
+      padding: 20px;
+      &__title {
+        font-family: "Montserrat-Regular";
+        margin-bottom: 20px;
+      }
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        &-content__title {
+          font-family: "Montserrat-Regular";
+          color: $beige;
+          margin-bottom: 10px;
+        }
+        &-content__price {
+          font-family: "Montserrat-Medium";
+        }
+      }
+    }
+  }
+}
+// end about
+
+@import '@/styles/scss/media_about.scss';

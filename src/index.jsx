@@ -9,6 +9,7 @@ import './js/sidebar.js'
 import './styles/css/slick.css'
 import './js/slider.js'
 import './js/form.js'
+import './js/handleSearch.js'
 
 
 

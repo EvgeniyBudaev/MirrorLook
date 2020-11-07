@@ -1,0 +1,128 @@
+@import '@/styles/scss/_vars.scss';
+@import '@/styles/scss/_fonts.scss';
+@import '@/styles/scss/_global.scss';
+@import '@/styles/scss/sidebar.scss';
+
+// start catalog
+.catalog {
+  padding-bottom: 100px;
+  &-top {
+    display: flex;
+    & .title {
+      font-family: "Montserrat-Bold";
+    }
+    &__title span {
+      font-family: 'Montserrat-Light', sans-serif;
+      font-size: 16px;
+      margin-left: 50px;
+      text-transform: none;
+    }
+  }
+  &__inner {
+    display: flex;
+    &-aside {
+      min-width: 224px;
+      margin-right: 20px;
+    }
+    &-content {
+      max-width: 926px;
+      width: 100%;
+    }
+  }
+  &__filter {
+    display: flex;
+    justify-content: space-between;
+    &-selects {
+      display: flex;
+    }
+    &-selects li + li {
+      margin-left: 30px;
+    }
+    &-btn button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+    }
+    &-btn button + button {
+      margin-left: 20px;
+    }
+  }
+}
+// end catalog
+
+// start pagination
+.pagination {
+  margin-bottom: 50px;
+  &-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-list__item {
+    padding: 5px 7px;
+    border: 1px solid $beige;
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+  &-list__item:hover {
+    color: $white;
+    background-color: $lightBeige;
+    border: 1px solid $lightBeige;
+    cursor: pointer;
+  }
+  &-list__item.active {
+    border: 1px solid $beige;
+    color: $white;
+    background-color: $beige;
+  }
+  &-list__item.disabled {
+    cursor: default;
+    border: none;
+    color: $disabled;
+  }
+  &-list__item a {
+    display: block;
+  }
+  &-previous,
+  &-next {
+    display: flex;
+    align-items: center;
+    & p {
+      position: relative;
+      margin: 0 10px;
+    }
+    & p::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $black;
+    }
+  }
+  &-previous.disabled,
+  &-next.disabled {
+    cursor: default;
+  }
+  &-previous.disabled svg,
+  &-next.disabled svg {
+    fill: $disabled;
+  }
+  &-previous.disabled p,
+  &-next.disabled p {
+    color: $disabled;
+  }
+  &-previous.disabled p::before,
+  &-next.disabled p::before {
+    background-color: $disabled;
+  }
+}
+// end pagination
+
+
+
+@import '@/styles/scss/media_catalog.scss';

@@ -89,6 +89,18 @@ const plugins = () => {
       filename: 'cardProduct.html',
       template: './cardProduct.html',
     }),
+    new HTMLWebpackPlugin({
+      filename: 'about.html',
+      template: './about.html',
+    }),
+    new HTMLWebpackPlugin({
+      filename: 'categories.html',
+      template: './categories.html',
+    }),
+    new HTMLWebpackPlugin({
+      filename: 'venetianMirrors.html',
+      template: './venetianMirrors.html',
+    }),
     new CopyWebpackPlugin({
       patterns: [
         {

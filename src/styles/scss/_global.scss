@@ -19,6 +19,8 @@ body {
   padding: 0;
   color: $black;
   font-family: 'Montserrat-Light', sans-serif;
+  font-size: 16px;
+  line-height: $lh;
 }
 
 ul,
@@ -32,6 +34,11 @@ a {
   text-decoration: none;
   color: inherit;
   display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 24px;
+  line-height: $lh;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -87,8 +94,7 @@ p {
 }
 
 .title {
-  font-size: 22px;
-  lh: $lh;
+  font-size: 24px;
   font-family: "Montserrat-Regular";
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -111,8 +117,6 @@ p {
   background-color: $lightBeige;
   z-index: 1;
   transition: transform 150ms ease-out, font-size 150ms ease-out;
-  font-size: 18px;
-  line-height: $lh;
   font-family: "Montserrat-Regular";
 }
 
@@ -151,23 +155,39 @@ p {
 .empty.sticky {
   padding: 192px 0 0;
 }
+.empty-mainPage {
+  padding: 250px 0 0;
+  transition: all .5s;
+}
+.empty-mainPage.sticky {
+  padding: 10px 0 0;
+}
+
 
 
 /*start breadcrumbs*/
 .breadcrumbs {
+  padding-bottom: 50px;
   &__list {
     background-color: $white;
     display: inline-block;
     padding: 2px 8px;
+    position: relative;
+  }
+  &__list::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 98%;
+    background-color: $beige;
+    bottom: -20px;
   }
   &__list-item {
     display: inline-block;
     padding-right: 16px;
     margin-right: 10px;
     position: relative;
-    font-size: 12px;
-    line-height: $lh;
-    font-weight: 400;
+    font-family: "Montserrat-Regular";
     color: $black;
     text-transform: none;
   }
@@ -175,12 +195,13 @@ p {
     text-transform: none;
     transition: all .3s;
     position: relative;
+    font-family: "Montserrat-ExtraLight";
   }
   &__list-item a::before {
     content: '';
     position: absolute;
     bottom: 0;
-    width: 0%;
+    width: 0;
     height: 1px;
     //background-color: $burgundy;
     transition: all .3s;
@@ -194,8 +215,9 @@ p {
     position: absolute;
     right: 0;
     top: 0;
-    bottom: 0px;
+    bottom: 0;
     color: $black;
+    font-family: "Montserrat-ExtraLight";
   }
   &__list-item:last-child::after {
     display: none;
@@ -210,3 +232,103 @@ p {
   }
 }
 /*end breadcrumbs*/
+
+
+ // start card
+.card {
+  max-width: 224px;
+  width: 100%;
+  height: 360px;
+  border: 1px solid #e4e4e4;
+  padding: 7px 7px 10px 12px;
+  transition: all 0.5s;
+  &:hover {
+    box-shadow: 0 0 5px 5px rgba(170, 170, 170, 0.7);
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+  }
+  &__content {
+    flex: 1 0 auto;
+    position: relative;
+    &-favorite {
+      position: absolute;
+      top: 0;
+      right: 3px;
+      width: 20px;
+      height: 20px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+    &-img {
+      text-align: center;
+      height: 218px;
+    }
+    &__title {
+      margin-bottom: 10px;
+    }
+  }
+  &__footer {
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    &-top__basket {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      outline: none;
+    }
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-bottom__num {
+      font-family: "Montserrat-SemiBold";
+    }
+    &-bottom__status {
+      color: #b0976a;
+    }
+  }
+}
+
+.cards__inner-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-bottom: 40px;
+  & .card {
+    flex-basis: calc(33.3333% - 10px);
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+}
+ // end card
+
+
+// start line-info
+.line__info {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  border-top: 2px solid $beige;
+  padding-top: 30px;
+  & p {
+    max-width: 416px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+// end line-info
