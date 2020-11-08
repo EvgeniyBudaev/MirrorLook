@@ -1,4 +1,5 @@
 import $ from 'jquery'
+import 'ion-rangeslider'
 
 // Форма отправки заявки
 
@@ -16,3 +17,17 @@ $('input').blur(function(){
     $(this).addClass('filled');
   }
 })
+
+// На странице catalog форма aside input
+$('.filter__item-drop').on('click', function () {
+  $(this).toggleClass('active')
+  $(this).next().slideToggle('200')
+});
+
+// На странице catalog форма aside range-slider
+$(".js-range-slider").ionRangeSlider({
+  type: "double",
+  min: 0,
+  max: 100000,
+});
+

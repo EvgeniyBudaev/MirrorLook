@@ -126,66 +126,292 @@
           <aside class="catalog__inner-aside aside-filter">
             <form class="aside-filter__form">
               <ul class="aside-filter__list">
+
                 <li class="aside-filter__item-drop">
-                  <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Форма</p>
+                  <div class="aside-filter__item-header filter__item-drop active">
+                    <p class="aside-filter__item-title">Форма</p>
+                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
+                    </svg>
+                  </div>
                   <div class="aside-filter__content">
                     <div class="aside-filter__content-box">
-                      <label class="aside-filter__content-label">
-                        <input class="filter-style" type="checkbox">
-                        Круглая
-                      </label>
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-circular">
+                      <label class="aside-filter__content-label" for="form-circular">Круглая</label>
                     </div>
                     <div class="aside-filter__content-box">
-                      <label class="aside-filter__content-label">
-                        <input class="filter-style" type="checkbox">
-                        Овальная
-                      </label>
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-oval">
+                      <label class="aside-filter__content-label" for="form-oval">Овальная</label>
                     </div>
                     <div class="aside-filter__content-box">
-                      <label class="aside-filter__content-label">
-                        <input class="filter-style" type="checkbox">
-                        Прямоугольная
-                      </label>
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-rectangular">
+                      <label class="aside-filter__content-label" for="form-rectangular">Прямоугольная</label>
                     </div>
                     <div class="aside-filter__content-box">
-                      <label class="aside-filter__content-label">
-                        <input class="filter-style" type="checkbox">
-                        Фигурная
-                      </label>
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-figured">
+                      <label class="aside-filter__content-label" for="form-figured">Фигурная</label>
                     </div>
                   </div>
                 </li>
+
+                <li class="aside-filter__item-drop">
+                  <div class="aside-filter__item-header filter__item-drop active">
+                    <p class="aside-filter__item-title">Тип навески</p>
+                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
+                    </svg>
+                  </div>
+                  <div class="aside-filter__content">
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-vertical">
+                      <label class="aside-filter__content-label" for="form-vertical">Вертикальная</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-horizontal">
+                      <label class="aside-filter__content-label" for="form-horizontal">Горизонтальная</label>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="aside-filter__item-drop">
+                  <div class="aside-filter__item-header filter__item-drop active">
+                    <p class="aside-filter__item-title">Тип крепления</p>
+                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
+                    </svg>
+                  </div>
+                  <div class="aside-filter__content">
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-wall">
+                      <label class="aside-filter__content-label" for="form-wall">Настенное</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-mounted">
+                      <label class="aside-filter__content-label" for="form-mounted">Навесное</label>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="aside-filter__item-drop">
+                  <div class="aside-filter__item-header filter__item-drop active">
+                    <p class="aside-filter__item-title">Цвет рамы</p>
+                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
+                    </svg>
+                  </div>
+                  <div class="aside-filter__content">
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-antique-gold">
+                      <label class="aside-filter__content-label" for="form-antique-gold">Античное золото</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-antique-silver">
+                      <label class="aside-filter__content-label" for="form-antique-silver">Античное серебро</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-silver">
+                      <label class="aside-filter__content-label" for="form-silver">Серебро</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-gold">
+                      <label class="aside-filter__content-label" for="form-gold">Золото</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-brass">
+                      <label class="aside-filter__content-label" for="form-brass">Латунь</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-chromium">
+                      <label class="aside-filter__content-label" for="form-chromium">Хром</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-nickel">
+                      <label class="aside-filter__content-label" for="form-nickel">Никель</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-bronze">
+                      <label class="aside-filter__content-label" for="form-bronze">Бронза</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-champagne">
+                      <label class="aside-filter__content-label" for="form-champagne">Шампань</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-turquoise">
+                      <label class="aside-filter__content-label" for="form-turquoise">Бирюза</label>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="aside-filter__item-drop">
+                  <div class="aside-filter__item-header filter__item-drop active">
+                    <p class="aside-filter__item-title">Материал рамы</p>
+                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
+                    </svg>
+                  </div>
+                  <div class="aside-filter__content">
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-mdf">
+                      <label class="aside-filter__content-label" for="form-mdf">МДФ</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-mirror">
+                      <label class="aside-filter__content-label" for="form-mirror">Зеркало</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-tree">
+                      <label class="aside-filter__content-label" for="form-tree">Дерево</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-metal">
+                      <label class="aside-filter__content-label" for="form-metal">Металл</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-polyresin">
+                      <label class="aside-filter__content-label" for="form-polyresin">Полирезин</label>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="aside-filter__item-drop">
+                  <div class="aside-filter__item-header filter__item-drop active">
+                    <p class="aside-filter__item-title">Цена</p>
+                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
+                    </svg>
+                  </div>
+                  <div class="aside-filter__content">
+                    <div class="aside-filter__content-box aside-filter__content-rangeSlider">
+                      <input type="text" class="js-range-slider" name="my_range" value=""
+                             data-min="20000"
+                             data-max="100000"
+                             data-from="20000"
+                             data-to="60000"
+                             data-grid="false"
+                      />
+                    </div>
+                  </div>
+                </li>
+
+                <li class="aside-filter__item-drop">
+                  <div class="aside-filter__item-header filter__item-drop active">
+                    <p class="aside-filter__item-title">Назначение</p>
+                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
+                    </svg>
+                  </div>
+                  <div class="aside-filter__content">
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-bathroom">
+                      <label class="aside-filter__content-label" for="form-bathroom">Ванная</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-living-room">
+                      <label class="aside-filter__content-label" for="form-living-room">Гостинная</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-hallway">
+                      <label class="aside-filter__content-label" for="form-hallway">Прихожая</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-bedroom">
+                      <label class="aside-filter__content-label" for="form-bedroom">Спальня</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-hall">
+                      <label class="aside-filter__content-label" for="form-hall">Холл</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="checkbox"
+                             id="form-fireplace">
+                      <label class="aside-filter__content-label" for="form-fireplace">Под камин</label>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="aside-filter__item-drop">
+                  <div class="aside-filter__item-header filter__item-drop active">
+                    <p class="aside-filter__item-title">Наличие фацета</p>
+                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
+                    </svg>
+                  </div>
+                  <div class="aside-filter__content">
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="radio"
+                             id="form-yes" value="form-yes" name="form-yes-or-no" checked>
+                      <label class="aside-filter__content-label" for="form-yes">Да</label>
+                    </div>
+                    <div class="aside-filter__content-box">
+                      <input class="aside-filter__content-input custom-input" type="radio"
+                             id="form-no" value="form-no" name="form-yes-or-no">
+                      <label class="aside-filter__content-label" for="form-no">Нет</label>
+                    </div>
+                  </div>
+                </li>
+
               </ul>
             </form>
           </aside>
           <div class="catalog__inner-content">
-            <div class="catalog__filter">
+            <div class="catalog__filter" data-catalogfilter="">
               <ul class="catalog__filter-selects">
                 <li><p class="catalog__filter-name">Сортировать по</p></li>
-                <li><select class="filter-style select-item">
+                <li>
+                  <select class="filter-style select-item">
                   <option value="">возрастанию цены</option>
                   <option value="">убыванию цены</option>
                 </select>
                 </li>
                 <li><p class="catalog__filter-name">На странице</p></li>
                 <li>
-                  <select class="filter-style select-item">
+                  <select class="filter-style select-item filter__item-listSelect">
                     <option value="">16</option>
                     <option value="">32</option>
                   </select>
                 </li>
               </ul>
               <div class="catalog__filter-btn">
-                <button class="catalog__filter-btnLine catalog__filter-button">
+                <button class="catalog__filter-btnLine catalog__filter-button" data-catalogBtn="line">
                   <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.8">
                       <path d="M8.75 22.5H27.5M8.75 15H27.5H8.75ZM8.75 7.5H27.5H8.75Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
                       <path d="M3.75 13.125C3.25272 13.125 2.77581 13.3225 2.42417 13.6742C2.07254 14.0258 1.875 14.5027 1.875 15C1.875 15.4973 2.07254 15.9742 2.42417 16.3258C2.77581 16.6775 3.25272 16.875 3.75 16.875C4.24728 16.875 4.72419 16.6775 5.07583 16.3258C5.42746 15.9742 5.625 15.4973 5.625 15C5.625 14.5027 5.42746 14.0258 5.07583 13.6742C4.72419 13.3225 4.24728 13.125 3.75 13.125ZM3.75 20.625C3.25272 20.625 2.77581 20.8225 2.42417 21.1742C2.07254 21.5258 1.875 22.0027 1.875 22.5C1.875 22.9973 2.07254 23.4742 2.42417 23.8258C2.77581 24.1775 3.25272 24.375 3.75 24.375C4.24728 24.375 4.72419 24.1775 5.07583 23.8258C5.42746 23.4742 5.625 22.9973 5.625 22.5C5.625 22.0027 5.42746 21.5258 5.07583 21.1742C4.72419 20.8225 4.24728 20.625 3.75 20.625ZM3.75 5.625C3.25272 5.625 2.77581 5.82254 2.42417 6.17417C2.07254 6.52581 1.875 7.00272 1.875 7.5C1.875 7.99728 2.07254 8.47419 2.42417 8.82583C2.77581 9.17746 3.25272 9.375 3.75 9.375C4.24728 9.375 4.72419 9.17746 5.07583 8.82583C5.42746 8.47419 5.625 7.99728 5.625 7.5C5.625 7.00272 5.42746 6.52581 5.07583 6.17417C4.72419 5.82254 4.24728 5.625 3.75 5.625Z" fill="black"/>
                     </g>
                   </svg>
+                  </svg>
                 </button>
-                <button class="catalog__filter-btnGrid catalog__filter-button catalog__filter-button--active">
-                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <button class="catalog__filter-btnGrid catalog__filter-button active" data-catalogBtn="grid">
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="#e5e5e5" xmlns="http://www.w3.org/2000/svg">
                     <path d="M25 2.5H21.25C20.56 2.5 20 3.06 20 3.75V7.5C20 8.19 20.56 8.75 21.25 8.75H25C25.69 8.75 26.25 8.19 26.25 7.5V3.75C26.25 3.06 25.69 2.5 25 2.5ZM7.5 2.5H3.75C3.06 2.5 2.5 3.06 2.5 3.75V7.5C2.5 8.19 3.06 8.75 3.75 8.75H7.5C8.19 8.75 8.75 8.19 8.75 7.5V3.75C8.75 3.06 8.19 2.5 7.5 2.5ZM25 20H21.25C20.56 20 20 20.56 20 21.25V25C20 25.69 20.56 26.25 21.25 26.25H25C25.69 26.25 26.25 25.69 26.25 25V21.25C26.25 20.56 25.69 20 25 20ZM7.5 20H3.75C3.06 20 2.5 20.56 2.5 21.25V25C2.5 25.69 3.06 26.25 3.75 26.25H7.5C8.19 26.25 8.75 25.69 8.75 25V21.25C8.75 20.56 8.19 20 7.5 20ZM16.25 11.25H12.5C11.81 11.25 11.25 11.81 11.25 12.5V16.25C11.25 16.94 11.81 17.5 12.5 17.5H16.25C16.94 17.5 17.5 16.94 17.5 16.25V12.5C17.5 11.81 16.94 11.25 16.25 11.25ZM25 11.25H21.25C20.56 11.25 20 11.81 20 12.5V16.25C20 16.94 20.56 17.5 21.25 17.5H25C25.69 17.5 26.25 16.94 26.25 16.25V12.5C26.25 11.81 25.69 11.25 25 11.25ZM16.25 2.5H12.5C11.81 2.5 11.25 3.06 11.25 3.75V7.5C11.25 8.19 11.81 8.75 12.5 8.75H16.25C16.94 8.75 17.5 8.19 17.5 7.5V3.75C17.5 3.06 16.94 2.5 16.25 2.5ZM16.25 20H12.5C11.81 20 11.25 20.56 11.25 21.25V25C11.25 25.69 11.81 26.25 12.5 26.25H16.25C16.94 26.25 17.5 25.69 17.5 25V21.25C17.5 20.56 16.94 20 16.25 20ZM7.5 11.25H3.75C3.06 11.25 2.5 11.81 2.5 12.5V16.25C2.5 16.94 3.06 17.5 3.75 17.5H7.5C8.19 17.5 8.75 16.94 8.75 16.25V12.5C8.75 11.81 8.19 11.25 7.5 11.25Z" fill="black"/>
                   </svg>
                 </button>
@@ -194,7 +420,7 @@
 
             <div class="cards__inner-list">
 
-              <div class="card">
+              <div class="card" data-catalogCard="">
                 <div class="card__wrapper">
                   <div class="card__content">
                     <button class="card__content-favorite">
@@ -207,27 +433,35 @@
                     <div class="card__content-img">
                       <img src="./assets/images/content/venetianMirrors-1.jpg" alt="images">
                     </div>
-                    <p class="card__content__title">Зеркало в металлической раме Kitech (Китех)</p>
+                    <div class="card__content__description">
+                      <p class="card__content__title">Зеркало в металлической раме Kitech (Китех)</p>
+                      <p class="card__content__text">Артикул: MD1119ST</p>
+                      <p class="card__content__text">Размер: 71 * 107 см</p>
+                      <p class="card__content__text">Форма: прямоугольное</p>
+                      <p class="card__content__text">Цвет рамы: хром</p>
+                    </div>
                   </div>
                   <div class="card__footer">
                     <div class="card__footer-top">
                       <div class="card__footer-top__label">Цена:</div>
                       <button class="card__footer-top__basket">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.1676 13.5416H7.65404V11.4583H16.1676L19.0613 6.24996H5.45508V4.16663H20.8322C21.2009 4.16663 21.5426 4.36246 21.7301 4.68017C21.9176 4.99892 21.9228 5.39163 21.7426 5.71454L17.9895 12.4698C17.6228 13.1302 16.9249 13.5416 16.1676 13.5416Z" fill="#B0976A"/>
-                          <path d="M19.7917 17.7083H7.23131C6.4459 17.7083 5.7209 17.2812 5.33965 16.5948C4.9584 15.9083 4.98027 15.0667 5.39694 14.4L6.64381 12.4042L3.21257 4.16978L1.05527 4.1802L1.0459 2.09687L4.59902 2.0802L8.98027 12.5958L7.16361 15.5031L7.23131 15.625H19.7917V17.7083ZM17.7084 18.75C17.1559 18.75 16.626 18.9695 16.2353 19.3602C15.8446 19.7509 15.6251 20.2808 15.6251 20.8333C15.6251 21.3859 15.8446 21.9158 16.2353 22.3065C16.626 22.6972 17.1559 22.9167 17.7084 22.9167C18.2609 22.9167 18.7908 22.6972 19.1815 22.3065C19.5722 21.9158 19.7917 21.3859 19.7917 20.8333C19.7917 20.2808 19.5722 19.7509 19.1815 19.3602C18.7908 18.9695 18.2609 18.75 17.7084 18.75ZM7.29173 18.75C6.7392 18.75 6.20929 18.9695 5.81859 19.3602C5.42789 19.7509 5.2084 20.2808 5.2084 20.8333C5.2084 21.3859 5.42789 21.9158 5.81859 22.3065C6.20929 22.6972 6.7392 22.9167 7.29173 22.9167C7.84427 22.9167 8.37417 22.6972 8.76487 22.3065C9.15557 21.9158 9.37506 21.3859 9.37506 20.8333C9.37506 20.2808 9.15557 19.7509 8.76487 19.3602C8.37417 18.9695 7.84427 18.75 7.29173 18.75Z" fill="#B0976A"/>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.9341 10.8333H6.1233V9.16666H12.9341L15.2491 4.99999H4.36414V3.33333H16.6658C16.9608 3.33333 17.2341 3.48999 17.3841 3.74416C17.5341 3.99916 17.5383 4.31333 17.3941 4.57166L14.3916 9.97583C14.0983 10.5042 13.54 10.8333 12.9341 10.8333Z" fill="#B0976A"/>
+                          <path d="M15.8334 14.1667H5.78506C5.15673 14.1667 4.57673 13.825 4.27173 13.2758C3.96673 12.7267 3.98423 12.0533 4.31756 11.52L5.31506 9.92332L2.57006 3.33582L0.844231 3.34415L0.836731 1.67749L3.67923 1.66415L7.18423 10.0767L5.7309 12.4025L5.78506 12.5H15.8334V14.1667ZM14.1667 15C13.7247 15 13.3008 15.1756 12.9882 15.4881C12.6757 15.8007 12.5001 16.2246 12.5001 16.6667C12.5001 17.1087 12.6757 17.5326 12.9882 17.8452C13.3008 18.1577 13.7247 18.3333 14.1667 18.3333C14.6088 18.3333 15.0327 18.1577 15.3452 17.8452C15.6578 17.5326 15.8334 17.1087 15.8334 16.6667C15.8334 16.2246 15.6578 15.8007 15.3452 15.4881C15.0327 15.1756 14.6088 15 14.1667 15ZM5.8334 15C5.39137 15 4.96745 15.1756 4.65489 15.4881C4.34233 15.8007 4.16673 16.2246 4.16673 16.6667C4.16673 17.1087 4.34233 17.5326 4.65489 17.8452C4.96745 18.1577 5.39137 18.3333 5.8334 18.3333C6.27543 18.3333 6.69935 18.1577 7.01191 17.8452C7.32447 17.5326 7.50006 17.1087 7.50006 16.6667C7.50006 16.2246 7.32447 15.8007 7.01191 15.4881C6.69935 15.1756 6.27543 15 5.8334 15Z" fill="#B0976A"/>
                         </svg>
                       </button>
                     </div>
                     <div class="card__footer-bottom">
                       <div class="card__footer-bottom__num">25 000 ₽</div>
                       <div class="card__footer-bottom__status">В наличии</div>
+                      <div class="card__footer-bottom__delivery">Доставка 1-3 дня</div>
+                      <button class="card__footer-bottom__btn">В корзину</button>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card" data-catalogCard="">
                 <div class="card__wrapper">
                   <div class="card__content">
                     <button class="card__content-favorite">
@@ -240,27 +474,35 @@
                     <div class="card__content-img">
                       <img src="./assets/images/content/venetianMirrors-2.jpg" alt="images">
                     </div>
-                    <p class="card__content__title">Зеркало в металлической раме Hi-Tech (Хайтэк)</p>
+                    <div class="card__content__description">
+                      <p class="card__content__title">Зеркало в металлической раме Hi-Tech (Хайтэк)</p>
+                      <p class="card__content__text">Артикул: MD1119ST</p>
+                      <p class="card__content__text">Размер: 71 * 107 см</p>
+                      <p class="card__content__text">Форма: прямоугольное</p>
+                      <p class="card__content__text">Цвет рамы: хром</p>
+                    </div>
                   </div>
                   <div class="card__footer">
                     <div class="card__footer-top">
                       <div class="card__footer-top__label">Цена:</div>
                       <button class="card__footer-top__basket">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.1676 13.5416H7.65404V11.4583H16.1676L19.0613 6.24996H5.45508V4.16663H20.8322C21.2009 4.16663 21.5426 4.36246 21.7301 4.68017C21.9176 4.99892 21.9228 5.39163 21.7426 5.71454L17.9895 12.4698C17.6228 13.1302 16.9249 13.5416 16.1676 13.5416Z" fill="#B0976A"/>
-                          <path d="M19.7917 17.7083H7.23131C6.4459 17.7083 5.7209 17.2812 5.33965 16.5948C4.9584 15.9083 4.98027 15.0667 5.39694 14.4L6.64381 12.4042L3.21257 4.16978L1.05527 4.1802L1.0459 2.09687L4.59902 2.0802L8.98027 12.5958L7.16361 15.5031L7.23131 15.625H19.7917V17.7083ZM17.7084 18.75C17.1559 18.75 16.626 18.9695 16.2353 19.3602C15.8446 19.7509 15.6251 20.2808 15.6251 20.8333C15.6251 21.3859 15.8446 21.9158 16.2353 22.3065C16.626 22.6972 17.1559 22.9167 17.7084 22.9167C18.2609 22.9167 18.7908 22.6972 19.1815 22.3065C19.5722 21.9158 19.7917 21.3859 19.7917 20.8333C19.7917 20.2808 19.5722 19.7509 19.1815 19.3602C18.7908 18.9695 18.2609 18.75 17.7084 18.75ZM7.29173 18.75C6.7392 18.75 6.20929 18.9695 5.81859 19.3602C5.42789 19.7509 5.2084 20.2808 5.2084 20.8333C5.2084 21.3859 5.42789 21.9158 5.81859 22.3065C6.20929 22.6972 6.7392 22.9167 7.29173 22.9167C7.84427 22.9167 8.37417 22.6972 8.76487 22.3065C9.15557 21.9158 9.37506 21.3859 9.37506 20.8333C9.37506 20.2808 9.15557 19.7509 8.76487 19.3602C8.37417 18.9695 7.84427 18.75 7.29173 18.75Z" fill="#B0976A"/>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.9341 10.8333H6.1233V9.16666H12.9341L15.2491 4.99999H4.36414V3.33333H16.6658C16.9608 3.33333 17.2341 3.48999 17.3841 3.74416C17.5341 3.99916 17.5383 4.31333 17.3941 4.57166L14.3916 9.97583C14.0983 10.5042 13.54 10.8333 12.9341 10.8333Z" fill="#B0976A"/>
+                          <path d="M15.8334 14.1667H5.78506C5.15673 14.1667 4.57673 13.825 4.27173 13.2758C3.96673 12.7267 3.98423 12.0533 4.31756 11.52L5.31506 9.92332L2.57006 3.33582L0.844231 3.34415L0.836731 1.67749L3.67923 1.66415L7.18423 10.0767L5.7309 12.4025L5.78506 12.5H15.8334V14.1667ZM14.1667 15C13.7247 15 13.3008 15.1756 12.9882 15.4881C12.6757 15.8007 12.5001 16.2246 12.5001 16.6667C12.5001 17.1087 12.6757 17.5326 12.9882 17.8452C13.3008 18.1577 13.7247 18.3333 14.1667 18.3333C14.6088 18.3333 15.0327 18.1577 15.3452 17.8452C15.6578 17.5326 15.8334 17.1087 15.8334 16.6667C15.8334 16.2246 15.6578 15.8007 15.3452 15.4881C15.0327 15.1756 14.6088 15 14.1667 15ZM5.8334 15C5.39137 15 4.96745 15.1756 4.65489 15.4881C4.34233 15.8007 4.16673 16.2246 4.16673 16.6667C4.16673 17.1087 4.34233 17.5326 4.65489 17.8452C4.96745 18.1577 5.39137 18.3333 5.8334 18.3333C6.27543 18.3333 6.69935 18.1577 7.01191 17.8452C7.32447 17.5326 7.50006 17.1087 7.50006 16.6667C7.50006 16.2246 7.32447 15.8007 7.01191 15.4881C6.69935 15.1756 6.27543 15 5.8334 15Z" fill="#B0976A"/>
                         </svg>
                       </button>
                     </div>
                     <div class="card__footer-bottom">
                       <div class="card__footer-bottom__num">27 500 ₽</div>
                       <div class="card__footer-bottom__status">В наличии</div>
+                      <div class="card__footer-bottom__delivery">Доставка 1-3 дня</div>
+                      <button class="card__footer-bottom__btn">В корзину</button>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card" data-catalogCard="">
                 <div class="card__wrapper">
                   <div class="card__content">
                     <button class="card__content-favorite">
@@ -273,27 +515,35 @@
                     <div class="card__content-img">
                       <img src="./assets/images/content/venetianMirrors-3.jpg" alt="images">
                     </div>
-                    <p class="card__content__title">Зеркало в металлической раме Sequoia (Секвойя)</p>
+                    <div class="card__content__description">
+                      <p class="card__content__title">Зеркало в металлической раме Sequoia (Секвойя)</p>
+                      <p class="card__content__text">Артикул: MD1119ST</p>
+                      <p class="card__content__text">Размер: 71 * 107 см</p>
+                      <p class="card__content__text">Форма: прямоугольное</p>
+                      <p class="card__content__text">Цвет рамы: хром</p>
+                    </div>
                   </div>
                   <div class="card__footer">
                     <div class="card__footer-top">
                       <div class="card__footer-top__label">Цена:</div>
                       <button class="card__footer-top__basket">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.1676 13.5416H7.65404V11.4583H16.1676L19.0613 6.24996H5.45508V4.16663H20.8322C21.2009 4.16663 21.5426 4.36246 21.7301 4.68017C21.9176 4.99892 21.9228 5.39163 21.7426 5.71454L17.9895 12.4698C17.6228 13.1302 16.9249 13.5416 16.1676 13.5416Z" fill="#B0976A"/>
-                          <path d="M19.7917 17.7083H7.23131C6.4459 17.7083 5.7209 17.2812 5.33965 16.5948C4.9584 15.9083 4.98027 15.0667 5.39694 14.4L6.64381 12.4042L3.21257 4.16978L1.05527 4.1802L1.0459 2.09687L4.59902 2.0802L8.98027 12.5958L7.16361 15.5031L7.23131 15.625H19.7917V17.7083ZM17.7084 18.75C17.1559 18.75 16.626 18.9695 16.2353 19.3602C15.8446 19.7509 15.6251 20.2808 15.6251 20.8333C15.6251 21.3859 15.8446 21.9158 16.2353 22.3065C16.626 22.6972 17.1559 22.9167 17.7084 22.9167C18.2609 22.9167 18.7908 22.6972 19.1815 22.3065C19.5722 21.9158 19.7917 21.3859 19.7917 20.8333C19.7917 20.2808 19.5722 19.7509 19.1815 19.3602C18.7908 18.9695 18.2609 18.75 17.7084 18.75ZM7.29173 18.75C6.7392 18.75 6.20929 18.9695 5.81859 19.3602C5.42789 19.7509 5.2084 20.2808 5.2084 20.8333C5.2084 21.3859 5.42789 21.9158 5.81859 22.3065C6.20929 22.6972 6.7392 22.9167 7.29173 22.9167C7.84427 22.9167 8.37417 22.6972 8.76487 22.3065C9.15557 21.9158 9.37506 21.3859 9.37506 20.8333C9.37506 20.2808 9.15557 19.7509 8.76487 19.3602C8.37417 18.9695 7.84427 18.75 7.29173 18.75Z" fill="#B0976A"/>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.9341 10.8333H6.1233V9.16666H12.9341L15.2491 4.99999H4.36414V3.33333H16.6658C16.9608 3.33333 17.2341 3.48999 17.3841 3.74416C17.5341 3.99916 17.5383 4.31333 17.3941 4.57166L14.3916 9.97583C14.0983 10.5042 13.54 10.8333 12.9341 10.8333Z" fill="#B0976A"/>
+                          <path d="M15.8334 14.1667H5.78506C5.15673 14.1667 4.57673 13.825 4.27173 13.2758C3.96673 12.7267 3.98423 12.0533 4.31756 11.52L5.31506 9.92332L2.57006 3.33582L0.844231 3.34415L0.836731 1.67749L3.67923 1.66415L7.18423 10.0767L5.7309 12.4025L5.78506 12.5H15.8334V14.1667ZM14.1667 15C13.7247 15 13.3008 15.1756 12.9882 15.4881C12.6757 15.8007 12.5001 16.2246 12.5001 16.6667C12.5001 17.1087 12.6757 17.5326 12.9882 17.8452C13.3008 18.1577 13.7247 18.3333 14.1667 18.3333C14.6088 18.3333 15.0327 18.1577 15.3452 17.8452C15.6578 17.5326 15.8334 17.1087 15.8334 16.6667C15.8334 16.2246 15.6578 15.8007 15.3452 15.4881C15.0327 15.1756 14.6088 15 14.1667 15ZM5.8334 15C5.39137 15 4.96745 15.1756 4.65489 15.4881C4.34233 15.8007 4.16673 16.2246 4.16673 16.6667C4.16673 17.1087 4.34233 17.5326 4.65489 17.8452C4.96745 18.1577 5.39137 18.3333 5.8334 18.3333C6.27543 18.3333 6.69935 18.1577 7.01191 17.8452C7.32447 17.5326 7.50006 17.1087 7.50006 16.6667C7.50006 16.2246 7.32447 15.8007 7.01191 15.4881C6.69935 15.1756 6.27543 15 5.8334 15Z" fill="#B0976A"/>
                         </svg>
                       </button>
                     </div>
                     <div class="card__footer-bottom">
                       <div class="card__footer-bottom__num">25 000 ₽</div>
                       <div class="card__footer-bottom__status">В наличии</div>
+                      <div class="card__footer-bottom__delivery">Доставка 1-3 дня</div>
+                      <button class="card__footer-bottom__btn">В корзину</button>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card" data-catalogCard="">
                 <div class="card__wrapper">
                   <div class="card__content">
                     <button class="card__content-favorite">
@@ -306,27 +556,35 @@
                     <div class="card__content-img">
                       <img src="./assets/images/content/venetianMirrors-4.jpg" alt="images">
                     </div>
-                    <p class="card__content__title">Зеркало в металлической раме Hi-Tech (Хайтэк)</p>
+                    <div class="card__content__description">
+                      <p class="card__content__title">Зеркало в металлической раме Hi-Tech (Хайтэк)</p>
+                      <p class="card__content__text">Артикул: MD1119ST</p>
+                      <p class="card__content__text">Размер: 71 * 107 см</p>
+                      <p class="card__content__text">Форма: прямоугольное</p>
+                      <p class="card__content__text">Цвет рамы: хром</p>
+                    </div>
                   </div>
                   <div class="card__footer">
                     <div class="card__footer-top">
                       <div class="card__footer-top__label">Цена:</div>
                       <button class="card__footer-top__basket">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.1676 13.5416H7.65404V11.4583H16.1676L19.0613 6.24996H5.45508V4.16663H20.8322C21.2009 4.16663 21.5426 4.36246 21.7301 4.68017C21.9176 4.99892 21.9228 5.39163 21.7426 5.71454L17.9895 12.4698C17.6228 13.1302 16.9249 13.5416 16.1676 13.5416Z" fill="#B0976A"/>
-                          <path d="M19.7917 17.7083H7.23131C6.4459 17.7083 5.7209 17.2812 5.33965 16.5948C4.9584 15.9083 4.98027 15.0667 5.39694 14.4L6.64381 12.4042L3.21257 4.16978L1.05527 4.1802L1.0459 2.09687L4.59902 2.0802L8.98027 12.5958L7.16361 15.5031L7.23131 15.625H19.7917V17.7083ZM17.7084 18.75C17.1559 18.75 16.626 18.9695 16.2353 19.3602C15.8446 19.7509 15.6251 20.2808 15.6251 20.8333C15.6251 21.3859 15.8446 21.9158 16.2353 22.3065C16.626 22.6972 17.1559 22.9167 17.7084 22.9167C18.2609 22.9167 18.7908 22.6972 19.1815 22.3065C19.5722 21.9158 19.7917 21.3859 19.7917 20.8333C19.7917 20.2808 19.5722 19.7509 19.1815 19.3602C18.7908 18.9695 18.2609 18.75 17.7084 18.75ZM7.29173 18.75C6.7392 18.75 6.20929 18.9695 5.81859 19.3602C5.42789 19.7509 5.2084 20.2808 5.2084 20.8333C5.2084 21.3859 5.42789 21.9158 5.81859 22.3065C6.20929 22.6972 6.7392 22.9167 7.29173 22.9167C7.84427 22.9167 8.37417 22.6972 8.76487 22.3065C9.15557 21.9158 9.37506 21.3859 9.37506 20.8333C9.37506 20.2808 9.15557 19.7509 8.76487 19.3602C8.37417 18.9695 7.84427 18.75 7.29173 18.75Z" fill="#B0976A"/>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.9341 10.8333H6.1233V9.16666H12.9341L15.2491 4.99999H4.36414V3.33333H16.6658C16.9608 3.33333 17.2341 3.48999 17.3841 3.74416C17.5341 3.99916 17.5383 4.31333 17.3941 4.57166L14.3916 9.97583C14.0983 10.5042 13.54 10.8333 12.9341 10.8333Z" fill="#B0976A"/>
+                          <path d="M15.8334 14.1667H5.78506C5.15673 14.1667 4.57673 13.825 4.27173 13.2758C3.96673 12.7267 3.98423 12.0533 4.31756 11.52L5.31506 9.92332L2.57006 3.33582L0.844231 3.34415L0.836731 1.67749L3.67923 1.66415L7.18423 10.0767L5.7309 12.4025L5.78506 12.5H15.8334V14.1667ZM14.1667 15C13.7247 15 13.3008 15.1756 12.9882 15.4881C12.6757 15.8007 12.5001 16.2246 12.5001 16.6667C12.5001 17.1087 12.6757 17.5326 12.9882 17.8452C13.3008 18.1577 13.7247 18.3333 14.1667 18.3333C14.6088 18.3333 15.0327 18.1577 15.3452 17.8452C15.6578 17.5326 15.8334 17.1087 15.8334 16.6667C15.8334 16.2246 15.6578 15.8007 15.3452 15.4881C15.0327 15.1756 14.6088 15 14.1667 15ZM5.8334 15C5.39137 15 4.96745 15.1756 4.65489 15.4881C4.34233 15.8007 4.16673 16.2246 4.16673 16.6667C4.16673 17.1087 4.34233 17.5326 4.65489 17.8452C4.96745 18.1577 5.39137 18.3333 5.8334 18.3333C6.27543 18.3333 6.69935 18.1577 7.01191 17.8452C7.32447 17.5326 7.50006 17.1087 7.50006 16.6667C7.50006 16.2246 7.32447 15.8007 7.01191 15.4881C6.69935 15.1756 6.27543 15 5.8334 15Z" fill="#B0976A"/>
                         </svg>
                       </button>
                     </div>
                     <div class="card__footer-bottom">
                       <div class="card__footer-bottom__num">25 000 ₽</div>
                       <div class="card__footer-bottom__status">В наличии</div>
+                      <div class="card__footer-bottom__delivery">Доставка 1-3 дня</div>
+                      <button class="card__footer-bottom__btn">В корзину</button>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card" data-catalogCard="">
                 <div class="card__wrapper">
                   <div class="card__content">
                     <button class="card__content-favorite">
@@ -339,27 +597,35 @@
                     <div class="card__content-img">
                       <img src="./assets/images/content/venetianMirrors-5.jpg" alt="images">
                     </div>
-                    <p class="card__content__title">Зеркало в металлической раме Abstract (Абстракт)</p>
+                    <div class="card__content__description">
+                      <p class="card__content__title">Зеркало в металлической раме Abstract (Абстракт)</p>
+                      <p class="card__content__text">Артикул: MD1119ST</p>
+                      <p class="card__content__text">Размер: 71 * 107 см</p>
+                      <p class="card__content__text">Форма: прямоугольное</p>
+                      <p class="card__content__text">Цвет рамы: хром</p>
+                    </div>
                   </div>
                   <div class="card__footer">
                     <div class="card__footer-top">
                       <div class="card__footer-top__label">Цена:</div>
                       <button class="card__footer-top__basket">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.1676 13.5416H7.65404V11.4583H16.1676L19.0613 6.24996H5.45508V4.16663H20.8322C21.2009 4.16663 21.5426 4.36246 21.7301 4.68017C21.9176 4.99892 21.9228 5.39163 21.7426 5.71454L17.9895 12.4698C17.6228 13.1302 16.9249 13.5416 16.1676 13.5416Z" fill="#B0976A"/>
-                          <path d="M19.7917 17.7083H7.23131C6.4459 17.7083 5.7209 17.2812 5.33965 16.5948C4.9584 15.9083 4.98027 15.0667 5.39694 14.4L6.64381 12.4042L3.21257 4.16978L1.05527 4.1802L1.0459 2.09687L4.59902 2.0802L8.98027 12.5958L7.16361 15.5031L7.23131 15.625H19.7917V17.7083ZM17.7084 18.75C17.1559 18.75 16.626 18.9695 16.2353 19.3602C15.8446 19.7509 15.6251 20.2808 15.6251 20.8333C15.6251 21.3859 15.8446 21.9158 16.2353 22.3065C16.626 22.6972 17.1559 22.9167 17.7084 22.9167C18.2609 22.9167 18.7908 22.6972 19.1815 22.3065C19.5722 21.9158 19.7917 21.3859 19.7917 20.8333C19.7917 20.2808 19.5722 19.7509 19.1815 19.3602C18.7908 18.9695 18.2609 18.75 17.7084 18.75ZM7.29173 18.75C6.7392 18.75 6.20929 18.9695 5.81859 19.3602C5.42789 19.7509 5.2084 20.2808 5.2084 20.8333C5.2084 21.3859 5.42789 21.9158 5.81859 22.3065C6.20929 22.6972 6.7392 22.9167 7.29173 22.9167C7.84427 22.9167 8.37417 22.6972 8.76487 22.3065C9.15557 21.9158 9.37506 21.3859 9.37506 20.8333C9.37506 20.2808 9.15557 19.7509 8.76487 19.3602C8.37417 18.9695 7.84427 18.75 7.29173 18.75Z" fill="#B0976A"/>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.9341 10.8333H6.1233V9.16666H12.9341L15.2491 4.99999H4.36414V3.33333H16.6658C16.9608 3.33333 17.2341 3.48999 17.3841 3.74416C17.5341 3.99916 17.5383 4.31333 17.3941 4.57166L14.3916 9.97583C14.0983 10.5042 13.54 10.8333 12.9341 10.8333Z" fill="#B0976A"/>
+                          <path d="M15.8334 14.1667H5.78506C5.15673 14.1667 4.57673 13.825 4.27173 13.2758C3.96673 12.7267 3.98423 12.0533 4.31756 11.52L5.31506 9.92332L2.57006 3.33582L0.844231 3.34415L0.836731 1.67749L3.67923 1.66415L7.18423 10.0767L5.7309 12.4025L5.78506 12.5H15.8334V14.1667ZM14.1667 15C13.7247 15 13.3008 15.1756 12.9882 15.4881C12.6757 15.8007 12.5001 16.2246 12.5001 16.6667C12.5001 17.1087 12.6757 17.5326 12.9882 17.8452C13.3008 18.1577 13.7247 18.3333 14.1667 18.3333C14.6088 18.3333 15.0327 18.1577 15.3452 17.8452C15.6578 17.5326 15.8334 17.1087 15.8334 16.6667C15.8334 16.2246 15.6578 15.8007 15.3452 15.4881C15.0327 15.1756 14.6088 15 14.1667 15ZM5.8334 15C5.39137 15 4.96745 15.1756 4.65489 15.4881C4.34233 15.8007 4.16673 16.2246 4.16673 16.6667C4.16673 17.1087 4.34233 17.5326 4.65489 17.8452C4.96745 18.1577 5.39137 18.3333 5.8334 18.3333C6.27543 18.3333 6.69935 18.1577 7.01191 17.8452C7.32447 17.5326 7.50006 17.1087 7.50006 16.6667C7.50006 16.2246 7.32447 15.8007 7.01191 15.4881C6.69935 15.1756 6.27543 15 5.8334 15Z" fill="#B0976A"/>
                         </svg>
                       </button>
                     </div>
                     <div class="card__footer-bottom">
                       <div class="card__footer-bottom__num">32 500 ₽</div>
                       <div class="card__footer-bottom__status">В наличии</div>
+                      <div class="card__footer-bottom__delivery">Доставка 1-3 дня</div>
+                      <button class="card__footer-bottom__btn">В корзину</button>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card" data-catalogCard="">
                 <div class="card__wrapper">
                   <div class="card__content">
                     <button class="card__content-favorite">
@@ -372,27 +638,35 @@
                     <div class="card__content-img">
                       <img src="./assets/images/content/venetianMirrors-6.jpg" alt="images">
                     </div>
-                    <p class="card__content__title">Зеркало в металлической раме Bavaro (Баваро)</p>
+                    <div class="card__content__description">
+                      <p class="card__content__title">Зеркало в металлической раме Bavaro (Баваро)</p>
+                      <p class="card__content__text">Артикул: MD1119ST</p>
+                      <p class="card__content__text">Размер: 71 * 107 см</p>
+                      <p class="card__content__text">Форма: прямоугольное</p>
+                      <p class="card__content__text">Цвет рамы: хром</p>
+                    </div>
                   </div>
                   <div class="card__footer">
                     <div class="card__footer-top">
                       <div class="card__footer-top__label">Цена:</div>
                       <button class="card__footer-top__basket">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.1676 13.5416H7.65404V11.4583H16.1676L19.0613 6.24996H5.45508V4.16663H20.8322C21.2009 4.16663 21.5426 4.36246 21.7301 4.68017C21.9176 4.99892 21.9228 5.39163 21.7426 5.71454L17.9895 12.4698C17.6228 13.1302 16.9249 13.5416 16.1676 13.5416Z" fill="#B0976A"/>
-                          <path d="M19.7917 17.7083H7.23131C6.4459 17.7083 5.7209 17.2812 5.33965 16.5948C4.9584 15.9083 4.98027 15.0667 5.39694 14.4L6.64381 12.4042L3.21257 4.16978L1.05527 4.1802L1.0459 2.09687L4.59902 2.0802L8.98027 12.5958L7.16361 15.5031L7.23131 15.625H19.7917V17.7083ZM17.7084 18.75C17.1559 18.75 16.626 18.9695 16.2353 19.3602C15.8446 19.7509 15.6251 20.2808 15.6251 20.8333C15.6251 21.3859 15.8446 21.9158 16.2353 22.3065C16.626 22.6972 17.1559 22.9167 17.7084 22.9167C18.2609 22.9167 18.7908 22.6972 19.1815 22.3065C19.5722 21.9158 19.7917 21.3859 19.7917 20.8333C19.7917 20.2808 19.5722 19.7509 19.1815 19.3602C18.7908 18.9695 18.2609 18.75 17.7084 18.75ZM7.29173 18.75C6.7392 18.75 6.20929 18.9695 5.81859 19.3602C5.42789 19.7509 5.2084 20.2808 5.2084 20.8333C5.2084 21.3859 5.42789 21.9158 5.81859 22.3065C6.20929 22.6972 6.7392 22.9167 7.29173 22.9167C7.84427 22.9167 8.37417 22.6972 8.76487 22.3065C9.15557 21.9158 9.37506 21.3859 9.37506 20.8333C9.37506 20.2808 9.15557 19.7509 8.76487 19.3602C8.37417 18.9695 7.84427 18.75 7.29173 18.75Z" fill="#B0976A"/>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.9341 10.8333H6.1233V9.16666H12.9341L15.2491 4.99999H4.36414V3.33333H16.6658C16.9608 3.33333 17.2341 3.48999 17.3841 3.74416C17.5341 3.99916 17.5383 4.31333 17.3941 4.57166L14.3916 9.97583C14.0983 10.5042 13.54 10.8333 12.9341 10.8333Z" fill="#B0976A"/>
+                          <path d="M15.8334 14.1667H5.78506C5.15673 14.1667 4.57673 13.825 4.27173 13.2758C3.96673 12.7267 3.98423 12.0533 4.31756 11.52L5.31506 9.92332L2.57006 3.33582L0.844231 3.34415L0.836731 1.67749L3.67923 1.66415L7.18423 10.0767L5.7309 12.4025L5.78506 12.5H15.8334V14.1667ZM14.1667 15C13.7247 15 13.3008 15.1756 12.9882 15.4881C12.6757 15.8007 12.5001 16.2246 12.5001 16.6667C12.5001 17.1087 12.6757 17.5326 12.9882 17.8452C13.3008 18.1577 13.7247 18.3333 14.1667 18.3333C14.6088 18.3333 15.0327 18.1577 15.3452 17.8452C15.6578 17.5326 15.8334 17.1087 15.8334 16.6667C15.8334 16.2246 15.6578 15.8007 15.3452 15.4881C15.0327 15.1756 14.6088 15 14.1667 15ZM5.8334 15C5.39137 15 4.96745 15.1756 4.65489 15.4881C4.34233 15.8007 4.16673 16.2246 4.16673 16.6667C4.16673 17.1087 4.34233 17.5326 4.65489 17.8452C4.96745 18.1577 5.39137 18.3333 5.8334 18.3333C6.27543 18.3333 6.69935 18.1577 7.01191 17.8452C7.32447 17.5326 7.50006 17.1087 7.50006 16.6667C7.50006 16.2246 7.32447 15.8007 7.01191 15.4881C6.69935 15.1756 6.27543 15 5.8334 15Z" fill="#B0976A"/>
                         </svg>
                       </button>
                     </div>
                     <div class="card__footer-bottom">
                       <div class="card__footer-bottom__num">25 000 ₽</div>
                       <div class="card__footer-bottom__status">В наличии</div>
+                      <div class="card__footer-bottom__delivery">Доставка 1-3 дня</div>
+                      <button class="card__footer-bottom__btn">В корзину</button>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card" data-catalogCard="">
                 <div class="card__wrapper">
                   <div class="card__content">
                     <button class="card__content-favorite">
@@ -405,27 +679,35 @@
                     <div class="card__content-img">
                       <img src="./assets/images/content/venetianMirrors-7.jpg" alt="images">
                     </div>
-                    <p class="card__content__title">Зеркало-солнце в металлической раме Helios (Гелиос)</p>
+                    <div class="card__content__description">
+                      <p class="card__content__title">Зеркало-солнце в металлической раме Helios (Гелиос)</p>
+                      <p class="card__content__text">Артикул: MD1119ST</p>
+                      <p class="card__content__text">Размер: 71 * 107 см</p>
+                      <p class="card__content__text">Форма: прямоугольное</p>
+                      <p class="card__content__text">Цвет рамы: хром</p>
+                    </div>
                   </div>
                   <div class="card__footer">
                     <div class="card__footer-top">
                       <div class="card__footer-top__label">Цена:</div>
                       <button class="card__footer-top__basket">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.1676 13.5416H7.65404V11.4583H16.1676L19.0613 6.24996H5.45508V4.16663H20.8322C21.2009 4.16663 21.5426 4.36246 21.7301 4.68017C21.9176 4.99892 21.9228 5.39163 21.7426 5.71454L17.9895 12.4698C17.6228 13.1302 16.9249 13.5416 16.1676 13.5416Z" fill="#B0976A"/>
-                          <path d="M19.7917 17.7083H7.23131C6.4459 17.7083 5.7209 17.2812 5.33965 16.5948C4.9584 15.9083 4.98027 15.0667 5.39694 14.4L6.64381 12.4042L3.21257 4.16978L1.05527 4.1802L1.0459 2.09687L4.59902 2.0802L8.98027 12.5958L7.16361 15.5031L7.23131 15.625H19.7917V17.7083ZM17.7084 18.75C17.1559 18.75 16.626 18.9695 16.2353 19.3602C15.8446 19.7509 15.6251 20.2808 15.6251 20.8333C15.6251 21.3859 15.8446 21.9158 16.2353 22.3065C16.626 22.6972 17.1559 22.9167 17.7084 22.9167C18.2609 22.9167 18.7908 22.6972 19.1815 22.3065C19.5722 21.9158 19.7917 21.3859 19.7917 20.8333C19.7917 20.2808 19.5722 19.7509 19.1815 19.3602C18.7908 18.9695 18.2609 18.75 17.7084 18.75ZM7.29173 18.75C6.7392 18.75 6.20929 18.9695 5.81859 19.3602C5.42789 19.7509 5.2084 20.2808 5.2084 20.8333C5.2084 21.3859 5.42789 21.9158 5.81859 22.3065C6.20929 22.6972 6.7392 22.9167 7.29173 22.9167C7.84427 22.9167 8.37417 22.6972 8.76487 22.3065C9.15557 21.9158 9.37506 21.3859 9.37506 20.8333C9.37506 20.2808 9.15557 19.7509 8.76487 19.3602C8.37417 18.9695 7.84427 18.75 7.29173 18.75Z" fill="#B0976A"/>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.9341 10.8333H6.1233V9.16666H12.9341L15.2491 4.99999H4.36414V3.33333H16.6658C16.9608 3.33333 17.2341 3.48999 17.3841 3.74416C17.5341 3.99916 17.5383 4.31333 17.3941 4.57166L14.3916 9.97583C14.0983 10.5042 13.54 10.8333 12.9341 10.8333Z" fill="#B0976A"/>
+                          <path d="M15.8334 14.1667H5.78506C5.15673 14.1667 4.57673 13.825 4.27173 13.2758C3.96673 12.7267 3.98423 12.0533 4.31756 11.52L5.31506 9.92332L2.57006 3.33582L0.844231 3.34415L0.836731 1.67749L3.67923 1.66415L7.18423 10.0767L5.7309 12.4025L5.78506 12.5H15.8334V14.1667ZM14.1667 15C13.7247 15 13.3008 15.1756 12.9882 15.4881C12.6757 15.8007 12.5001 16.2246 12.5001 16.6667C12.5001 17.1087 12.6757 17.5326 12.9882 17.8452C13.3008 18.1577 13.7247 18.3333 14.1667 18.3333C14.6088 18.3333 15.0327 18.1577 15.3452 17.8452C15.6578 17.5326 15.8334 17.1087 15.8334 16.6667C15.8334 16.2246 15.6578 15.8007 15.3452 15.4881C15.0327 15.1756 14.6088 15 14.1667 15ZM5.8334 15C5.39137 15 4.96745 15.1756 4.65489 15.4881C4.34233 15.8007 4.16673 16.2246 4.16673 16.6667C4.16673 17.1087 4.34233 17.5326 4.65489 17.8452C4.96745 18.1577 5.39137 18.3333 5.8334 18.3333C6.27543 18.3333 6.69935 18.1577 7.01191 17.8452C7.32447 17.5326 7.50006 17.1087 7.50006 16.6667C7.50006 16.2246 7.32447 15.8007 7.01191 15.4881C6.69935 15.1756 6.27543 15 5.8334 15Z" fill="#B0976A"/>
                         </svg>
                       </button>
                     </div>
                     <div class="card__footer-bottom">
                       <div class="card__footer-bottom__num">25 000 ₽</div>
                       <div class="card__footer-bottom__status">В наличии</div>
+                      <div class="card__footer-bottom__delivery">Доставка 1-3 дня</div>
+                      <button class="card__footer-bottom__btn">В корзину</button>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card" data-catalogCard="">
                 <div class="card__wrapper">
                   <div class="card__content">
                     <button class="card__content-favorite">
@@ -438,27 +720,35 @@
                     <div class="card__content-img">
                       <img src="./assets/images/content/venetianMirrors-8.jpg" alt="images">
                     </div>
-                    <p class="card__content__title">Зеркало-солнце в металлической раме Cassiopeia (Кассиопея)</p>
+                    <div class="card__content__description">
+                      <p class="card__content__title">Зеркало-солнце в металлической раме Cassiopeia (Кассиопея)</p>
+                      <p class="card__content__text">Артикул: MD1119ST</p>
+                      <p class="card__content__text">Размер: 71 * 107 см</p>
+                      <p class="card__content__text">Форма: прямоугольное</p>
+                      <p class="card__content__text">Цвет рамы: хром</p>
+                    </div>
                   </div>
                   <div class="card__footer">
                     <div class="card__footer-top">
                       <div class="card__footer-top__label">Цена:</div>
                       <button class="card__footer-top__basket">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.1676 13.5416H7.65404V11.4583H16.1676L19.0613 6.24996H5.45508V4.16663H20.8322C21.2009 4.16663 21.5426 4.36246 21.7301 4.68017C21.9176 4.99892 21.9228 5.39163 21.7426 5.71454L17.9895 12.4698C17.6228 13.1302 16.9249 13.5416 16.1676 13.5416Z" fill="#B0976A"/>
-                          <path d="M19.7917 17.7083H7.23131C6.4459 17.7083 5.7209 17.2812 5.33965 16.5948C4.9584 15.9083 4.98027 15.0667 5.39694 14.4L6.64381 12.4042L3.21257 4.16978L1.05527 4.1802L1.0459 2.09687L4.59902 2.0802L8.98027 12.5958L7.16361 15.5031L7.23131 15.625H19.7917V17.7083ZM17.7084 18.75C17.1559 18.75 16.626 18.9695 16.2353 19.3602C15.8446 19.7509 15.6251 20.2808 15.6251 20.8333C15.6251 21.3859 15.8446 21.9158 16.2353 22.3065C16.626 22.6972 17.1559 22.9167 17.7084 22.9167C18.2609 22.9167 18.7908 22.6972 19.1815 22.3065C19.5722 21.9158 19.7917 21.3859 19.7917 20.8333C19.7917 20.2808 19.5722 19.7509 19.1815 19.3602C18.7908 18.9695 18.2609 18.75 17.7084 18.75ZM7.29173 18.75C6.7392 18.75 6.20929 18.9695 5.81859 19.3602C5.42789 19.7509 5.2084 20.2808 5.2084 20.8333C5.2084 21.3859 5.42789 21.9158 5.81859 22.3065C6.20929 22.6972 6.7392 22.9167 7.29173 22.9167C7.84427 22.9167 8.37417 22.6972 8.76487 22.3065C9.15557 21.9158 9.37506 21.3859 9.37506 20.8333C9.37506 20.2808 9.15557 19.7509 8.76487 19.3602C8.37417 18.9695 7.84427 18.75 7.29173 18.75Z" fill="#B0976A"/>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.9341 10.8333H6.1233V9.16666H12.9341L15.2491 4.99999H4.36414V3.33333H16.6658C16.9608 3.33333 17.2341 3.48999 17.3841 3.74416C17.5341 3.99916 17.5383 4.31333 17.3941 4.57166L14.3916 9.97583C14.0983 10.5042 13.54 10.8333 12.9341 10.8333Z" fill="#B0976A"/>
+                          <path d="M15.8334 14.1667H5.78506C5.15673 14.1667 4.57673 13.825 4.27173 13.2758C3.96673 12.7267 3.98423 12.0533 4.31756 11.52L5.31506 9.92332L2.57006 3.33582L0.844231 3.34415L0.836731 1.67749L3.67923 1.66415L7.18423 10.0767L5.7309 12.4025L5.78506 12.5H15.8334V14.1667ZM14.1667 15C13.7247 15 13.3008 15.1756 12.9882 15.4881C12.6757 15.8007 12.5001 16.2246 12.5001 16.6667C12.5001 17.1087 12.6757 17.5326 12.9882 17.8452C13.3008 18.1577 13.7247 18.3333 14.1667 18.3333C14.6088 18.3333 15.0327 18.1577 15.3452 17.8452C15.6578 17.5326 15.8334 17.1087 15.8334 16.6667C15.8334 16.2246 15.6578 15.8007 15.3452 15.4881C15.0327 15.1756 14.6088 15 14.1667 15ZM5.8334 15C5.39137 15 4.96745 15.1756 4.65489 15.4881C4.34233 15.8007 4.16673 16.2246 4.16673 16.6667C4.16673 17.1087 4.34233 17.5326 4.65489 17.8452C4.96745 18.1577 5.39137 18.3333 5.8334 18.3333C6.27543 18.3333 6.69935 18.1577 7.01191 17.8452C7.32447 17.5326 7.50006 17.1087 7.50006 16.6667C7.50006 16.2246 7.32447 15.8007 7.01191 15.4881C6.69935 15.1756 6.27543 15 5.8334 15Z" fill="#B0976A"/>
                         </svg>
                       </button>
                     </div>
                     <div class="card__footer-bottom">
                       <div class="card__footer-bottom__num">25 000 ₽</div>
                       <div class="card__footer-bottom__status">В наличии</div>
+                      <div class="card__footer-bottom__delivery">Доставка 1-3 дня</div>
+                      <button class="card__footer-bottom__btn">В корзину</button>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card" data-catalogCard="">
                 <div class="card__wrapper">
                   <div class="card__content">
                     <button class="card__content-favorite">
@@ -471,27 +761,35 @@
                     <div class="card__content-img">
                       <img src="./assets/images/content/venetianMirrors-9.jpg" alt="images">
                     </div>
-                    <p class="card__content__title">Зеркало-солнце в металлической раме Bang Brass (Бэнг)</p>
+                    <div class="card__content__description">
+                      <p class="card__content__title">Зеркало-солнце в металлической раме Bang Brass (Бэнг)</p>
+                      <p class="card__content__text">Артикул: MD1119ST</p>
+                      <p class="card__content__text">Размер: 71 * 107 см</p>
+                      <p class="card__content__text">Форма: прямоугольное</p>
+                      <p class="card__content__text">Цвет рамы: хром</p>
+                    </div>
                   </div>
                   <div class="card__footer">
                     <div class="card__footer-top">
                       <div class="card__footer-top__label">Цена:</div>
                       <button class="card__footer-top__basket">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.1676 13.5416H7.65404V11.4583H16.1676L19.0613 6.24996H5.45508V4.16663H20.8322C21.2009 4.16663 21.5426 4.36246 21.7301 4.68017C21.9176 4.99892 21.9228 5.39163 21.7426 5.71454L17.9895 12.4698C17.6228 13.1302 16.9249 13.5416 16.1676 13.5416Z" fill="#B0976A"/>
-                          <path d="M19.7917 17.7083H7.23131C6.4459 17.7083 5.7209 17.2812 5.33965 16.5948C4.9584 15.9083 4.98027 15.0667 5.39694 14.4L6.64381 12.4042L3.21257 4.16978L1.05527 4.1802L1.0459 2.09687L4.59902 2.0802L8.98027 12.5958L7.16361 15.5031L7.23131 15.625H19.7917V17.7083ZM17.7084 18.75C17.1559 18.75 16.626 18.9695 16.2353 19.3602C15.8446 19.7509 15.6251 20.2808 15.6251 20.8333C15.6251 21.3859 15.8446 21.9158 16.2353 22.3065C16.626 22.6972 17.1559 22.9167 17.7084 22.9167C18.2609 22.9167 18.7908 22.6972 19.1815 22.3065C19.5722 21.9158 19.7917 21.3859 19.7917 20.8333C19.7917 20.2808 19.5722 19.7509 19.1815 19.3602C18.7908 18.9695 18.2609 18.75 17.7084 18.75ZM7.29173 18.75C6.7392 18.75 6.20929 18.9695 5.81859 19.3602C5.42789 19.7509 5.2084 20.2808 5.2084 20.8333C5.2084 21.3859 5.42789 21.9158 5.81859 22.3065C6.20929 22.6972 6.7392 22.9167 7.29173 22.9167C7.84427 22.9167 8.37417 22.6972 8.76487 22.3065C9.15557 21.9158 9.37506 21.3859 9.37506 20.8333C9.37506 20.2808 9.15557 19.7509 8.76487 19.3602C8.37417 18.9695 7.84427 18.75 7.29173 18.75Z" fill="#B0976A"/>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.9341 10.8333H6.1233V9.16666H12.9341L15.2491 4.99999H4.36414V3.33333H16.6658C16.9608 3.33333 17.2341 3.48999 17.3841 3.74416C17.5341 3.99916 17.5383 4.31333 17.3941 4.57166L14.3916 9.97583C14.0983 10.5042 13.54 10.8333 12.9341 10.8333Z" fill="#B0976A"/>
+                          <path d="M15.8334 14.1667H5.78506C5.15673 14.1667 4.57673 13.825 4.27173 13.2758C3.96673 12.7267 3.98423 12.0533 4.31756 11.52L5.31506 9.92332L2.57006 3.33582L0.844231 3.34415L0.836731 1.67749L3.67923 1.66415L7.18423 10.0767L5.7309 12.4025L5.78506 12.5H15.8334V14.1667ZM14.1667 15C13.7247 15 13.3008 15.1756 12.9882 15.4881C12.6757 15.8007 12.5001 16.2246 12.5001 16.6667C12.5001 17.1087 12.6757 17.5326 12.9882 17.8452C13.3008 18.1577 13.7247 18.3333 14.1667 18.3333C14.6088 18.3333 15.0327 18.1577 15.3452 17.8452C15.6578 17.5326 15.8334 17.1087 15.8334 16.6667C15.8334 16.2246 15.6578 15.8007 15.3452 15.4881C15.0327 15.1756 14.6088 15 14.1667 15ZM5.8334 15C5.39137 15 4.96745 15.1756 4.65489 15.4881C4.34233 15.8007 4.16673 16.2246 4.16673 16.6667C4.16673 17.1087 4.34233 17.5326 4.65489 17.8452C4.96745 18.1577 5.39137 18.3333 5.8334 18.3333C6.27543 18.3333 6.69935 18.1577 7.01191 17.8452C7.32447 17.5326 7.50006 17.1087 7.50006 16.6667C7.50006 16.2246 7.32447 15.8007 7.01191 15.4881C6.69935 15.1756 6.27543 15 5.8334 15Z" fill="#B0976A"/>
                         </svg>
                       </button>
                     </div>
                     <div class="card__footer-bottom">
                       <div class="card__footer-bottom__num">25 000 ₽</div>
                       <div class="card__footer-bottom__status">В наличии</div>
+                      <div class="card__footer-bottom__delivery">Доставка 1-3 дня</div>
+                      <button class="card__footer-bottom__btn">В корзину</button>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card" data-catalogCard="">
                 <div class="card__wrapper">
                   <div class="card__content">
                     <button class="card__content-favorite">
@@ -504,27 +802,35 @@
                     <div class="card__content-img">
                       <img src="./assets/images/content/venetianMirrors-10.jpg" alt="images">
                     </div>
-                    <p class="card__content__title">Зеркало-солнце в металлической раме Bang Nickel (Бэнг)</p>
+                    <div class="card__content__description">
+                      <p class="card__content__title">Зеркало-солнце в металлической раме Bang Brass (Бэнг)</p>
+                      <p class="card__content__text">Артикул: MD1119ST</p>
+                      <p class="card__content__text">Размер: 71 * 107 см</p>
+                      <p class="card__content__text">Форма: прямоугольное</p>
+                      <p class="card__content__text">Цвет рамы: хром</p>
+                    </div>
                   </div>
                   <div class="card__footer">
                     <div class="card__footer-top">
                       <div class="card__footer-top__label">Цена:</div>
                       <button class="card__footer-top__basket">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.1676 13.5416H7.65404V11.4583H16.1676L19.0613 6.24996H5.45508V4.16663H20.8322C21.2009 4.16663 21.5426 4.36246 21.7301 4.68017C21.9176 4.99892 21.9228 5.39163 21.7426 5.71454L17.9895 12.4698C17.6228 13.1302 16.9249 13.5416 16.1676 13.5416Z" fill="#B0976A"/>
-                          <path d="M19.7917 17.7083H7.23131C6.4459 17.7083 5.7209 17.2812 5.33965 16.5948C4.9584 15.9083 4.98027 15.0667 5.39694 14.4L6.64381 12.4042L3.21257 4.16978L1.05527 4.1802L1.0459 2.09687L4.59902 2.0802L8.98027 12.5958L7.16361 15.5031L7.23131 15.625H19.7917V17.7083ZM17.7084 18.75C17.1559 18.75 16.626 18.9695 16.2353 19.3602C15.8446 19.7509 15.6251 20.2808 15.6251 20.8333C15.6251 21.3859 15.8446 21.9158 16.2353 22.3065C16.626 22.6972 17.1559 22.9167 17.7084 22.9167C18.2609 22.9167 18.7908 22.6972 19.1815 22.3065C19.5722 21.9158 19.7917 21.3859 19.7917 20.8333C19.7917 20.2808 19.5722 19.7509 19.1815 19.3602C18.7908 18.9695 18.2609 18.75 17.7084 18.75ZM7.29173 18.75C6.7392 18.75 6.20929 18.9695 5.81859 19.3602C5.42789 19.7509 5.2084 20.2808 5.2084 20.8333C5.2084 21.3859 5.42789 21.9158 5.81859 22.3065C6.20929 22.6972 6.7392 22.9167 7.29173 22.9167C7.84427 22.9167 8.37417 22.6972 8.76487 22.3065C9.15557 21.9158 9.37506 21.3859 9.37506 20.8333C9.37506 20.2808 9.15557 19.7509 8.76487 19.3602C8.37417 18.9695 7.84427 18.75 7.29173 18.75Z" fill="#B0976A"/>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.9341 10.8333H6.1233V9.16666H12.9341L15.2491 4.99999H4.36414V3.33333H16.6658C16.9608 3.33333 17.2341 3.48999 17.3841 3.74416C17.5341 3.99916 17.5383 4.31333 17.3941 4.57166L14.3916 9.97583C14.0983 10.5042 13.54 10.8333 12.9341 10.8333Z" fill="#B0976A"/>
+                          <path d="M15.8334 14.1667H5.78506C5.15673 14.1667 4.57673 13.825 4.27173 13.2758C3.96673 12.7267 3.98423 12.0533 4.31756 11.52L5.31506 9.92332L2.57006 3.33582L0.844231 3.34415L0.836731 1.67749L3.67923 1.66415L7.18423 10.0767L5.7309 12.4025L5.78506 12.5H15.8334V14.1667ZM14.1667 15C13.7247 15 13.3008 15.1756 12.9882 15.4881C12.6757 15.8007 12.5001 16.2246 12.5001 16.6667C12.5001 17.1087 12.6757 17.5326 12.9882 17.8452C13.3008 18.1577 13.7247 18.3333 14.1667 18.3333C14.6088 18.3333 15.0327 18.1577 15.3452 17.8452C15.6578 17.5326 15.8334 17.1087 15.8334 16.6667C15.8334 16.2246 15.6578 15.8007 15.3452 15.4881C15.0327 15.1756 14.6088 15 14.1667 15ZM5.8334 15C5.39137 15 4.96745 15.1756 4.65489 15.4881C4.34233 15.8007 4.16673 16.2246 4.16673 16.6667C4.16673 17.1087 4.34233 17.5326 4.65489 17.8452C4.96745 18.1577 5.39137 18.3333 5.8334 18.3333C6.27543 18.3333 6.69935 18.1577 7.01191 17.8452C7.32447 17.5326 7.50006 17.1087 7.50006 16.6667C7.50006 16.2246 7.32447 15.8007 7.01191 15.4881C6.69935 15.1756 6.27543 15 5.8334 15Z" fill="#B0976A"/>
                         </svg>
                       </button>
                     </div>
                     <div class="card__footer-bottom">
                       <div class="card__footer-bottom__num">25 000 ₽</div>
                       <div class="card__footer-bottom__status">В наличии</div>
+                      <div class="card__footer-bottom__delivery">Доставка 1-3 дня</div>
+                      <button class="card__footer-bottom__btn">В корзину</button>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card" data-catalogCard="">
                 <div class="card__wrapper">
                   <div class="card__content">
                     <button class="card__content-favorite">
@@ -537,27 +843,35 @@
                     <div class="card__content-img">
                       <img src="./assets/images/content/venetianMirrors-11.jpg" alt="images">
                     </div>
-                    <p class="card__content__title">Зеркало-солнце в металлической раме Crochet (Кроше)</p>
+                    <div class="card__content__description">
+                      <p class="card__content__title">Зеркало-солнце в металлической раме Crochet (Кроше)</p>
+                      <p class="card__content__text">Артикул: MD1119ST</p>
+                      <p class="card__content__text">Размер: 71 * 107 см</p>
+                      <p class="card__content__text">Форма: прямоугольное</p>
+                      <p class="card__content__text">Цвет рамы: хром</p>
+                    </div>
                   </div>
                   <div class="card__footer">
                     <div class="card__footer-top">
                       <div class="card__footer-top__label">Цена:</div>
                       <button class="card__footer-top__basket">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.1676 13.5416H7.65404V11.4583H16.1676L19.0613 6.24996H5.45508V4.16663H20.8322C21.2009 4.16663 21.5426 4.36246 21.7301 4.68017C21.9176 4.99892 21.9228 5.39163 21.7426 5.71454L17.9895 12.4698C17.6228 13.1302 16.9249 13.5416 16.1676 13.5416Z" fill="#B0976A"/>
-                          <path d="M19.7917 17.7083H7.23131C6.4459 17.7083 5.7209 17.2812 5.33965 16.5948C4.9584 15.9083 4.98027 15.0667 5.39694 14.4L6.64381 12.4042L3.21257 4.16978L1.05527 4.1802L1.0459 2.09687L4.59902 2.0802L8.98027 12.5958L7.16361 15.5031L7.23131 15.625H19.7917V17.7083ZM17.7084 18.75C17.1559 18.75 16.626 18.9695 16.2353 19.3602C15.8446 19.7509 15.6251 20.2808 15.6251 20.8333C15.6251 21.3859 15.8446 21.9158 16.2353 22.3065C16.626 22.6972 17.1559 22.9167 17.7084 22.9167C18.2609 22.9167 18.7908 22.6972 19.1815 22.3065C19.5722 21.9158 19.7917 21.3859 19.7917 20.8333C19.7917 20.2808 19.5722 19.7509 19.1815 19.3602C18.7908 18.9695 18.2609 18.75 17.7084 18.75ZM7.29173 18.75C6.7392 18.75 6.20929 18.9695 5.81859 19.3602C5.42789 19.7509 5.2084 20.2808 5.2084 20.8333C5.2084 21.3859 5.42789 21.9158 5.81859 22.3065C6.20929 22.6972 6.7392 22.9167 7.29173 22.9167C7.84427 22.9167 8.37417 22.6972 8.76487 22.3065C9.15557 21.9158 9.37506 21.3859 9.37506 20.8333C9.37506 20.2808 9.15557 19.7509 8.76487 19.3602C8.37417 18.9695 7.84427 18.75 7.29173 18.75Z" fill="#B0976A"/>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.9341 10.8333H6.1233V9.16666H12.9341L15.2491 4.99999H4.36414V3.33333H16.6658C16.9608 3.33333 17.2341 3.48999 17.3841 3.74416C17.5341 3.99916 17.5383 4.31333 17.3941 4.57166L14.3916 9.97583C14.0983 10.5042 13.54 10.8333 12.9341 10.8333Z" fill="#B0976A"/>
+                          <path d="M15.8334 14.1667H5.78506C5.15673 14.1667 4.57673 13.825 4.27173 13.2758C3.96673 12.7267 3.98423 12.0533 4.31756 11.52L5.31506 9.92332L2.57006 3.33582L0.844231 3.34415L0.836731 1.67749L3.67923 1.66415L7.18423 10.0767L5.7309 12.4025L5.78506 12.5H15.8334V14.1667ZM14.1667 15C13.7247 15 13.3008 15.1756 12.9882 15.4881C12.6757 15.8007 12.5001 16.2246 12.5001 16.6667C12.5001 17.1087 12.6757 17.5326 12.9882 17.8452C13.3008 18.1577 13.7247 18.3333 14.1667 18.3333C14.6088 18.3333 15.0327 18.1577 15.3452 17.8452C15.6578 17.5326 15.8334 17.1087 15.8334 16.6667C15.8334 16.2246 15.6578 15.8007 15.3452 15.4881C15.0327 15.1756 14.6088 15 14.1667 15ZM5.8334 15C5.39137 15 4.96745 15.1756 4.65489 15.4881C4.34233 15.8007 4.16673 16.2246 4.16673 16.6667C4.16673 17.1087 4.34233 17.5326 4.65489 17.8452C4.96745 18.1577 5.39137 18.3333 5.8334 18.3333C6.27543 18.3333 6.69935 18.1577 7.01191 17.8452C7.32447 17.5326 7.50006 17.1087 7.50006 16.6667C7.50006 16.2246 7.32447 15.8007 7.01191 15.4881C6.69935 15.1756 6.27543 15 5.8334 15Z" fill="#B0976A"/>
                         </svg>
                       </button>
                     </div>
                     <div class="card__footer-bottom">
                       <div class="card__footer-bottom__num">25 000 ₽</div>
                       <div class="card__footer-bottom__status">В наличии</div>
+                      <div class="card__footer-bottom__delivery">Доставка 1-3 дня</div>
+                      <button class="card__footer-bottom__btn">В корзину</button>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="card">
+              <div class="card" data-catalogCard="">
                 <div class="card__wrapper">
                   <div class="card__content">
                     <button class="card__content-favorite">
@@ -570,21 +884,29 @@
                     <div class="card__content-img">
                       <img src="./assets/images/content/venetianMirrors-12.jpg" alt="images">
                     </div>
-                    <p class="card__content__title">Зеркало-солнце в металлической раме Raindrops (Рейндропс)</p>
+                    <div class="card__content__description">
+                      <p class="card__content__title">Зеркало-солнце в металлической раме Raindrops (Рейндропс)</p>
+                      <p class="card__content__text">Артикул: MD1119ST</p>
+                      <p class="card__content__text">Размер: 71 * 107 см</p>
+                      <p class="card__content__text">Форма: прямоугольное</p>
+                      <p class="card__content__text">Цвет рамы: хром</p>
+                    </div>
                   </div>
                   <div class="card__footer">
                     <div class="card__footer-top">
                       <div class="card__footer-top__label">Цена:</div>
                       <button class="card__footer-top__basket">
-                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M16.1676 13.5416H7.65404V11.4583H16.1676L19.0613 6.24996H5.45508V4.16663H20.8322C21.2009 4.16663 21.5426 4.36246 21.7301 4.68017C21.9176 4.99892 21.9228 5.39163 21.7426 5.71454L17.9895 12.4698C17.6228 13.1302 16.9249 13.5416 16.1676 13.5416Z" fill="#B0976A"/>
-                          <path d="M19.7917 17.7083H7.23131C6.4459 17.7083 5.7209 17.2812 5.33965 16.5948C4.9584 15.9083 4.98027 15.0667 5.39694 14.4L6.64381 12.4042L3.21257 4.16978L1.05527 4.1802L1.0459 2.09687L4.59902 2.0802L8.98027 12.5958L7.16361 15.5031L7.23131 15.625H19.7917V17.7083ZM17.7084 18.75C17.1559 18.75 16.626 18.9695 16.2353 19.3602C15.8446 19.7509 15.6251 20.2808 15.6251 20.8333C15.6251 21.3859 15.8446 21.9158 16.2353 22.3065C16.626 22.6972 17.1559 22.9167 17.7084 22.9167C18.2609 22.9167 18.7908 22.6972 19.1815 22.3065C19.5722 21.9158 19.7917 21.3859 19.7917 20.8333C19.7917 20.2808 19.5722 19.7509 19.1815 19.3602C18.7908 18.9695 18.2609 18.75 17.7084 18.75ZM7.29173 18.75C6.7392 18.75 6.20929 18.9695 5.81859 19.3602C5.42789 19.7509 5.2084 20.2808 5.2084 20.8333C5.2084 21.3859 5.42789 21.9158 5.81859 22.3065C6.20929 22.6972 6.7392 22.9167 7.29173 22.9167C7.84427 22.9167 8.37417 22.6972 8.76487 22.3065C9.15557 21.9158 9.37506 21.3859 9.37506 20.8333C9.37506 20.2808 9.15557 19.7509 8.76487 19.3602C8.37417 18.9695 7.84427 18.75 7.29173 18.75Z" fill="#B0976A"/>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.9341 10.8333H6.1233V9.16666H12.9341L15.2491 4.99999H4.36414V3.33333H16.6658C16.9608 3.33333 17.2341 3.48999 17.3841 3.74416C17.5341 3.99916 17.5383 4.31333 17.3941 4.57166L14.3916 9.97583C14.0983 10.5042 13.54 10.8333 12.9341 10.8333Z" fill="#B0976A"/>
+                          <path d="M15.8334 14.1667H5.78506C5.15673 14.1667 4.57673 13.825 4.27173 13.2758C3.96673 12.7267 3.98423 12.0533 4.31756 11.52L5.31506 9.92332L2.57006 3.33582L0.844231 3.34415L0.836731 1.67749L3.67923 1.66415L7.18423 10.0767L5.7309 12.4025L5.78506 12.5H15.8334V14.1667ZM14.1667 15C13.7247 15 13.3008 15.1756 12.9882 15.4881C12.6757 15.8007 12.5001 16.2246 12.5001 16.6667C12.5001 17.1087 12.6757 17.5326 12.9882 17.8452C13.3008 18.1577 13.7247 18.3333 14.1667 18.3333C14.6088 18.3333 15.0327 18.1577 15.3452 17.8452C15.6578 17.5326 15.8334 17.1087 15.8334 16.6667C15.8334 16.2246 15.6578 15.8007 15.3452 15.4881C15.0327 15.1756 14.6088 15 14.1667 15ZM5.8334 15C5.39137 15 4.96745 15.1756 4.65489 15.4881C4.34233 15.8007 4.16673 16.2246 4.16673 16.6667C4.16673 17.1087 4.34233 17.5326 4.65489 17.8452C4.96745 18.1577 5.39137 18.3333 5.8334 18.3333C6.27543 18.3333 6.69935 18.1577 7.01191 17.8452C7.32447 17.5326 7.50006 17.1087 7.50006 16.6667C7.50006 16.2246 7.32447 15.8007 7.01191 15.4881C6.69935 15.1756 6.27543 15 5.8334 15Z" fill="#B0976A"/>
                         </svg>
                       </button>
                     </div>
                     <div class="card__footer-bottom">
                       <div class="card__footer-bottom__num">25 000 ₽</div>
                       <div class="card__footer-bottom__status">В наличии</div>
+                      <div class="card__footer-bottom__delivery">Доставка 1-3 дня</div>
+                      <button class="card__footer-bottom__btn">В корзину</button>
                     </div>
                   </div>
                 </div>
