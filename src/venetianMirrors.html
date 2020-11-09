@@ -102,7 +102,7 @@
               <a href="./index.html">Главная</a>
             </li>
             <li class="breadcrumbs__list-item">
-              <a href="categories.html">Каталог товаров</a>
+              <a href="./categories.html">Каталог товаров</a>
             </li>
             <li class="breadcrumbs__list-item">
               <span>Венецианские зеркала</span>
@@ -383,23 +383,73 @@
             </form>
           </aside>
           <div class="catalog__inner-content">
-            <div class="catalog__filter" data-catalogfilter="">
-              <ul class="catalog__filter-selects">
-                <li><p class="catalog__filter-name">Сортировать по</p></li>
-                <li>
-                  <select class="filter-style select-item">
-                  <option value="">возрастанию цены</option>
-                  <option value="">убыванию цены</option>
-                </select>
-                </li>
-                <li><p class="catalog__filter-name">На странице</p></li>
-                <li>
-                  <select class="filter-style select-item filter__item-listSelect">
-                    <option value="">16</option>
-                    <option value="">32</option>
-                  </select>
-                </li>
-              </ul>
+            <div class="catalog__filter">
+
+
+                <ul class="catalog__filter-selects">
+                  <li
+                    class="catalog__filter-element"><p class="catalog__filter-name catalog__filter-item">Сортировать по</p></li>
+                  <form class="catalog__filter-element">
+                  <li>
+
+                    <!--                  <div class="select" id="select-1">-->
+                    <!--                    <div class="select__backdrop" data-select="backdrop"></div>-->
+                    <!--                    <button type="button" class="select__trigger" data-select="trigger">-->
+                    <!--                      возрастанию цены-->
+                    <!--                    </button>-->
+                    <!--                    <div class="select__dropdown">-->
+                    <!--                      <ul class="select__items">-->
+                    <!--                        <li class="select__item select__item_selected" data-select="item">возрастанию цены</li>-->
+                    <!--                        <li class="select__item" data-select="item">убыванию цены</li>-->
+                    <!--                      </ul>-->
+                    <!--                    </div>-->
+                    <!--                  </div>-->
+
+                    <div id="select" data-type="select">
+                      <div class="select__backdrop" data-type="backdrop"></div>
+                      <div class="select__input" data-type="input">
+                        <span data-type="value">возрастанию цены</span>
+                        <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg" data-type="arrow">
+                          <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
+                        </svg>
+                      </div>
+                      <div class="select__dropdown">
+                        <ul class="select__list">
+                          <li class="select__item" data-type="item">возрастанию цены</li>
+                          <li class="select__item" data-type="item">убыванию цены</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </li>
+                    <input type="hidden" data-input="hidden" name="inputHidden" value="">
+                  </form>
+
+                    <li class="catalog__filter-element"><p class="catalog__filter-name catalog__filter-item">На странице</p></li>
+
+                  <form class="catalog__filter-element">
+                    <li>
+                      <div id="catalog-select2" data-type="select">
+                        <div class="select__backdrop" data-type="backdrop"></div>
+                        <div class="select__input" data-type="input">
+                          <span data-type="value">16</span>
+                          <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg" data-type="arrow">
+                            <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
+                          </svg>
+                        </div>
+                        <div class="select__dropdown">
+                          <ul class="select__list">
+                            <li class="select__item" data-type="item">16</li>
+                            <li class="select__item" data-type="item">32</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <input type="hidden" data-input="hidden" name="inputHidden" value="">
+                  </form>
+
+                </ul>
+
               <div class="catalog__filter-btn">
                 <button class="catalog__filter-btnLine catalog__filter-button" data-catalogBtn="line">
                   <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">

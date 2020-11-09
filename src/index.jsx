@@ -11,6 +11,7 @@ import './js/slider.js'
 import './js/form.js'
 import './js/handleSearch.js'
 import './js/catalogBtn.js'
+import './js/customSelect.js'
 
 
 

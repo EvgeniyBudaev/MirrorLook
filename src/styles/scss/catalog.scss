@@ -27,7 +27,7 @@
     &-aside {
       min-width: 224px;
       margin-right: 20px;
-      margin-top: 17px;
+      margin-top: 47px;
     }
     &-content {
       max-width: 926px;
@@ -37,11 +37,19 @@
   &__filter {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
     &-selects {
       display: flex;
+      align-items: center;
     }
-    &-selects li + li {
+    &-selects .catalog__filter-element + .catalog__filter-element {
       margin-left: 30px;
+    }
+    &-btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     &-btn button {
       background-color: transparent;
