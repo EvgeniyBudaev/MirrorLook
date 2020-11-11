@@ -1,4 +1,4 @@
-export class Select {
+class Select {
   constructor(selector, options) {
     this.$el = document.querySelector(selector)
     this.options = options
@@ -6,23 +6,27 @@ export class Select {
 
     this.inputHidden = document.querySelector('[data-input="hidden"]')
     this.inputHiddenValue = null
+    this.data = null
 
-    this.span = document.querySelector('[data-type="value"]')
+    this.span = this.$el.querySelector('[data-type="value"]') // fixed
 
     this.render()
     this.setup()
   }
 
   render() {
-     //console.log('this.options', this.options);
+    //console.log('this.options', this.options);
     if (this.$el) {
       this.$el.classList.add('select')
     }
   }
 
   setup() {
-    //console.log('this', this);
     //console.log('this.current', this.current);
+    //console.log('this.$selects', this.$selects);
+    this.data = this.generateArrayObjects(this.$el)
+    //console.log('this', this);
+    //console.log('this.data', this.data);
     this.inputHiddenValue = this.current.value
     this.inputHidden.value = this.inputHiddenValue
 
@@ -53,7 +57,7 @@ export class Select {
   }
 
   get current() {
-    return this.options.data.find(item => item.id === this.selectedId)
+    return this.data.find(el => el.id === this.selectedId)
   }
 
   select(id) {
@@ -80,10 +84,6 @@ export class Select {
 
   open() {
     this.$el.classList.add('open')
-
-    // const selectDropDown = document.querySelector('.select__dropdown')
-    // console.log('selectDropDown', selectDropDown);
-    // selectDropDown.style.overflowY = 'auto'
   }
 
   close() {
@@ -94,40 +94,49 @@ export class Select {
     this.$el.removeEventListener('click', this.clickHandler)
     this.$el.innerHTML = ''
   }
+
+  generateArrayObjects(e) {
+    const items = [...e.querySelectorAll('[data-type="item"]')]
+
+    const arrayObjects = items.map((item,index) => {
+      item.dataset.id = (index + 1).toString()
+      return {
+        id: item.dataset.id,
+        value: item.textContent
+      }
+    });
+
+    // console.log('arrayObjects', arrayObjects)
+    return arrayObjects
+  }
+
 }
 
 
 // Страница Каталога с товарами. Работа с селектами
-const select = document.querySelector('[data-type="select"]')
-if (select) {
-  const items = select.querySelectorAll('[data-type="item"]')
-  const array = [...items]
-  let obj = array.map( (item, index) => {
-    item.dataset.id = index + 1
-    return {
-      id: item.dataset.id,
-      value: item.textContent
-    }
-  })
- // console.log('obj', obj)
+new Select('#select', {
+  selectedId: '1',
+  onSelect(item) {
+    console.log('[customSelect.js] Catalog Select 1', item)
+  }
+})
 
-  new Select('#select', {
-    selectedId: '1',
-    data: obj,
-    onSelect(item) {
-      console.log('[customSelect.js] Catalog Select 1', item)
-    }
-  })
+new Select('#catalog-select2', {
+  selectedId: '1',
+  onSelect(item) {
+    console.log('[customSelect.js] Catalog Select 2', item)
+  }
+})
 
-  new Select('#catalog-select2', {
-    selectedId: '1',
-    data: obj,
-    onSelect(item) {
-      console.log('[customSelect.js] Catalog Select 2', item)
-    }
-  })
+  // new Select('#catalog-select2', {
+  //   selectedId: '1',
+  //   data: obj,
+  //   onSelect(item) {
+  //     console.log('[customSelect.js] Catalog Select 2', item)
+  //   }
+  // })
 
-}
+
 
 // (function () {
 //   if (typeof window.CustomEvent === 'function') return false;

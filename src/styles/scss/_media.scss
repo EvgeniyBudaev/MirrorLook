@@ -98,6 +98,16 @@
   }
 }
 
+@media (max-width: 760px) {
+  body {
+    font-size: 12px;
+  }
+  .title,
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 735px) {
   .banner__left,
   .banner__center,
@@ -137,9 +147,6 @@
 }
 
 @media (max-width: 500px) {
-  body {
-    font-size: 12px;
-  }
   .header__logo svg,
   .header.sticky .header__logo svg {
     height: 32px;
@@ -150,10 +157,6 @@
   }
   .menu.open .header__menu-top__buttons {
     display: none;
-  }
-  .title,
-  h1, h2, h3, h4, h5, h6 {
-    font-size: 16px;
   }
 }
 

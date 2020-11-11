@@ -36,6 +36,9 @@ $height: 29px;
     cursor: pointer;
     z-index: 1;
   }
+  &__firstValue {
+    margin-right: 10px;
+  }
   &__dropdown {
     // display: none;
     position: absolute;
