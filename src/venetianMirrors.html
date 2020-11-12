@@ -55,7 +55,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="./basket.html">
                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="0.6">
                         <path d="M16.1676 13.5417H7.65404V11.4584H16.1676L19.0613 6.25002H5.45508V4.16669H20.8322C21.2009 4.16669 21.5426 4.36252 21.7301 4.68023C21.9176 4.99898 21.9228 5.39169 21.7426 5.7146L17.9895 12.4698C17.6228 13.1302 16.9249 13.5417 16.1676 13.5417Z" fill="black"/>
@@ -82,12 +82,12 @@
           </div>
         </div>
         <ul class="header__categories">
-          <li class="header__categories-item active"><a href="./venetianMirrors.html">ВЕНЕЦИАНСКИЕ ЗЕРКАЛА</a></li>
-          <li class="header__categories-item"><a href="#">НАПОЛЬНЫЕ ЗЕРКАЛА</a></li>
-          <li class="header__categories-item"><a href="#">ЗЕРКАЛА В РАМАХ</a></li>
-          <li class="header__categories-item"><a href="#">ЗЕРКАЛЬНЫЕ ПАННО</a></li>
-          <li class="header__categories-item"><a href="#">ЗЕРКАЛО-СОЛНЦЕ</a></li>
-          <li class="header__categories-item"><a href="#">КОНСОЛИ</a></li>
+          <a href="./venetianMirrors.html"><li class="header__categories-item active">ВЕНЕЦИАНСКИЕ ЗЕРКАЛА</li></a>
+          <a href="#"><li class="header__categories-item">НАПОЛЬНЫЕ ЗЕРКАЛА</li></a>
+          <a href="#"><li class="header__categories-item">ЗЕРКАЛА В РАМАХ</li></a>
+          <a href="#"><li class="header__categories-item">ЗЕРКАЛЬНЫЕ ПАННО</li></a>
+          <a href="#"><li class="header__categories-item">ЗЕРКАЛО-СОЛНЦЕ</li></a>
+          <a href="#"><li class="header__categories-item">КОНСОЛИ</li></a>
         </ul>
       </div>
     </header>
@@ -394,7 +394,7 @@
 
 
                 <ul class="catalog__filter-selects">
-                  <button class="catalog__filter-selects__buttonX" data-catalog-btn-sort="">
+                  <button class="catalog__filter-selects__button" data-catalog-btn-sort="">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0.125 13.25H6.375M0.125 7H10.125H0.125ZM0.125 3.875H12H0.125ZM0.125 10.125H8.25H0.125ZM0.125 0.75H13.875H0.125Z" stroke="#B0976A" stroke-width="1.25" stroke-miterlimit="10"/>
                     </svg>
@@ -418,7 +418,7 @@
                         <!--                    </div>-->
                         <!--                  </div>-->
 
-                        <div id="select" data-type="select">
+                        <div class="select select__price" id="select" data-type="select">
                           <div class="select__backdrop" data-type="backdrop"></div>
                           <div class="select__input" data-type="input">
                             <span class="select__firstValue" data-type="value">возрастанию цены</span>
@@ -426,8 +426,8 @@
                               <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
                             </svg>
                           </div>
-                          <div class="select__dropdown">
-                            <ul class="select__list">
+                          <div class="select__dropdown select__dropdown-price">
+                            <ul class="select__list select__list-price">
                               <li class="select__item" data-type="item">возрастанию цены</li>
                               <li class="select__item" data-type="item">убыванию цены</li>
                             </ul>
@@ -442,7 +442,7 @@
 
                     <form class="catalog__filter-element">
                       <li>
-                        <div id="catalog-select2" data-type="select">
+                        <div class="select" id="catalog-select2" data-type="select">
                           <div class="select__backdrop" data-type="backdrop"></div>
                           <div class="select__input" data-type="input">
                             <span class="select__firstValue" data-type="value">16</span>

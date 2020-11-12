@@ -41,42 +41,31 @@
   }
   .aside-filter__wrapper {
     max-height: 0;
-    transition: all 1s ease-in-out;
     opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
   }
   .aside-filter__wrapper.active {
     opacity: 1;
+    visibility: visible;
   }
   .catalog__filter-selects__wrapper {
     max-height: 0;
-    transition: all 1s ease-in-out;
     opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
   }
   .catalog__filter-selects__wrapper.active {
     opacity: 1;
+    visibility: visible;
   }
   .catalog__filter-btn {
-    margin: 30px 0;
-  }
-  .catalog__filter-btn.active {
-    position: relative;
-    top: 15px;
+    margin: 0
   }
   .catalog__filter-selects__button {
     display: block;
+    margin-bottom: 20px;
   }
-}
-
-@media (max-width: 760px) {
-  .catalog__inner-content .cards__inner-list .card.active .card__footer-bottom__num {
-    font-size: 16px;
-  }
-  .catalog-top__title span {
-    top: 3px;
-  }
-}
-
-@media (max-width: 640px) {
   .catalog__inner-content .cards__inner-list .card.active .card__content__description {
     margin-left: 15px;
     max-width: 130px;
@@ -91,17 +80,40 @@
     margin-bottom: 20px;
   }
   .catalog__filter-selects .catalog__filter-element + .catalog__filter-element {
-    margin-left: 0;
-    margin-top: 10px;
+    margin-left: 30px;
   }
   .catalog__inner-content .cards__inner-list .card.active .card__footer-bottom {
     margin-right: 0;
   }
 }
 
+
+@media (max-width: 760px) {
+  .catalog__inner-content .cards__inner-list .card.active .card__footer-bottom__num {
+    font-size: 16px;
+  }
+  .catalog-top__title span {
+    top: 3px;
+  }
+  .catalog__filter-element .select.open .select__dropdown {
+    min-height: 98px;
+  }
+}
+
+@media (max-width: 600px) {
+  .catalog__filter-selects .catalog__filter-element + .catalog__filter-element {
+    margin-left: 10px;
+  }
+}
+
+
 @media (max-width: 500px) {
   .catalog__inner-content .cards__inner-list .card.active .card__wrapper {
     flex-direction: column;
+  }
+  .catalog__filter-selects__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
   }
   .catalog__inner-content .cards__inner-list .card.active {
     height: 380px;
@@ -111,6 +123,13 @@
   }
   .catalog__inner-content .cards__inner-list .card.active .card__footer-bottom__num {
     margin-bottom: 10px;
+  }
+  .catalog__filter-selects .catalog__filter-element + .catalog__filter-element {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .select.select__price {
+    z-index: 2;
   }
   .pagination-list {
     flex-wrap: wrap;

@@ -8,8 +8,6 @@ class Select {
     this.inputHiddenValue = null
     this.data = null
 
-    this.span = this.$el.querySelector('[data-type="value"]') // fixed
-
     this.render()
     this.setup()
   }
@@ -30,7 +28,11 @@ class Select {
     this.inputHiddenValue = this.current.value
     this.inputHidden.value = this.inputHiddenValue
 
-    this.span.innerHTML = this.current.value
+    if (this.$el) {
+      this.span = this.$el.querySelector('[data-type="value"]') // fixed
+      this.span.innerHTML = this.current.value
+    }
+
 
     this.clickHandler = this.clickHandler.bind(this)
     if (this.$el) {
@@ -96,18 +98,20 @@ class Select {
   }
 
   generateArrayObjects(e) {
-    const items = [...e.querySelectorAll('[data-type="item"]')]
+    if (e) {
+      const items = [...e.querySelectorAll('[data-type="item"]')]
 
-    const arrayObjects = items.map((item,index) => {
-      item.dataset.id = (index + 1).toString()
-      return {
-        id: item.dataset.id,
-        value: item.textContent
-      }
-    });
+      const arrayObjects = items.map((item,index) => {
+        item.dataset.id = (index + 1).toString()
+        return {
+          id: item.dataset.id,
+          value: item.textContent
+        }
+      });
 
-    // console.log('arrayObjects', arrayObjects)
-    return arrayObjects
+      // console.log('arrayObjects', arrayObjects)
+      return arrayObjects
+    }
   }
 
 }

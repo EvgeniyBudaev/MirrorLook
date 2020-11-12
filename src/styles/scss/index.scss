@@ -8,6 +8,7 @@
 @import '@/styles/scss/catalog.scss';
 @import '@/styles/scss/venetianMirrors.scss';
 @import '@/styles/scss/customSelect.scss';
+@import '@/styles/scss/basket.scss';
 
 // start header
 .header {
@@ -89,6 +90,9 @@
     & nav ul {
       display: flex;
     }
+    & nav ul li {
+      transition: all .3s;
+    }
     & nav ul li + li {
       padding-left: 22px;
     }
@@ -104,6 +108,9 @@
     & nav ul li .red {
       color: $red;
     }
+    & nav ul li:hover {
+      color: $beige;
+    }
   }
   &__categories {
     display: flex;
@@ -114,6 +121,10 @@
     & li {
       padding: 23px 12px;
       transition: all .5s;
+    }
+    &-item:hover {
+      background-color: $lightBeige;
+      color: $white;
     }
     & li a {
       text-transform: uppercase;

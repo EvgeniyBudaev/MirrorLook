@@ -101,6 +101,10 @@ const plugins = () => {
       filename: 'venetianMirrors.html',
       template: './venetianMirrors.html',
     }),
+    new HTMLWebpackPlugin({
+      filename: 'basket.html',
+      template: './basket.html',
+    }),
     new CopyWebpackPlugin({
       patterns: [
         {
