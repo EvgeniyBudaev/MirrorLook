@@ -109,6 +109,10 @@ const plugins = () => {
       filename: 'thanks.html',
       template: './thanks.html',
     }),
+    new HTMLWebpackPlugin({
+      filename: 'order.html',
+      template: './order.html',
+    }),
     new CopyWebpackPlugin({
       patterns: [
         {
