@@ -1,0 +1,94 @@
+@import '@/styles/scss/_vars.scss';
+@import '@/styles/scss/_fonts.scss';
+@import '@/styles/scss/_global.scss';
+@import '@/styles/scss/sidebar.scss';
+
+// start thanks
+.thanks {
+  padding-top: 75px;
+  &__icon {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__title {
+    text-align: center;
+    text-transform: none;
+    color: $beige;
+  }
+  &__subtitle {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  &__number {
+    font-size: 24px;
+    text-align: center;
+    font-family: "Montserrat-Regular";
+    margin-bottom: 50px;
+  }
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $gray;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);
+    transition: all .3s;
+    padding: 20px 50px ;
+    margin-bottom: 30px;
+    &-left {
+      display: flex;
+      align-items: center;
+    }
+    &-description {
+      max-width: 200px;
+      width: 100%;
+      margin-left: 50px;
+    }
+    &-description__article {
+      font-family: "Montserrat-Medium";
+    }
+    &-description__title {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    &-total__price {
+      font-size: 24px;
+      font-family: "Montserrat-SemiBold";
+      text-align: center;
+    }
+  }
+  &__card:hover {
+    box-shadow: 0 0 5px 5px rgba(170, 170, 170, 0.7);
+  }
+
+  &__bottom {
+    &-title {
+      margin-bottom: 30px;
+    }
+    &-number {
+      border: 1px solid $beige;
+      max-width: 25px;
+      width: 100%;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+    }
+    & ul {
+      margin-bottom: 50px;
+    }
+    & ul li {
+      display: flex;
+    }
+    & ul li + li {
+      margin-top: 25px;
+    }
+    &-button {
+      text-align: end;
+    }
+  }
+}
+// end thanks
+
+@import '@/styles/scss/media/media_thanks.scss';

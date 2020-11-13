@@ -9,7 +9,6 @@
 
 // start catalog
 .catalog {
-  padding-bottom: 100px;
   &-top__title {
     display: flex;
     & .title {
@@ -310,4 +309,4 @@
 
 
 
-@import '@/styles/scss/media_catalog.scss';
+@import '@/styles/scss/media/media_catalog.scss';

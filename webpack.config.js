@@ -105,6 +105,10 @@ const plugins = () => {
       filename: 'basket.html',
       template: './basket.html',
     }),
+    new HTMLWebpackPlugin({
+      filename: 'thanks.html',
+      template: './thanks.html',
+    }),
     new CopyWebpackPlugin({
       patterns: [
         {
