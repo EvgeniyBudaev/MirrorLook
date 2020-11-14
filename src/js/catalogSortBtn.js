@@ -4,7 +4,7 @@ const catalogFilterBtn = document.querySelector('.catalog__filter-btn')
 
 // Отображение панели сортировки по клику на иконку
 function clickHandlerAsideButtonSort() {
-  console.log('click')
+  // console.log('click')
   catalogAsideFilterSelectsWrapper.classList.toggle('active')
   catalogFilterBtn.classList.toggle('active')
   if (catalogAsideFilterSelectsWrapper.style.maxHeight) {
@@ -15,7 +15,7 @@ function clickHandlerAsideButtonSort() {
 }
 
 function showCatalogSort() {
-  console.log('catalogAsideButtonSort', catalogAsideButtonSort)
+  // console.log('catalogAsideButtonSort', catalogAsideButtonSort)
   if (catalogAsideButtonSort) catalogAsideButtonSort.addEventListener('click', clickHandlerAsideButtonSort)
 }
 

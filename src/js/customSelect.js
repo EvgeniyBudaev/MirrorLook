@@ -25,8 +25,11 @@ class Select {
     this.data = this.generateArrayObjects(this.$el)
     //console.log('this', this);
     //console.log('this.data', this.data);
-    this.inputHiddenValue = this.current.value
-    this.inputHidden.value = this.inputHiddenValue
+    if (this.current !== undefined) {
+      this.inputHiddenValue = this.current.value
+      this.inputHidden.value = this.inputHiddenValue
+    }
+
 
     if (this.$el) {
       this.span = this.$el.querySelector('[data-type="value"]') // fixed
@@ -59,7 +62,11 @@ class Select {
   }
 
   get current() {
-    return this.data.find(el => el.id === this.selectedId)
+    let result
+    if (this.data !== undefined) {
+      result = this.data.find(el => el.id === this.selectedId)
+    }
+     return result
   }
 
   select(id) {
