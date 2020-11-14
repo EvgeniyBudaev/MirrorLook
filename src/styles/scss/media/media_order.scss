@@ -1,0 +1,26 @@
+@media (max-width: 720px) {
+  .order__card-left {
+    flex-direction: column;
+    align-items: center;
+  }
+  .order__card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .order__card-left__images {
+    margin-right: 0;
+  }
+  .order__card-left__info {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 420px) {
+  .order__info {
+    flex-direction: column;
+  }
+  .order__fields {
+    margin-left: 0;
+  }
+}
