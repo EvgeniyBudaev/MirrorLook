@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="favicon.ico" type="image/icon" />
-  <title>Карточка товара</title>
+  <title>Каталог - Mirror Look</title>
 </head>
 <body class="body" data-body="">
 <div class="wrapper">
@@ -70,9 +70,9 @@
             <div class="header__menu-bottom">
               <nav>
                 <ul>
-                  <li><a href="#">Главная</a></li>
-                  <li><a href="#">О магазине</a></li>
-                  <li><a href="#">Каталог</a></li>
+                  <li><a href="./index.html">Главная</a></li>
+                  <li><a  href="./about.html">О магазине</a></li>
+                  <li><a href="./categories.html">Каталог</a></li>
                   <li><a class="red" href="#">Распродажа</a></li>
                   <li><a href="#">Доставка и оплата</a></li>
                   <li><a href="#">Контакты</a></li>
@@ -82,7 +82,7 @@
           </div>
         </div>
         <ul class="header__categories">
-          <a href="./venetianMirrors.html"><li class="header__categories-item">ВЕНЕЦИАНСКИЕ ЗЕРКАЛА</li></a>
+          <a href="./venetianMirrors.html"><li class="header__categories-item active">ВЕНЕЦИАНСКИЕ ЗЕРКАЛА</li></a>
           <a href="#"><li class="header__categories-item">НАПОЛЬНЫЕ ЗЕРКАЛА</li></a>
           <a href="#"><li class="header__categories-item">ЗЕРКАЛА В РАМАХ</li></a>
           <a href="#"><li class="header__categories-item">ЗЕРКАЛЬНЫЕ ПАННО</li></a>
@@ -94,28 +94,642 @@
 
     <section class="empty" data-empty=""></section>
 
-    <div class="breadcrumbs">
-      <div class="breadcrumbs__inner">
-        <ul class="breadcrumbs__list mobile-overflow">
-          <li class="breadcrumbs__list-item">
-            <a href="./index.html">Главная</a>
-          </li>
-          <li class="breadcrumbs__list-item">
-            <a href="#">Каталог товаров</a>
-          </li>
-          <li class="breadcrumbs__list-item">
-            <a href="#">Венецианские зеркала</a>
-          </li>
-          <li class="breadcrumbs__list-item">
-            <span>Венецианское зеркало Nikole (Николь)</span>
-          </li>
-        </ul>
+    <div class="container">
+      <div class="breadcrumbs">
+        <div class="breadcrumbs__inner">
+          <ul class="breadcrumbs__list mobile-overflow">
+            <li class="breadcrumbs__list-item">
+              <a href="./index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__list-item">
+              <a href="./categories.html">Каталог товаров</a>
+            </li>
+            <li class="breadcrumbs__list-item">
+              <a href="./venetianMirrors.html">Венецианские зеркала</a>
+            </li>
+            <li class="breadcrumbs__list-item">
+              <span>Венецианское зеркало Nikole (Николь)</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
 
-    <section class="card-product"></section>
+    <section class="card-product">
+      <div class="container">
+        <h2 class="card-product__title title">
+          Венецианское зеркало
+          <a href="#">
+            <img src="./assets/images/icon-favorite.svg" alt="favorite">
+          </a>
+        </h2>
+        <h2 class="card-product__name">
+          Nikole (Николь)
+        </h2>
+        <div class="card-product__inner">
+          <div class="card-product__item description">
+            <div class="description__text">
+              <p>Влагостойкое серебрянное зеркало в венецианском стиле Nikole (Николь), 80*110 см</p>
+              <p>Зеркала в венецианском стиле никогда не выходят из моды, являясь примером высокого мастерства и предметом роскоши.</p>
+            </div>
+            <div class="description__info">
+              <div class="description__info-favourites">
+                <a href="#">
+                  <img src="./assets/images/icon-favorite.svg" alt="favorite">
+                  <span>В избранное</span>
+                </a>
+              </div>
+              <ul class="description__info-list">
+                <li>Доставка в: <span class="description-city">г. Москва</span></li>
+                <li>Цена и сроки: <span>1-2 дня БЕСПЛАТНО</span></li>
+                <li>Оплата: <span>При получении</span></li>
+                <li class="description-pay">
+                  <a href="#">
+                    <img src="./assets/images/wallet.png" alt="pay">
+                  </a>
+                  <a href="#">
+                    <img src="./assets/images/visa.png" alt="pay">
+                  </a>
+                  <a href="#">
+                    <img src="./assets/images/master.png" alt="pay">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="card-product__item card-slider">
+            <div class="card-product__slider">
+              <div class="slider__item">
+                <img src="./assets/images/cardProduct-1.jpg" alt="slider">
+              </div>
+              <div class="slider__item">
+                <img src="./assets/images/content/venetianMirrors-1.jpg" alt="slider">
+              </div>
+            </div>
+            <div class="card-product__slider-nav">
+              <div class="slider__item slider__nav">
+                <img src="./assets/images/cardProduct-nav1.jpg" alt="slide">
+              </div>
+              <div class="slider__item slider__nav">
+                <img src="./assets/images/cardProduct-nav2.jpg" alt="slide">
+              </div>
+            </div>
+          </div>
+          <div class="card-product__item data">
+            <div class="data__article">
+              Артикул: <span class="article">VZ232SL</span>
+            </div>
+            <div class="data__list">
+              <ul class="data__list-item item-1">
+                <li>Цвет основы</li>
+                <li>Высота</li>
+                <li>Ширина</li>
+                <li>Вес</li>
+                <li>Тип установки</li>
+              </ul>
+              <ul class="data__list-item item-2">
+                <li>черный</li>
+                <li>110 см</li>
+                <li>80 см</li>
+                <li>13 кг</li>
+                <li>настенное</li>
+              </ul>
+            </div>
+            <div class="data__availability">
+              В наличии
+            </div>
+            <div class="data__order">
+              <div class="data__order-price">
+                30 000 ₽
+              </div>
+              <div class="data__order-quantity">
+                <span>Кол-во:</span>
+                <div class="quantity__num">
+                  <button class="quantity__btn quantity-left">-</button>
+                  <input type="text" value="1">
+                  <button class="quantity__btn quantity-right">+</button>
+                </div>
+              </div>
+              <div class="data__order-btn">
+                <button>В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="detailed">
+      <div class="container">
+        <div class="detailed__tabs">
+          <div class="tabs">
+            <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+            <label for="tab-btn-1">Характеристики</label>
+            <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+            <label for="tab-btn-2">Отзывы (<span>0</span>)</label>
+            <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+            <label for="tab-btn-3">Доставка и оплата</label>
+            <div class="tabs__block">
+              <div class="tabs__block-toggle">
+                Описание
+                <img src="./assets/images/arrow-beige-up.svg" alt="toggle-arrow">
+                <div class="tabs__block-toggle-line"></div>
+              </div>
+              <div class="description__text tabs__block-body description">
+                <p>Влагостойкое серебрянное зеркало в венецианском стиле Nikole (Николь), 80*110 см</p>
+                <p>Зеркала в венецианском стиле никогда не выходят из моды, являясь примером высокого мастерства и предметом роскоши.</p>
+              </div>
+            </div>
+            <div id="tab_01" class="tabs__block specifications">
+              <div class="tabs__block-toggle">
+                Характеристики
+                <img src="./assets/images/arrow-beige-up.svg" alt="toggle-arrow">
+                <div class="tabs__block-toggle-line"></div>
+              </div>
+              <div class="tabs__block-body">
+                <div class="specifications__items">
+                  <div class="specifications__items-title">Габариты</div>
+                  <div class="specifications__item">
+                    <div class="specifications__item-line"></div>
+                    <div class="specifications__item-naming">
+                      <span>Высота</span>
+                    </div>
+                    <div class="specifications__item-date">
+                      <span>110 см</span>
+                    </div>
+                  </div>
+                  <div class="specifications__item">
+                    <div class="specifications__item-line"></div>
+                    <div class="specifications__item-naming">
+                      <span>Ширина</span>
+                    </div>
+                    <div class="specifications__item-date">
+                      <span>80 см</span>
+                    </div>
+                  </div>
+                  <div class="specifications__item">
+                    <div class="specifications__item-line"></div>
+                    <div class="specifications__item-naming">
+                      <span>Размер внешний, с рамой</span>
+                    </div>
+                    <div class="specifications__item-date">
+                      <span>80*110 см</span>
+                    </div>
+                  </div>
+                  <div class="specifications__item">
+                    <div class="specifications__item-line"></div>
+                    <div class="specifications__item-naming">
+                      <span>Размер зеркала без рамы</span>
+                    </div>
+                    <div class="specifications__item-date">
+                      <span>48*78 см</span>
+                    </div>
+                  </div>
+                  <div class="specifications__item">
+                    <div class="specifications__item-line"></div>
+                    <div class="specifications__item-naming">
+                      <span>Вес</span>
+                    </div>
+                    <div class="specifications__item-date">
+                      <span>13 кг</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="specifications__items">
+                  <div class="specifications__items-title">Форма и установка</div>
+                  <div class="specifications__item">
+                    <div class="specifications__item-line"></div>
+                    <div class="specifications__item-naming">
+                      <span>Тип навески</span>
+                    </div>
+                    <div class="specifications__item-date">
+                      <span>Вертикальное/горизонтальное</span>
+                    </div>
+                  </div>
+                  <div class="specifications__item">
+                    <div class="specifications__item-line"></div>
+                    <div class="specifications__item-naming">
+                      <span>Тип установки</span>
+                    </div>
+                    <div class="specifications__item-date">
+                      <span>Настенное</span>
+                    </div>
+                  </div>
+                  <div class="specifications__item">
+                    <div class="specifications__item-line"></div>
+                    <div class="specifications__item-naming">
+                      <span>Наличие фацета</span>
+                    </div>
+                    <div class="specifications__item-date">
+                      <span>Да</span>
+                    </div>
+                  </div>
+                  <div class="specifications__item">
+                    <div class="specifications__item-line"></div>
+                    <div class="specifications__item-naming">
+                      <span>Форма</span>
+                    </div>
+                    <div class="specifications__item-date">
+                      <span>Фигурное</span>
+                    </div>
+                  </div>
+                  <div class="specifications__item">
+                    <div class="specifications__item-line"></div>
+                    <div class="specifications__item-naming">
+                      <span>Назначение</span>
+                    </div>
+                    <div class="specifications__item-date">
+                      <span>Ванная, гостинная, спальня, прихожая, холл, над камином</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="specifications__items">
+                  <div class="specifications__items-title">Материалы и цвет</div>
+                  <div class="specifications__item">
+                    <div class="specifications__item-line"></div>
+                    <div class="specifications__item-naming">
+                      <span>Материал зеркала</span>
+                    </div>
+                    <div class="specifications__item-date">
+                      <span>Влагостойкое серебряное зеркало</span>
+                    </div>
+                  </div>
+                  <div class="specifications__item">
+                    <div class="specifications__item-line"></div>
+                    <div class="specifications__item-naming">
+                      <span>Материал рамы</span>
+                    </div>
+                    <div class="specifications__item-date">
+                      <span>Основа МДФ</span>
+                    </div>
+                  </div>
+                  <div class="specifications__item">
+                    <div class="specifications__item-line"></div>
+                    <div class="specifications__item-naming">
+                      <span>Цвет зеркала</span>
+                    </div>
+                    <div class="specifications__item-date">
+                      <span>Серебро</span>
+                    </div>
+                  </div>
+                  <div class="specifications__item">
+                    <div class="specifications__item-line"></div>
+                    <div class="specifications__item-naming">
+                      <span>Цвет основы</span>
+                    </div>
+                    <div class="specifications__item-date">
+                      <span>Черный</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="specifications__items">
+                  <div class="specifications__items-title">О производителе</div>
+                  <div class="specifications__item">
+                    <div class="specifications__item-line"></div>
+                    <div class="specifications__item-naming">
+                      <span>Страна бренда</span>
+                    </div>
+                    <div class="specifications__item-date">
+                      <span>Россия</span>
+                    </div>
+                  </div>
+                  <div class="specifications__item">
+                    <div class="specifications__item-line"></div>
+                    <div class="specifications__item-naming">
+                      <span>Страна произодства</span>
+                    </div>
+                    <div class="specifications__item-date">
+                      <span>Китай</span>
+                    </div>
+                  </div>
+                  <div class="specifications__item">
+                    <div class="specifications__item-line"></div>
+                    <div class="specifications__item-naming">
+                      <span>Производитель</span>
+                    </div>
+                    <div class="specifications__item-date">
+                      <span>Art-Zerkalo</span>
+                    </div>
+                  </div>
+                  <div class="specifications__item">
+                    <div class="specifications__item-line"></div>
+                    <div class="specifications__item-naming">
+                      <span>Гарантия</span>
+                    </div>
+                    <div class="specifications__item-date">
+                      <a href="#"><span>Гарантийные условия</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="tab_02" class="tabs__block">
+              <div class="tabs__block-toggle">
+                Отзывы (<span>0</span>)
+                <img src="./assets/images/arrow-beige-up.svg" alt="toggle-arrow">
+                <div class="tabs__block-toggle-line"></div>
+              </div>
+              <div class="tabs__block-body reviews">
+                <div class="reviews__rating">
+                  <img src="./assets/images/icon-rating-1.svg" alt="rating">
+                  <img src="./assets/images/icon-rating-1.svg" alt="rating">
+                  <img src="./assets/images/icon-rating-1.svg" alt="rating">
+                  <img src="./assets/images/icon-rating-1.svg" alt="rating">
+                  <img src="./assets/images/icon-rating-2.svg" alt="rating">
+                </div>
+                <textarea placeholder="Напишите ваш отзыв о товаре"></textarea>
+                <div class="reviews__btn">
+                  <button type="submit">
+                    Оставить отзыв
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div id="tab_03" class="tabs__block delivery">
+              <div class="tabs__block-toggle">
+                Доставка и оплата
+                <img src="./assets/images/arrow-beige-up.svg" alt="toggle-arrow">
+                <div class="tabs__block-toggle-line"></div>
+              </div>
+              <div class="tabs__block-body">
+                <ul class="description__info-list">
+                  <li>Доставка в: <span class="description-city">г. Москва</span></li>
+                  <li>Цена и сроки: <span>1-2 дня БЕСПЛАТНО</span></li>
+                  <li>Оплата: <span>При получении</span></li>
+                  <li class="description-pay">
+                    <a href="#">
+                      <img src="./assets/images/wallet.png" alt="pay">
+                    </a>
+                    <a href="#">
+                      <img src="./assets/images/visa.png" alt="pay">
+                    </a>
+                    <a href="#">
+                      <img src="./assets/images/master.png" alt="pay">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products-slider">
+      <div class="container-slider">
+        <h2 class="products-slider__title title">ПОХОЖИЕ ТОВАРЫ</h2>
+        <div class="products-slider__inner">
 
+          <div class="products-slider__item">
+            <div class="products-slider__item-wrapper">
+              <div class="products-slider__item-content">
+                <button class="products-slider__item-content__favorite">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.6">
+                      <path d="M13.7501 2.5C11.3376 2.5 10.0001 4.24167 10.0001 4.24167C10.0001 4.24167 8.66258 2.5 6.25008 2.5C3.71841 2.5 1.66675 4.55167 1.66675 7.08333C1.66675 10.5592 5.76008 13.9275 6.90091 14.9917C8.21508 16.2167 10.0001 17.7917 10.0001 17.7917C10.0001 17.7917 11.7851 16.2167 13.0992 14.9917C14.2401 13.9275 18.3334 10.5592 18.3334 7.08333C18.3334 4.55167 16.2817 2.5 13.7501 2.5ZM12.3426 13.425C12.1951 13.5583 12.0667 13.6742 11.9626 13.7717C11.3367 14.355 10.5967 15.0242 10.0001 15.5592C9.40341 15.0242 8.66258 14.3542 8.03758 13.7717C7.93258 13.6742 7.80425 13.5575 7.65758 13.425C6.47425 12.3558 3.33341 9.51583 3.33341 7.08333C3.33341 5.475 4.64175 4.16667 6.25008 4.16667C7.77258 4.16667 8.65508 5.22917 8.67841 5.25667L10.0001 6.66667L11.3217 5.25667C11.3301 5.24583 12.2276 4.16667 13.7501 4.16667C15.3584 4.16667 16.6667 5.475 16.6667 7.08333C16.6667 9.51583 13.5259 12.3558 12.3426 13.425Z" fill="black"/>
+                    </g>
+                  </svg>
+                </button>
+                <img src="./assets/images/product-5.jpg" alt="product">
+                <p class="products-slider__item-content__title">Овальное зеркало в раме Daisy Gold (Дейзи)</p>
+              </div>
+              <div class="products-slider__item-footer">
+                <div class="products-slider__item-footer__top">
+                  <div class="products-slider__item-footer__top-label">Цена:</div>
+                  <button class="products-slider__item-footer__top-basket">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.1676 13.5416H7.65404V11.4583H16.1676L19.0613 6.24996H5.45508V4.16663H20.8322C21.2009 4.16663 21.5426 4.36246 21.7301 4.68017C21.9176 4.99892 21.9228 5.39163 21.7426 5.71454L17.9895 12.4698C17.6228 13.1302 16.9249 13.5416 16.1676 13.5416Z" fill="#B0976A"/>
+                      <path d="M19.7917 17.7083H7.23131C6.4459 17.7083 5.7209 17.2812 5.33965 16.5948C4.9584 15.9083 4.98027 15.0667 5.39694 14.4L6.64381 12.4042L3.21257 4.16978L1.05527 4.1802L1.0459 2.09687L4.59902 2.0802L8.98027 12.5958L7.16361 15.5031L7.23131 15.625H19.7917V17.7083ZM17.7084 18.75C17.1559 18.75 16.626 18.9695 16.2353 19.3602C15.8446 19.7509 15.6251 20.2808 15.6251 20.8333C15.6251 21.3859 15.8446 21.9158 16.2353 22.3065C16.626 22.6972 17.1559 22.9167 17.7084 22.9167C18.2609 22.9167 18.7908 22.6972 19.1815 22.3065C19.5722 21.9158 19.7917 21.3859 19.7917 20.8333C19.7917 20.2808 19.5722 19.7509 19.1815 19.3602C18.7908 18.9695 18.2609 18.75 17.7084 18.75ZM7.29173 18.75C6.7392 18.75 6.20929 18.9695 5.81859 19.3602C5.42789 19.7509 5.2084 20.2808 5.2084 20.8333C5.2084 21.3859 5.42789 21.9158 5.81859 22.3065C6.20929 22.6972 6.7392 22.9167 7.29173 22.9167C7.84427 22.9167 8.37417 22.6972 8.76487 22.3065C9.15557 21.9158 9.37506 21.3859 9.37506 20.8333C9.37506 20.2808 9.15557 19.7509 8.76487 19.3602C8.37417 18.9695 7.84427 18.75 7.29173 18.75Z" fill="#B0976A"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="products-slider__item-footer__bottom">
+                  <div class="products-slider__item-footer__bottom-num">25 000 ₽</div>
+                  <div class="products-slider__item-footer__bottom-status">В наличии</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="products-slider__item">
+            <div class="products-slider__item-wrapper">
+              <div class="products-slider__item-content">
+                <button class="products-slider__item-content__favorite">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.6">
+                      <path d="M13.7501 2.5C11.3376 2.5 10.0001 4.24167 10.0001 4.24167C10.0001 4.24167 8.66258 2.5 6.25008 2.5C3.71841 2.5 1.66675 4.55167 1.66675 7.08333C1.66675 10.5592 5.76008 13.9275 6.90091 14.9917C8.21508 16.2167 10.0001 17.7917 10.0001 17.7917C10.0001 17.7917 11.7851 16.2167 13.0992 14.9917C14.2401 13.9275 18.3334 10.5592 18.3334 7.08333C18.3334 4.55167 16.2817 2.5 13.7501 2.5ZM12.3426 13.425C12.1951 13.5583 12.0667 13.6742 11.9626 13.7717C11.3367 14.355 10.5967 15.0242 10.0001 15.5592C9.40341 15.0242 8.66258 14.3542 8.03758 13.7717C7.93258 13.6742 7.80425 13.5575 7.65758 13.425C6.47425 12.3558 3.33341 9.51583 3.33341 7.08333C3.33341 5.475 4.64175 4.16667 6.25008 4.16667C7.77258 4.16667 8.65508 5.22917 8.67841 5.25667L10.0001 6.66667L11.3217 5.25667C11.3301 5.24583 12.2276 4.16667 13.7501 4.16667C15.3584 4.16667 16.6667 5.475 16.6667 7.08333C16.6667 9.51583 13.5259 12.3558 12.3426 13.425Z" fill="black"/>
+                    </g>
+                  </svg>
+                </button>
+                <img src="./assets/images/product-6.jpg" alt="product">
+                <p class="products-slider__item-content__title">Зеркало в резной раме Pretty Gold (Притти)</p>
+              </div>
+              <div class="products-slider__item-footer">
+                <div class="products-slider__item-footer__top">
+                  <div class="products-slider__item-footer__top-label">Цена:</div>
+                  <button class="products-slider__item-footer__top-basket">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.1676 13.5416H7.65404V11.4583H16.1676L19.0613 6.24996H5.45508V4.16663H20.8322C21.2009 4.16663 21.5426 4.36246 21.7301 4.68017C21.9176 4.99892 21.9228 5.39163 21.7426 5.71454L17.9895 12.4698C17.6228 13.1302 16.9249 13.5416 16.1676 13.5416Z" fill="#B0976A"/>
+                      <path d="M19.7917 17.7083H7.23131C6.4459 17.7083 5.7209 17.2812 5.33965 16.5948C4.9584 15.9083 4.98027 15.0667 5.39694 14.4L6.64381 12.4042L3.21257 4.16978L1.05527 4.1802L1.0459 2.09687L4.59902 2.0802L8.98027 12.5958L7.16361 15.5031L7.23131 15.625H19.7917V17.7083ZM17.7084 18.75C17.1559 18.75 16.626 18.9695 16.2353 19.3602C15.8446 19.7509 15.6251 20.2808 15.6251 20.8333C15.6251 21.3859 15.8446 21.9158 16.2353 22.3065C16.626 22.6972 17.1559 22.9167 17.7084 22.9167C18.2609 22.9167 18.7908 22.6972 19.1815 22.3065C19.5722 21.9158 19.7917 21.3859 19.7917 20.8333C19.7917 20.2808 19.5722 19.7509 19.1815 19.3602C18.7908 18.9695 18.2609 18.75 17.7084 18.75ZM7.29173 18.75C6.7392 18.75 6.20929 18.9695 5.81859 19.3602C5.42789 19.7509 5.2084 20.2808 5.2084 20.8333C5.2084 21.3859 5.42789 21.9158 5.81859 22.3065C6.20929 22.6972 6.7392 22.9167 7.29173 22.9167C7.84427 22.9167 8.37417 22.6972 8.76487 22.3065C9.15557 21.9158 9.37506 21.3859 9.37506 20.8333C9.37506 20.2808 9.15557 19.7509 8.76487 19.3602C8.37417 18.9695 7.84427 18.75 7.29173 18.75Z" fill="#B0976A"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="products-slider__item-footer__bottom">
+                  <div class="products-slider__item-footer__bottom-num">25 000 ₽</div>
+                  <div class="products-slider__item-footer__bottom-status">В наличии</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="products-slider__item">
+            <div class="products-slider__item-wrapper">
+              <div class="products-slider__item-content">
+                <button class="products-slider__item-content__favorite">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.6">
+                      <path d="M13.7501 2.5C11.3376 2.5 10.0001 4.24167 10.0001 4.24167C10.0001 4.24167 8.66258 2.5 6.25008 2.5C3.71841 2.5 1.66675 4.55167 1.66675 7.08333C1.66675 10.5592 5.76008 13.9275 6.90091 14.9917C8.21508 16.2167 10.0001 17.7917 10.0001 17.7917C10.0001 17.7917 11.7851 16.2167 13.0992 14.9917C14.2401 13.9275 18.3334 10.5592 18.3334 7.08333C18.3334 4.55167 16.2817 2.5 13.7501 2.5ZM12.3426 13.425C12.1951 13.5583 12.0667 13.6742 11.9626 13.7717C11.3367 14.355 10.5967 15.0242 10.0001 15.5592C9.40341 15.0242 8.66258 14.3542 8.03758 13.7717C7.93258 13.6742 7.80425 13.5575 7.65758 13.425C6.47425 12.3558 3.33341 9.51583 3.33341 7.08333C3.33341 5.475 4.64175 4.16667 6.25008 4.16667C7.77258 4.16667 8.65508 5.22917 8.67841 5.25667L10.0001 6.66667L11.3217 5.25667C11.3301 5.24583 12.2276 4.16667 13.7501 4.16667C15.3584 4.16667 16.6667 5.475 16.6667 7.08333C16.6667 9.51583 13.5259 12.3558 12.3426 13.425Z" fill="black"/>
+                    </g>
+                  </svg>
+                </button>
+                <img src="./assets/images/product-7.jpg" alt="product">
+                <p class="products-slider__item-content__title">Венецианское зеркало Domenico (Доменик)</p>
+              </div>
+              <div class="products-slider__item-footer">
+                <div class="products-slider__item-footer__top">
+                  <div class="products-slider__item-footer__top-label">Цена:</div>
+                  <button class="products-slider__item-footer__top-basket">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.1676 13.5416H7.65404V11.4583H16.1676L19.0613 6.24996H5.45508V4.16663H20.8322C21.2009 4.16663 21.5426 4.36246 21.7301 4.68017C21.9176 4.99892 21.9228 5.39163 21.7426 5.71454L17.9895 12.4698C17.6228 13.1302 16.9249 13.5416 16.1676 13.5416Z" fill="#B0976A"/>
+                      <path d="M19.7917 17.7083H7.23131C6.4459 17.7083 5.7209 17.2812 5.33965 16.5948C4.9584 15.9083 4.98027 15.0667 5.39694 14.4L6.64381 12.4042L3.21257 4.16978L1.05527 4.1802L1.0459 2.09687L4.59902 2.0802L8.98027 12.5958L7.16361 15.5031L7.23131 15.625H19.7917V17.7083ZM17.7084 18.75C17.1559 18.75 16.626 18.9695 16.2353 19.3602C15.8446 19.7509 15.6251 20.2808 15.6251 20.8333C15.6251 21.3859 15.8446 21.9158 16.2353 22.3065C16.626 22.6972 17.1559 22.9167 17.7084 22.9167C18.2609 22.9167 18.7908 22.6972 19.1815 22.3065C19.5722 21.9158 19.7917 21.3859 19.7917 20.8333C19.7917 20.2808 19.5722 19.7509 19.1815 19.3602C18.7908 18.9695 18.2609 18.75 17.7084 18.75ZM7.29173 18.75C6.7392 18.75 6.20929 18.9695 5.81859 19.3602C5.42789 19.7509 5.2084 20.2808 5.2084 20.8333C5.2084 21.3859 5.42789 21.9158 5.81859 22.3065C6.20929 22.6972 6.7392 22.9167 7.29173 22.9167C7.84427 22.9167 8.37417 22.6972 8.76487 22.3065C9.15557 21.9158 9.37506 21.3859 9.37506 20.8333C9.37506 20.2808 9.15557 19.7509 8.76487 19.3602C8.37417 18.9695 7.84427 18.75 7.29173 18.75Z" fill="#B0976A"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="products-slider__item-footer__bottom">
+                  <div class="products-slider__item-footer__bottom-num">25 000 ₽</div>
+                  <div class="products-slider__item-footer__bottom-status">В наличии</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="products-slider__item">
+            <div class="products-slider__item-wrapper">
+              <div class="products-slider__item-content">
+                <button class="products-slider__item-content__favorite">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.6">
+                      <path d="M13.7501 2.5C11.3376 2.5 10.0001 4.24167 10.0001 4.24167C10.0001 4.24167 8.66258 2.5 6.25008 2.5C3.71841 2.5 1.66675 4.55167 1.66675 7.08333C1.66675 10.5592 5.76008 13.9275 6.90091 14.9917C8.21508 16.2167 10.0001 17.7917 10.0001 17.7917C10.0001 17.7917 11.7851 16.2167 13.0992 14.9917C14.2401 13.9275 18.3334 10.5592 18.3334 7.08333C18.3334 4.55167 16.2817 2.5 13.7501 2.5ZM12.3426 13.425C12.1951 13.5583 12.0667 13.6742 11.9626 13.7717C11.3367 14.355 10.5967 15.0242 10.0001 15.5592C9.40341 15.0242 8.66258 14.3542 8.03758 13.7717C7.93258 13.6742 7.80425 13.5575 7.65758 13.425C6.47425 12.3558 3.33341 9.51583 3.33341 7.08333C3.33341 5.475 4.64175 4.16667 6.25008 4.16667C7.77258 4.16667 8.65508 5.22917 8.67841 5.25667L10.0001 6.66667L11.3217 5.25667C11.3301 5.24583 12.2276 4.16667 13.7501 4.16667C15.3584 4.16667 16.6667 5.475 16.6667 7.08333C16.6667 9.51583 13.5259 12.3558 12.3426 13.425Z" fill="black"/>
+                    </g>
+                  </svg>
+                </button>
+                <img src="./assets/images/product-8.jpg" alt="product">
+                <p class="products-slider__item-content__title">Зеркало в резной раме Marriot (Мэриот)</p>
+              </div>
+              <div class="products-slider__item-footer">
+                <div class="products-slider__item-footer__top">
+                  <div class="products-slider__item-footer__top-label">Цена:</div>
+                  <button class="products-slider__item-footer__top-basket">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.1676 13.5416H7.65404V11.4583H16.1676L19.0613 6.24996H5.45508V4.16663H20.8322C21.2009 4.16663 21.5426 4.36246 21.7301 4.68017C21.9176 4.99892 21.9228 5.39163 21.7426 5.71454L17.9895 12.4698C17.6228 13.1302 16.9249 13.5416 16.1676 13.5416Z" fill="#B0976A"/>
+                      <path d="M19.7917 17.7083H7.23131C6.4459 17.7083 5.7209 17.2812 5.33965 16.5948C4.9584 15.9083 4.98027 15.0667 5.39694 14.4L6.64381 12.4042L3.21257 4.16978L1.05527 4.1802L1.0459 2.09687L4.59902 2.0802L8.98027 12.5958L7.16361 15.5031L7.23131 15.625H19.7917V17.7083ZM17.7084 18.75C17.1559 18.75 16.626 18.9695 16.2353 19.3602C15.8446 19.7509 15.6251 20.2808 15.6251 20.8333C15.6251 21.3859 15.8446 21.9158 16.2353 22.3065C16.626 22.6972 17.1559 22.9167 17.7084 22.9167C18.2609 22.9167 18.7908 22.6972 19.1815 22.3065C19.5722 21.9158 19.7917 21.3859 19.7917 20.8333C19.7917 20.2808 19.5722 19.7509 19.1815 19.3602C18.7908 18.9695 18.2609 18.75 17.7084 18.75ZM7.29173 18.75C6.7392 18.75 6.20929 18.9695 5.81859 19.3602C5.42789 19.7509 5.2084 20.2808 5.2084 20.8333C5.2084 21.3859 5.42789 21.9158 5.81859 22.3065C6.20929 22.6972 6.7392 22.9167 7.29173 22.9167C7.84427 22.9167 8.37417 22.6972 8.76487 22.3065C9.15557 21.9158 9.37506 21.3859 9.37506 20.8333C9.37506 20.2808 9.15557 19.7509 8.76487 19.3602C8.37417 18.9695 7.84427 18.75 7.29173 18.75Z" fill="#B0976A"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="products-slider__item-footer__bottom">
+                  <div class="products-slider__item-footer__bottom-num">25 000 ₽</div>
+                  <div class="products-slider__item-footer__bottom-status">В наличии</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="products-slider__item">
+            <div class="products-slider__item-wrapper">
+              <div class="products-slider__item-content">
+                <button class="products-slider__item-content__favorite">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.6">
+                      <path d="M13.7501 2.5C11.3376 2.5 10.0001 4.24167 10.0001 4.24167C10.0001 4.24167 8.66258 2.5 6.25008 2.5C3.71841 2.5 1.66675 4.55167 1.66675 7.08333C1.66675 10.5592 5.76008 13.9275 6.90091 14.9917C8.21508 16.2167 10.0001 17.7917 10.0001 17.7917C10.0001 17.7917 11.7851 16.2167 13.0992 14.9917C14.2401 13.9275 18.3334 10.5592 18.3334 7.08333C18.3334 4.55167 16.2817 2.5 13.7501 2.5ZM12.3426 13.425C12.1951 13.5583 12.0667 13.6742 11.9626 13.7717C11.3367 14.355 10.5967 15.0242 10.0001 15.5592C9.40341 15.0242 8.66258 14.3542 8.03758 13.7717C7.93258 13.6742 7.80425 13.5575 7.65758 13.425C6.47425 12.3558 3.33341 9.51583 3.33341 7.08333C3.33341 5.475 4.64175 4.16667 6.25008 4.16667C7.77258 4.16667 8.65508 5.22917 8.67841 5.25667L10.0001 6.66667L11.3217 5.25667C11.3301 5.24583 12.2276 4.16667 13.7501 4.16667C15.3584 4.16667 16.6667 5.475 16.6667 7.08333C16.6667 9.51583 13.5259 12.3558 12.3426 13.425Z" fill="black"/>
+                    </g>
+                  </svg>
+                </button>
+                <img src="./assets/images/product-1.jpg" alt="product">
+                <p class="products-slider__item-content__title">Овальное зеркало в раме Daisy Gold (Дейзи)</p>
+              </div>
+              <div class="products-slider__item-footer">
+                <div class="products-slider__item-footer__top">
+                  <div class="products-slider__item-footer__top-label">Цена:</div>
+                  <button class="products-slider__item-footer__top-basket">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.1676 13.5416H7.65404V11.4583H16.1676L19.0613 6.24996H5.45508V4.16663H20.8322C21.2009 4.16663 21.5426 4.36246 21.7301 4.68017C21.9176 4.99892 21.9228 5.39163 21.7426 5.71454L17.9895 12.4698C17.6228 13.1302 16.9249 13.5416 16.1676 13.5416Z" fill="#B0976A"/>
+                      <path d="M19.7917 17.7083H7.23131C6.4459 17.7083 5.7209 17.2812 5.33965 16.5948C4.9584 15.9083 4.98027 15.0667 5.39694 14.4L6.64381 12.4042L3.21257 4.16978L1.05527 4.1802L1.0459 2.09687L4.59902 2.0802L8.98027 12.5958L7.16361 15.5031L7.23131 15.625H19.7917V17.7083ZM17.7084 18.75C17.1559 18.75 16.626 18.9695 16.2353 19.3602C15.8446 19.7509 15.6251 20.2808 15.6251 20.8333C15.6251 21.3859 15.8446 21.9158 16.2353 22.3065C16.626 22.6972 17.1559 22.9167 17.7084 22.9167C18.2609 22.9167 18.7908 22.6972 19.1815 22.3065C19.5722 21.9158 19.7917 21.3859 19.7917 20.8333C19.7917 20.2808 19.5722 19.7509 19.1815 19.3602C18.7908 18.9695 18.2609 18.75 17.7084 18.75ZM7.29173 18.75C6.7392 18.75 6.20929 18.9695 5.81859 19.3602C5.42789 19.7509 5.2084 20.2808 5.2084 20.8333C5.2084 21.3859 5.42789 21.9158 5.81859 22.3065C6.20929 22.6972 6.7392 22.9167 7.29173 22.9167C7.84427 22.9167 8.37417 22.6972 8.76487 22.3065C9.15557 21.9158 9.37506 21.3859 9.37506 20.8333C9.37506 20.2808 9.15557 19.7509 8.76487 19.3602C8.37417 18.9695 7.84427 18.75 7.29173 18.75Z" fill="#B0976A"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="products-slider__item-footer__bottom">
+                  <div class="products-slider__item-footer__bottom-num">25 000 ₽</div>
+                  <div class="products-slider__item-footer__bottom-status">В наличии</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="products-slider__item">
+            <div class="products-slider__item-wrapper">
+              <div class="products-slider__item-content">
+                <button class="products-slider__item-content__favorite">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.6">
+                      <path d="M13.7501 2.5C11.3376 2.5 10.0001 4.24167 10.0001 4.24167C10.0001 4.24167 8.66258 2.5 6.25008 2.5C3.71841 2.5 1.66675 4.55167 1.66675 7.08333C1.66675 10.5592 5.76008 13.9275 6.90091 14.9917C8.21508 16.2167 10.0001 17.7917 10.0001 17.7917C10.0001 17.7917 11.7851 16.2167 13.0992 14.9917C14.2401 13.9275 18.3334 10.5592 18.3334 7.08333C18.3334 4.55167 16.2817 2.5 13.7501 2.5ZM12.3426 13.425C12.1951 13.5583 12.0667 13.6742 11.9626 13.7717C11.3367 14.355 10.5967 15.0242 10.0001 15.5592C9.40341 15.0242 8.66258 14.3542 8.03758 13.7717C7.93258 13.6742 7.80425 13.5575 7.65758 13.425C6.47425 12.3558 3.33341 9.51583 3.33341 7.08333C3.33341 5.475 4.64175 4.16667 6.25008 4.16667C7.77258 4.16667 8.65508 5.22917 8.67841 5.25667L10.0001 6.66667L11.3217 5.25667C11.3301 5.24583 12.2276 4.16667 13.7501 4.16667C15.3584 4.16667 16.6667 5.475 16.6667 7.08333C16.6667 9.51583 13.5259 12.3558 12.3426 13.425Z" fill="black"/>
+                    </g>
+                  </svg>
+                </button>
+                <img src="./assets/images/product-2.jpg" alt="product">
+                <p class="products-slider__item-content__title">Зеркало в раме модерн Nexus Gold (Нексус)</p>
+              </div>
+              <div class="products-slider__item-footer">
+                <div class="products-slider__item-footer__top">
+                  <div class="products-slider__item-footer__top-label">Цена:</div>
+                  <button class="products-slider__item-footer__top-basket">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.1676 13.5416H7.65404V11.4583H16.1676L19.0613 6.24996H5.45508V4.16663H20.8322C21.2009 4.16663 21.5426 4.36246 21.7301 4.68017C21.9176 4.99892 21.9228 5.39163 21.7426 5.71454L17.9895 12.4698C17.6228 13.1302 16.9249 13.5416 16.1676 13.5416Z" fill="#B0976A"/>
+                      <path d="M19.7917 17.7083H7.23131C6.4459 17.7083 5.7209 17.2812 5.33965 16.5948C4.9584 15.9083 4.98027 15.0667 5.39694 14.4L6.64381 12.4042L3.21257 4.16978L1.05527 4.1802L1.0459 2.09687L4.59902 2.0802L8.98027 12.5958L7.16361 15.5031L7.23131 15.625H19.7917V17.7083ZM17.7084 18.75C17.1559 18.75 16.626 18.9695 16.2353 19.3602C15.8446 19.7509 15.6251 20.2808 15.6251 20.8333C15.6251 21.3859 15.8446 21.9158 16.2353 22.3065C16.626 22.6972 17.1559 22.9167 17.7084 22.9167C18.2609 22.9167 18.7908 22.6972 19.1815 22.3065C19.5722 21.9158 19.7917 21.3859 19.7917 20.8333C19.7917 20.2808 19.5722 19.7509 19.1815 19.3602C18.7908 18.9695 18.2609 18.75 17.7084 18.75ZM7.29173 18.75C6.7392 18.75 6.20929 18.9695 5.81859 19.3602C5.42789 19.7509 5.2084 20.2808 5.2084 20.8333C5.2084 21.3859 5.42789 21.9158 5.81859 22.3065C6.20929 22.6972 6.7392 22.9167 7.29173 22.9167C7.84427 22.9167 8.37417 22.6972 8.76487 22.3065C9.15557 21.9158 9.37506 21.3859 9.37506 20.8333C9.37506 20.2808 9.15557 19.7509 8.76487 19.3602C8.37417 18.9695 7.84427 18.75 7.29173 18.75Z" fill="#B0976A"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="products-slider__item-footer__bottom">
+                  <div class="products-slider__item-footer__bottom-num">25 000 ₽</div>
+                  <div class="products-slider__item-footer__bottom-status">В наличии</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="products-slider__item">
+            <div class="products-slider__item-wrapper">
+              <div class="products-slider__item-content">
+                <button class="products-slider__item-content__favorite">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.6">
+                      <path d="M13.7501 2.5C11.3376 2.5 10.0001 4.24167 10.0001 4.24167C10.0001 4.24167 8.66258 2.5 6.25008 2.5C3.71841 2.5 1.66675 4.55167 1.66675 7.08333C1.66675 10.5592 5.76008 13.9275 6.90091 14.9917C8.21508 16.2167 10.0001 17.7917 10.0001 17.7917C10.0001 17.7917 11.7851 16.2167 13.0992 14.9917C14.2401 13.9275 18.3334 10.5592 18.3334 7.08333C18.3334 4.55167 16.2817 2.5 13.7501 2.5ZM12.3426 13.425C12.1951 13.5583 12.0667 13.6742 11.9626 13.7717C11.3367 14.355 10.5967 15.0242 10.0001 15.5592C9.40341 15.0242 8.66258 14.3542 8.03758 13.7717C7.93258 13.6742 7.80425 13.5575 7.65758 13.425C6.47425 12.3558 3.33341 9.51583 3.33341 7.08333C3.33341 5.475 4.64175 4.16667 6.25008 4.16667C7.77258 4.16667 8.65508 5.22917 8.67841 5.25667L10.0001 6.66667L11.3217 5.25667C11.3301 5.24583 12.2276 4.16667 13.7501 4.16667C15.3584 4.16667 16.6667 5.475 16.6667 7.08333C16.6667 9.51583 13.5259 12.3558 12.3426 13.425Z" fill="black"/>
+                    </g>
+                  </svg>
+                </button>
+                <img src="./assets/images/product-3.jpg" alt="product">
+                <p class="products-slider__item-content__title">Зеркало в металлической раме Hi-Tech (Хайтэк)</p>
+              </div>
+              <div class="products-slider__item-footer">
+                <div class="products-slider__item-footer__top">
+                  <div class="products-slider__item-footer__top-label">Цена:</div>
+                  <button class="products-slider__item-footer__top-basket">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.1676 13.5416H7.65404V11.4583H16.1676L19.0613 6.24996H5.45508V4.16663H20.8322C21.2009 4.16663 21.5426 4.36246 21.7301 4.68017C21.9176 4.99892 21.9228 5.39163 21.7426 5.71454L17.9895 12.4698C17.6228 13.1302 16.9249 13.5416 16.1676 13.5416Z" fill="#B0976A"/>
+                      <path d="M19.7917 17.7083H7.23131C6.4459 17.7083 5.7209 17.2812 5.33965 16.5948C4.9584 15.9083 4.98027 15.0667 5.39694 14.4L6.64381 12.4042L3.21257 4.16978L1.05527 4.1802L1.0459 2.09687L4.59902 2.0802L8.98027 12.5958L7.16361 15.5031L7.23131 15.625H19.7917V17.7083ZM17.7084 18.75C17.1559 18.75 16.626 18.9695 16.2353 19.3602C15.8446 19.7509 15.6251 20.2808 15.6251 20.8333C15.6251 21.3859 15.8446 21.9158 16.2353 22.3065C16.626 22.6972 17.1559 22.9167 17.7084 22.9167C18.2609 22.9167 18.7908 22.6972 19.1815 22.3065C19.5722 21.9158 19.7917 21.3859 19.7917 20.8333C19.7917 20.2808 19.5722 19.7509 19.1815 19.3602C18.7908 18.9695 18.2609 18.75 17.7084 18.75ZM7.29173 18.75C6.7392 18.75 6.20929 18.9695 5.81859 19.3602C5.42789 19.7509 5.2084 20.2808 5.2084 20.8333C5.2084 21.3859 5.42789 21.9158 5.81859 22.3065C6.20929 22.6972 6.7392 22.9167 7.29173 22.9167C7.84427 22.9167 8.37417 22.6972 8.76487 22.3065C9.15557 21.9158 9.37506 21.3859 9.37506 20.8333C9.37506 20.2808 9.15557 19.7509 8.76487 19.3602C8.37417 18.9695 7.84427 18.75 7.29173 18.75Z" fill="#B0976A"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="products-slider__item-footer__bottom">
+                  <div class="products-slider__item-footer__bottom-num">35 000 ₽</div>
+                  <div class="products-slider__item-footer__bottom-status">В наличии</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="products-slider__item">
+            <div class="products-slider__item-wrapper">
+              <div class="products-slider__item-content">
+                <button class="products-slider__item-content__favorite">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.6">
+                      <path d="M13.7501 2.5C11.3376 2.5 10.0001 4.24167 10.0001 4.24167C10.0001 4.24167 8.66258 2.5 6.25008 2.5C3.71841 2.5 1.66675 4.55167 1.66675 7.08333C1.66675 10.5592 5.76008 13.9275 6.90091 14.9917C8.21508 16.2167 10.0001 17.7917 10.0001 17.7917C10.0001 17.7917 11.7851 16.2167 13.0992 14.9917C14.2401 13.9275 18.3334 10.5592 18.3334 7.08333C18.3334 4.55167 16.2817 2.5 13.7501 2.5ZM12.3426 13.425C12.1951 13.5583 12.0667 13.6742 11.9626 13.7717C11.3367 14.355 10.5967 15.0242 10.0001 15.5592C9.40341 15.0242 8.66258 14.3542 8.03758 13.7717C7.93258 13.6742 7.80425 13.5575 7.65758 13.425C6.47425 12.3558 3.33341 9.51583 3.33341 7.08333C3.33341 5.475 4.64175 4.16667 6.25008 4.16667C7.77258 4.16667 8.65508 5.22917 8.67841 5.25667L10.0001 6.66667L11.3217 5.25667C11.3301 5.24583 12.2276 4.16667 13.7501 4.16667C15.3584 4.16667 16.6667 5.475 16.6667 7.08333C16.6667 9.51583 13.5259 12.3558 12.3426 13.425Z" fill="black"/>
+                    </g>
+                  </svg>
+                </button>
+                <img src="./assets/images/product-4.jpg" alt="product">
+                <p class="products-slider__item-content__title">Зеркало-солнце в металлической раме Splash (Сплэш)</p>
+              </div>
+              <div class="products-slider__item-footer">
+                <div class="products-slider__item-footer__top">
+                  <div class="products-slider__item-footer__top-label">Цена:</div>
+                  <button class="products-slider__item-footer__top-basket">
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.1676 13.5416H7.65404V11.4583H16.1676L19.0613 6.24996H5.45508V4.16663H20.8322C21.2009 4.16663 21.5426 4.36246 21.7301 4.68017C21.9176 4.99892 21.9228 5.39163 21.7426 5.71454L17.9895 12.4698C17.6228 13.1302 16.9249 13.5416 16.1676 13.5416Z" fill="#B0976A"/>
+                      <path d="M19.7917 17.7083H7.23131C6.4459 17.7083 5.7209 17.2812 5.33965 16.5948C4.9584 15.9083 4.98027 15.0667 5.39694 14.4L6.64381 12.4042L3.21257 4.16978L1.05527 4.1802L1.0459 2.09687L4.59902 2.0802L8.98027 12.5958L7.16361 15.5031L7.23131 15.625H19.7917V17.7083ZM17.7084 18.75C17.1559 18.75 16.626 18.9695 16.2353 19.3602C15.8446 19.7509 15.6251 20.2808 15.6251 20.8333C15.6251 21.3859 15.8446 21.9158 16.2353 22.3065C16.626 22.6972 17.1559 22.9167 17.7084 22.9167C18.2609 22.9167 18.7908 22.6972 19.1815 22.3065C19.5722 21.9158 19.7917 21.3859 19.7917 20.8333C19.7917 20.2808 19.5722 19.7509 19.1815 19.3602C18.7908 18.9695 18.2609 18.75 17.7084 18.75ZM7.29173 18.75C6.7392 18.75 6.20929 18.9695 5.81859 19.3602C5.42789 19.7509 5.2084 20.2808 5.2084 20.8333C5.2084 21.3859 5.42789 21.9158 5.81859 22.3065C6.20929 22.6972 6.7392 22.9167 7.29173 22.9167C7.84427 22.9167 8.37417 22.6972 8.76487 22.3065C9.15557 21.9158 9.37506 21.3859 9.37506 20.8333C9.37506 20.2808 9.15557 19.7509 8.76487 19.3602C8.37417 18.9695 7.84427 18.75 7.29173 18.75Z" fill="#B0976A"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="products-slider__item-footer__bottom">
+                  <div class="products-slider__item-footer__bottom-num">25 000 ₽</div>
+                  <div class="products-slider__item-footer__bottom-status">В наличии</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
   </div>
 
@@ -171,20 +785,24 @@
           <div class="footer__logoAndSocial-socialIcons">
             <div class="footer__logoAndSocial-socialIcons__facebook social-icon">
               <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.8" d="M14.7167 0.916748C7.09501 0.916748 0.916748 7.09501 0.916748 14.7167C0.916748 22.1618 6.81625 28.2132 14.1937 28.4905V18.9106H10.9604V15.1501H14.1937V12.3832C14.1937 9.17605 16.1547 7.42759 19.0168 7.42759C19.9814 7.42483 20.9447 7.47451 21.9038 7.57249V10.9259H19.9331C18.3737 10.9259 18.0701 11.6628 18.0701 12.7502V15.1445H21.7961L21.3118 18.905H18.0481V28.0945C24.0566 26.6027 28.5167 21.1876 28.5167 14.7167C28.5167 7.09501 22.3385 0.916748 14.7167 0.916748Z" fill="black"/>
+                <path d="M14.5 0C6.49165 0 0 6.49782 0 14.5138C0 22.344 6.19875 28.7083 13.9505 29V18.9245H10.5531V14.9695H13.9505V12.0595C13.9505 8.6865 16.0109 6.8476 19.0182 6.8476C20.0318 6.8447 21.0439 6.89695 22.0516 7V10.5268H19.981C18.3425 10.5268 18.0235 11.3019 18.0235 12.4456V14.9637H21.9385L21.4296 18.9187H18.0003V28.5835C24.3136 27.0145 29 21.3193 29 14.5138C29 6.49782 22.5084 0 14.5 0Z" fill="black"/>
               </svg>
             </div>
             <div class="footer__logoAndSocial-socialIcons__vk social-icon">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.1999 0.399902C6.5907 0.399902 0.399902 6.5907 0.399902 14.1999C0.399902 21.8091 6.5907 27.9999 14.1999 27.9999C21.8097 27.9999 27.9999 21.8091 27.9999 14.1999C27.9999 6.5907 21.8097 0.399902 14.1999 0.399902ZM20.1837 16.9209C21.5259 18.1125 21.8049 18.5379 21.8505 18.6105C22.4067 19.4925 21.2337 19.5999 21.2337 19.5999H18.7617C18.7617 19.5999 18.1599 19.6065 17.6457 19.2657C16.8075 18.7167 15.9297 17.6523 15.3129 17.8371C14.7951 17.9919 14.7999 18.6915 14.7999 19.2897C14.7999 19.5039 14.6157 19.5999 14.1999 19.5999C13.7841 19.5999 13.6113 19.5999 13.4271 19.5999C12.0729 19.5999 10.6035 19.1439 9.1377 17.6121C7.0641 15.4467 5.2455 11.0847 5.2455 11.0847C5.2455 11.0847 5.1381 10.8651 5.2551 10.7313C5.3877 10.5813 5.7483 10.6005 5.7483 10.6005L8.1453 10.5999C8.1453 10.5999 8.3709 10.6425 8.5329 10.7565C8.6667 10.8501 8.7411 11.0289 8.7411 11.0289C8.7411 11.0289 9.1437 12.3585 9.6567 13.2063C10.6587 14.8611 11.1249 14.9031 11.4651 14.7249C11.9619 14.4669 11.7999 12.7077 11.7999 12.7077C11.7999 12.7077 11.8221 11.9523 11.5629 11.6157C11.3631 11.3553 10.9809 11.2167 10.8141 11.1951C10.6791 11.1777 10.9047 10.9413 11.1921 10.8063C11.5761 10.6353 12.0987 10.5915 12.9999 10.5999C13.7013 10.6065 13.9035 10.6485 14.1771 10.7115C15.0045 10.9023 14.7999 11.4057 14.7999 13.1733C14.7999 13.7397 14.7219 14.5359 15.1491 14.7999C15.3333 14.9139 15.9645 15.0531 17.0877 13.2291C17.6211 12.3639 18.0453 10.9287 18.0453 10.9287C18.0453 10.9287 18.1329 10.7709 18.2691 10.6929C18.4083 10.6131 18.4041 10.6149 18.5949 10.6149C18.7857 10.6149 20.6991 10.5999 21.1191 10.5999C21.5385 10.5999 21.9321 10.5951 21.9999 10.8411C22.0971 11.1945 21.6903 12.4053 20.6595 13.7193C18.9657 15.8757 18.7779 15.6741 20.1837 16.9209Z" fill="black"/>
+              <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.5 0C6.50483 0 0 6.50483 0 14.5C0 22.4952 6.50483 29 14.5 29C22.4958 29 29 22.4952 29 14.5C29 6.50483 22.4958 0 14.5 0ZM20.7873 17.359C22.1976 18.6111 22.4908 19.058 22.5387 19.1343C23.1231 20.0611 21.8906 20.1739 21.8906 20.1739H19.2932C19.2932 20.1739 18.6609 20.1808 18.1206 19.8228C17.2399 19.2459 16.3175 18.1275 15.6695 18.3217C15.1254 18.4843 15.1304 19.2194 15.1304 19.848C15.1304 20.073 14.9369 20.1739 14.5 20.1739C14.0631 20.1739 13.8815 20.1739 13.688 20.1739C12.2651 20.1739 10.7212 19.6948 9.18102 18.0853C7.00224 15.81 5.09139 11.2268 5.09139 11.2268C5.09139 11.2268 4.97854 10.996 5.10148 10.8555C5.2408 10.6978 5.6197 10.718 5.6197 10.718L8.13828 10.7174C8.13828 10.7174 8.37533 10.7622 8.54554 10.8819C8.68613 10.9803 8.76431 11.1682 8.76431 11.1682C8.76431 11.1682 9.18733 12.5652 9.72635 13.456C10.7792 15.1947 11.269 15.2389 11.6265 15.0516C12.1485 14.7805 11.9783 12.9321 11.9783 12.9321C11.9783 12.9321 12.0016 12.1384 11.7292 11.7847C11.5193 11.5111 11.1177 11.3655 10.9425 11.3428C10.8006 11.3245 11.0377 11.0761 11.3396 10.9343C11.7431 10.7546 12.2922 10.7086 13.2391 10.7174C13.9761 10.7243 14.1886 10.7685 14.476 10.8347C15.3454 11.0351 15.1304 11.5641 15.1304 13.4213C15.1304 14.0165 15.0485 14.853 15.4973 15.1304C15.6909 15.2502 16.3541 15.3965 17.5343 13.48C18.0947 12.5709 18.5405 11.0629 18.5405 11.0629C18.5405 11.0629 18.6325 10.8971 18.7756 10.8151C18.9219 10.7313 18.9175 10.7332 19.1179 10.7332C19.3184 10.7332 21.3289 10.7174 21.7702 10.7174C22.2108 10.7174 22.6244 10.7123 22.6957 10.9708C22.7978 11.3422 22.3703 12.6144 21.2873 13.995C19.5075 16.2608 19.3102 16.049 20.7873 17.359Z" fill="black"/>
               </svg>
             </div>
             <div class="footer__logoAndSocial-socialIcons__instagram social-icon">
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.8" fill-rule="evenodd" clip-rule="evenodd" d="M13.8 0C21.4161 0 27.6 6.17565 27.6 13.8C27.6 21.4161 21.4244 27.6 13.8 27.6C6.18392 27.6 0 21.4244 0 13.8C0 6.18392 6.17565 0 13.8 0ZM10.5714 6.22532H17.0286C19.4541 6.22532 21.4326 8.18728 21.4326 10.5714V17.012C21.4326 19.4044 19.4541 21.3581 17.0286 21.3581H10.5714C8.14589 21.3581 6.16737 19.4044 6.16737 17.012V10.5714C6.16737 8.179 8.15417 6.22532 10.5714 6.22532ZM13.7586 9.7105C16.1179 9.7105 18.0302 11.6228 18.0302 13.9821C18.0302 16.3415 16.1179 18.2537 13.7586 18.2537C11.3993 18.2537 9.48698 16.3415 9.48698 13.9821C9.48698 11.6228 11.3993 9.7105 13.7586 9.7105ZM13.7586 11.1509C15.3149 11.1509 16.5815 12.4175 16.5815 13.9738C16.5815 15.5302 15.3149 16.7968 13.7586 16.7968C12.194 16.7968 10.9357 15.5302 10.9357 13.9738C10.9357 12.4175 12.2023 11.1509 13.7586 11.1509ZM17.8895 9.11446C18.2703 9.11446 18.5849 9.42076 18.5849 9.80984C18.5849 10.1906 18.2786 10.5052 17.8895 10.5052C17.5087 10.5052 17.1941 10.1989 17.1941 9.80984C17.1941 9.42903 17.5004 9.11446 17.8895 9.11446ZM11.1013 7.45879H16.4987C18.5269 7.45879 20.1826 9.10618 20.1826 11.1261V16.5567C20.1826 18.5766 18.5269 20.224 16.4987 20.224H11.1013C9.07307 20.224 7.4174 18.5766 7.4174 16.5567V11.1261C7.4174 9.10618 9.07307 7.45879 11.1013 7.45879Z" fill="black"/>
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.8 0.300049C6.7925 0.300049 0.300049 6.7925 0.300049 14.8C0.300049 22.8076 6.7925 29.3 14.8 29.3C22.8076 29.3 29.3 22.8076 29.3 14.8C29.3 6.78954 22.8076 0.300049 14.8 0.300049ZM23.8611 23.21C23.8611 23.5711 23.5681 23.864 23.2041 23.864H6.39005C6.02903 23.864 5.73607 23.574 5.73607 23.21V6.39005C5.73607 6.02903 6.02903 5.73607 6.39005 5.73607H23.2041C23.5652 5.73607 23.8611 6.02903 23.8611 6.39005V23.21ZM11.175 14.8C11.175 12.7996 12.7996 11.175 14.8 11.175C16.8005 11.175 18.425 12.7996 18.425 14.8C18.425 16.8005 16.8005 18.425 14.8 18.425C12.7996 18.425 11.175 16.8005 11.175 14.8ZM18.425 7.55005H22.05V11.175H18.425V7.55005ZM20.0733 13.8945H22.05V22.05H7.55005V13.8945H9.52974C9.4528 14.2585 9.40842 14.4154 9.40842 14.8C9.40842 17.777 11.829 20.1917 14.8 20.1917C17.777 20.1917 20.1917 17.774 20.1917 14.8C20.1917 14.4154 20.1503 14.2585 20.0733 13.8945Z" fill="black"/>
               </svg>
             </div>
-            <div class="footer__logoAndSocial-socialIcons__twitter social-icon"></div>
+            <div class="footer__logoAndSocial-socialIcons__twitter social-icon">
+              <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.5 0C6.5042 0 0 6.5042 0 14.5C0 22.4958 6.5042 29 14.5 29C22.4958 29 29 22.4958 29 14.5C29 6.5042 22.4958 0 14.5 0ZM21.5842 11.6782C21.5905 11.827 21.5943 11.9783 21.5943 12.1302C21.5943 16.7437 18.0809 22.0652 11.6574 22.0652C9.68537 22.0652 7.84891 21.4871 6.30435 20.4961C6.57733 20.5289 6.85409 20.5446 7.13715 20.5446C8.77376 20.5446 10.2799 19.9873 11.4739 19.0505C9.94574 19.0227 8.65713 18.0109 8.21141 16.6252C8.42513 16.6662 8.64389 16.6882 8.86959 16.6882C9.18796 16.6882 9.49687 16.646 9.78876 16.5653C8.1925 16.2432 6.989 14.8335 6.989 13.1408C6.989 13.1257 6.989 13.1112 6.989 13.0967C7.45994 13.3583 7.9977 13.5159 8.57076 13.5342C7.63267 12.9069 7.01737 11.8389 7.01737 10.6272C7.01737 9.98735 7.18885 9.3878 7.48957 8.87085C9.21254 10.9834 11.786 12.3735 14.6879 12.5198C14.628 12.2638 14.5965 11.9978 14.5965 11.7242C14.5965 9.7957 16.1599 8.23222 18.0891 8.23222C19.0933 8.23222 20.0005 8.65587 20.6373 9.33485C21.4323 9.1785 22.1806 8.88787 22.8552 8.48817C22.5948 9.3027 22.0406 9.98735 21.3188 10.4198C22.0261 10.3341 22.6982 10.1475 23.3255 9.86946C22.8577 10.5699 22.2657 11.1858 21.5842 11.6782Z" fill="black"/>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
@@ -211,14 +829,8 @@
             />
           </div>
           <button class="footer__form-button" type="submit">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <rect x="0.176514" y="0.589844" width="22.9447" height="23.0674" fill="url(#pattern0)"/>
-              <defs>
-                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                  <use xlink:href="#image0" transform="translate(-0.00267411) scale(0.0335116 0.0333333)"/>
-                </pattern>
-                <image id="image0" width="30" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAA70lEQVRIie3WMUoDURCA4RAQKzshYGXhASy0tEplGxu9g/ESxkNY6RU8gGIjJOAZBAUrsZOAKPksfMH1GbBxJhb5++XjLW9np9Va9J/Cla9GWMmCb33vAu0MeB1PFT4Ihwu+g9cGPMFBFt6vTj3GdhZ+WuGPWMuAl3Bd4TdYzsBXcVfh5+FwwTfxUuH9LLxXbve0d+xm4YPq1M/YyIDbPidZs9Fvz8WPvahwkv6qsVddrjd0o9FZn9NhNNrBQ4WeRaPzGZl+/iTu0YlGjyp0jK1otFtu7bQJ9qPRWavPcSha4Lkte5cNdChrvV30F30A7hgDN1exTwwAAAAASUVORK5CYII="/>
-              </defs>
+            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 16.3909L1.51671 18L10 9L1.51671 0L0 1.60909L6.96658 9L0 16.3909Z" fill="white" fill-opacity="0.8"/>
             </svg>
           </button>
         </form>
