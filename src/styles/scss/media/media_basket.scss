@@ -1,0 +1,19 @@
+@media (max-width: 1000px) {
+  .basket__card {
+    padding: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .basket__card {
+    flex-direction: column;
+    padding: 20px 0 40px;
+  }
+  .basket__card-images,
+  .basket__card-unit,
+  .basket__card-amount {
+    margin-bottom: 30px;
+  }
+  .basket__card-description {
+    text-align: center;
+  }
+}

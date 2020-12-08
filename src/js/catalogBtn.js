@@ -2,6 +2,8 @@ const catalogBtnLine = document.querySelector('[data-catalogBtn="line"]')
 const catalogBtnGrid = document.querySelector('[data-catalogBtn="grid"]')
 const catalogCard = document.querySelectorAll('[data-catalogCard=""]')
 
+
+// Кнопки Grid и Line для разного отображения карточек
 function clickHandlerCatalogBtnLine() {
   catalogBtnLine.classList.add('active')
   catalogBtnGrid.classList.remove('active')
@@ -20,3 +22,5 @@ function catalogBtn() {
 }
 
 catalogBtn()
+
+

@@ -58,3 +58,32 @@ $('.products-slider__inner').slick({
     },
   ]
 });
+
+
+// slider cardProduct
+$('.card-product__slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.card-product__slider-nav',
+  responsive: [
+    {
+      breakpoint: 1050,
+      settings: {
+        arrows: true
+      }
+    }
+  ]
+});
+
+$('.card-product__slider-nav').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  asNavFor: '.card-product__slider',
+  arrows: false,
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true,
+  variableWidth: false
+});

@@ -9,17 +9,16 @@
 
 // start catalog
 .catalog {
-  padding-bottom: 100px;
-  &-top {
+  &-top__title {
     display: flex;
     & .title {
       font-family: "Montserrat-Bold";
     }
-    &__title span {
-      font-family: 'Montserrat-Light', sans-serif;
-      font-size: 16px;
+    & span {
       margin-left: 50px;
       text-transform: none;
+      position: relative;
+      top: 7px;
     }
   }
   &__inner {
@@ -39,12 +38,23 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
-    &-selects {
+    &-selects__wrapper {
       display: flex;
       align-items: center;
+      justify-content: space-between;
     }
     &-selects .catalog__filter-element + .catalog__filter-element {
       margin-left: 30px;
+    }
+    &-selects__button {
+      display: none;
+      border: none;
+      background-color: transparent;
+      outline: transparent;
+    }
+    &-selects__button svg {
+      width: 20px;
+      height: 20px;
     }
     &-btn {
       display: flex;
@@ -170,6 +180,12 @@
   &__content-rangeSlider {
     padding-bottom: 56px;
   }
+  &__button {
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+    display: none;
+  }
 }
 // end aside form
 
@@ -293,4 +309,4 @@
 
 
 
-@import '@/styles/scss/media_catalog.scss';
+@import '@/styles/scss/media/media_catalog.scss';

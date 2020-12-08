@@ -12,6 +12,9 @@ import './js/form.js'
 import './js/handleSearch.js'
 import './js/catalogBtn.js'
 import './js/customSelect.js'
+import './js/catalogAsideFilter.js'
+import './js/catalogSortBtn.js'
+import './js/toggle.js'
 
 
 

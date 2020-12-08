@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="favicon.ico" type="image/icon" />
-  <title>О магазине - Mirror Look</title>
+  <title>Каталог - Mirror Look</title>
 </head>
 <body class="body" data-body="">
 <div class="wrapper">
@@ -71,7 +71,7 @@
               <nav>
                 <ul>
                   <li><a href="./index.html">Главная</a></li>
-                  <li><a class="active" href="./about.html">О магазине</a></li>
+                  <li><a  href="./about.html">О магазине</a></li>
                   <li><a href="./categories.html">Каталог</a></li>
                   <li><a class="red" href="#">Распродажа</a></li>
                   <li><a href="#">Доставка и оплата</a></li>
@@ -82,7 +82,7 @@
           </div>
         </div>
         <ul class="header__categories">
-          <a href="./venetianMirrors.html"><li class="header__categories-item">ВЕНЕЦИАНСКИЕ ЗЕРКАЛА</li></a>
+          <a href="./venetianMirrors.html"><li class="header__categories-item active">ВЕНЕЦИАНСКИЕ ЗЕРКАЛА</li></a>
           <a href="#"><li class="header__categories-item">НАПОЛЬНЫЕ ЗЕРКАЛА</li></a>
           <a href="#"><li class="header__categories-item">ЗЕРКАЛА В РАМАХ</li></a>
           <a href="#"><li class="header__categories-item">ЗЕРКАЛЬНЫЕ ПАННО</li></a>
@@ -94,88 +94,183 @@
 
     <section class="empty" data-empty=""></section>
 
-    <div class="container">
-      <div class="breadcrumbs">
-        <div class="breadcrumbs__inner">
-          <ul class="breadcrumbs__list mobile-overflow">
-            <li class="breadcrumbs__list-item">
-              <a href="./index.html">Главная</a>
+    <!--    <div class="container">-->
+    <!--      <div class="breadcrumbs">-->
+    <!--        <div class="breadcrumbs__inner">-->
+    <!--          <ul class="breadcrumbs__list mobile-overflow">-->
+    <!--            <li class="breadcrumbs__list-item">-->
+    <!--              <a href="./index.html">Главная</a>-->
+    <!--            </li>-->
+    <!--            <li class="breadcrumbs__list-item">-->
+    <!--              <span>Спасибо!</span>-->
+    <!--            </li>-->
+    <!--          </ul>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
+
+
+    <section class="order">
+      <div class="container">
+        <h2 class="order__title">Оформление заказа</h2>
+        <form>
+          <div class="order__info">
+            <div class="order__info-left">
+              <div class="order__info-number">1</div>
+              <p class="order__info-text">Информация о покупателе</p>
+            </div>
+            <div class="order__info-right">
+              <p class="order__info-edit">Редактировать</p>
+            </div>
+          </div>
+          <ul class="order__fields order__fields-buyer">
+            <li class="order__field order__fields-name">
+              <label class="order__label order__label-name" for="order__input__name">Имя
+                покупателя<span class="order__label-star">*</span></label>
+              <input
+                id="order__input__name"
+                type="text"
+                name="order__name"
+                class="order__input order__input-name form-input"
+                placeholder="Введите имя"
+                data-validate-field="name"
+              />
             </li>
-            <li class="breadcrumbs__list-item">
-              <span>О  магазине</span>
+            <li class="order__field order__fields-email">
+              <label class="order__label order__label-name" for="order__input__email">Адрес электронной почты</label>
+              <input
+                id="order__input__email"
+                type="email"
+                name="order__email"
+                class="order__input order__input-email form-input"
+                placeholder="Введите адрес электронной почты"
+                data-validate-field="email"
+              />
+            </li>
+            <li class="order__field order__fields-tel">
+              <label class="order__label order__label-tel" for="order__input__tel">Телефон<span class="order__label-star">*</span></label>
+              <input
+                id="order__input__tel"
+                type="tel"
+                name="order__tel"
+                class="order__input order__input-tel form-input"
+                placeholder="+7 (___) ___-__-__"
+                data-validate-field="tel"
+              />
+            </li>
+            <p class="order__note">* Обязательные поля</p>
+          </ul>
+          <div class="order__info">
+            <div class="order__info-left">
+              <div class="order__info-number">2</div>
+              <p class="order__info-text">Информация о доставке</p>
+            </div>
+            <div class="order__info-right">
+              <p class="order__info-edit">Редактировать</p>
+            </div>
+          </div>
+          <ul class="order__fields order__fields-delivery">
+            <li class="order__field order__fields-city">
+              <label class="order__label order__label-city" for="order__input__city">Город<span class="order__label-star">*
+              </span></label>
+              <input
+                id="order__input__city"
+                type="text"
+                name="order__city"
+                class="order__input order__input-city form-input"
+                placeholder="Введите город"
+                data-validate-field="city"
+              />
+            </li>
+            <li class="order__field order__fields-address">
+              <label class="order__label order__label-address" for="order__input__address">Адрес доставки<span class="order__label-star">*
+              </span></label>
+              <input
+                id="order__input__address"
+                type="text"
+                name="order__address"
+                class="order__input order__input-address form-input"
+                placeholder="Введите адрес"
+                data-validate-field="address"
+              />
+            </li>
+            <li class="order__field order__fields-date">
+              <label class="order__label order__label-date" for="order__input__date">Дата и время</label>
+              <input
+                id="order__input__date"
+                type="text"
+                name="order__date"
+                class="order__input order__input-date form-input"
+                placeholder="Введите дату и время доставки"
+                data-validate-field="date"
+              />
+            </li>
+            <li class="order__check">
+              <input class="order__input-courier custom-input" type="checkbox"
+                     id="form-courier">
+              <label class="order__input-label" for="form-courier">Курьером</label>
+            </li>
+            <li class="order__check">
+              <input class="order__input-courier custom-input" type="checkbox"
+                     id="form-pickup">
+              <label class="order__input-label" for="form-pickup">Самовывоз из магазина</label>
+            </li>
+            <a class="order__address" href="#">Адрес магазина</a>
+          </ul>
+          <div class="order__info">
+            <div class="order__info-left">
+              <div class="order__info-number">3</div>
+              <p class="order__info-text">Информация об оплате</p>
+            </div>
+            <div class="order__info-right">
+              <p class="order__info-edit">Редактировать</p>
+            </div>
+          </div>
+          <ul class="order__fields order__fields-payment">
+            <li class="order__check">
+              <input class="order__input-cash custom-input" type="checkbox"
+                     id="form-cash">
+              <label class="order__input-label" for="form-cash">Наличными при получении</label>
+            </li>
+            <li class="order__check">
+              <input class="order__input-cashless custom-input" type="checkbox"
+                     id="form-cashless">
+              <label class="order__input-label" for="form-cashless">Безналичная оплата</label>
             </li>
           </ul>
-        </div>
-      </div>
-    </div>
-
-
-    <section class="about">
-      <div class="container">
-        <div class="about__inner">
-          <div class="about__left">
-            <h2 class="title">О магазине</h2>
-            <p>Здравствуйте!</p>
-            <p>Интернет-магазин "Mirror look" основана дизайнером Владимиром Лыскиным.</p>
-            <p>"Многолетний опыт работы со стеклом дал мне возможность завладеть секретами искусства создания произведений из стекла."</p>
-            <p>Состаренные зеркала, витражи, особые стекла.
-              Интерьеры со стеклом и предметы декора для вашего дома.</p>
-          </div>
-          <div class="about__right">
-            <div class="about__right-basket">
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g opacity="0.6">
-                  <path d="M19.4011 16.25H9.18489V13.75H19.4011L22.8736 7.5H6.54614V5H24.9986C25.4411 5 25.8511 5.235 26.0761 5.61625C26.3011 5.99875 26.3074 6.47 26.0911 6.8575L21.5874 14.9637C21.1474 15.7562 20.3099 16.25 19.4011 16.25Z" fill="black"/>
-                  <path d="M23.7501 21.25H8.67763C7.73513 21.25 6.86513 20.7375 6.40763 19.9137C5.95013 19.09 5.97638 18.08 6.47638 17.28L7.97263 14.885L3.85513 5.00372L1.26638 5.01622L1.25513 2.51622L5.51888 2.49622L10.7764 15.115L8.59638 18.6037L8.67763 18.75H23.7501V21.25ZM21.2501 22.5C20.5871 22.5 19.9512 22.7634 19.4824 23.2322C19.0135 23.701 18.7501 24.3369 18.7501 25C18.7501 25.663 19.0135 26.2989 19.4824 26.7677C19.9512 27.2366 20.5871 27.5 21.2501 27.5C21.9132 27.5 22.5491 27.2366 23.0179 26.7677C23.4867 26.2989 23.7501 25.663 23.7501 25C23.7501 24.3369 23.4867 23.701 23.0179 23.2322C22.5491 22.7634 21.9132 22.5 21.2501 22.5ZM8.75013 22.5C8.08709 22.5 7.4512 22.7634 6.98236 23.2322C6.51352 23.701 6.25013 24.3369 6.25013 25C6.25013 25.663 6.51352 26.2989 6.98236 26.7677C7.4512 27.2366 8.08709 27.5 8.75013 27.5C9.41317 27.5 10.0491 27.2366 10.5179 26.7677C10.9867 26.2989 11.2501 25.663 11.2501 25C11.2501 24.3369 10.9867 23.701 10.5179 23.2322C10.0491 22.7634 9.41317 22.5 8.75013 22.5Z" fill="black"/>
-                </g>
-              </svg>
-              <div class="about__right-basket__box">
-                <h6 class="about__right-basket__title">Корзина</h6>
-                <p class="about__right-basket__box-text">Ваша корзина пуста </p>
-              </div>
-            </div>
-            <div class="about__right-viewed">
-              <h6 class="about__right-viewed__title">Недавно просмотренные</h6>
-              <div class="about__right-viewed__item">
-                <div class="about__right-viewed__item-images">
-                  <img src="./assets/images/content/about-1.png" alt="images">
-                </div>
-                <div class="about__right-viewed__item-content">
-                  <p class="about__right-viewed__item-content__title">
-                    Зеркало в резной раме Florian Gold (Флориан)
-                  </p>
-                  <p class="about__right-viewed__item-content__price">Цена: 25 000  ₽ </p>
-                </div>
-              </div>
-              <div class="about__right-viewed__item">
-                <div class="about__right-viewed__item-images">
-                  <img src="./assets/images/content/about-2.png" alt="images">
-                </div>
-                <div class="about__right-viewed__item-content">
-                  <p class="about__right-viewed__item-content__title">
-                    Зеркало в полный рост Paolo Gold (Паоло)
-                  </p>
-                  <p class="about__right-viewed__item-content__price">Цена: 25 000  ₽ </p>
-                </div>
-              </div>
-              <div class="about__right-viewed__item">
-                <div class="about__right-viewed__item-images">
-                  <img src="./assets/images/content/about-3.png" alt="images">
-                </div>
-                <div class="about__right-viewed__item-content">
-                  <p class="about__right-viewed__item-content__title">
-                    Венецианское зеркало Laura (Лаура)
-                  </p>
-                  <p class="about__right-viewed__item-content__price">Цена: 25 000  ₽ </p>
-                </div>
-              </div>
+          <div class="order__info">
+            <div class="order__info-left">
+              <div class="order__info-number">4</div>
+              <p class="order__info-text">Обзор заказа</p>
             </div>
           </div>
-        </div>
-
+          <ul class="order__cards">
+            <li class="order__card">
+              <div class="order__card-left">
+                <div class="order__card-left__images">
+                  <img src="./assets/images/content/venetianMirrors-1.jpg" alt="images">
+                </div>
+                <div class="order__card-left__info">
+                  <p class="order__card-left__info-article">арт. VZ232SL</p>
+                  <p class="order__card-left__info-title">Венецианское зеркало Nikole (Николь)</p>
+                  <p class="order__card-left__info-amount">Кол-во: 1</p>
+                  <p class="order__card-left__info-delivery">Доставка: Самовывоз из магазина </p>
+                  <p class="order__card-left__info-payment">Оплата: Наличными при получении</p>
+                </div>
+              </div>
+              <div class="order__card-right">
+                <p>30 000 ₽</p>
+              </div>
+            </li>
+          </ul>
+          <div class="order__button">
+            <a class="button" href="./thanks.html">
+              Завершить заказ
+            </a>
+          </div>
+        </form>
       </div>
     </section>
-
 
   </div>
 

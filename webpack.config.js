@@ -101,6 +101,18 @@ const plugins = () => {
       filename: 'venetianMirrors.html',
       template: './venetianMirrors.html',
     }),
+    new HTMLWebpackPlugin({
+      filename: 'basket.html',
+      template: './basket.html',
+    }),
+    new HTMLWebpackPlugin({
+      filename: 'thanks.html',
+      template: './thanks.html',
+    }),
+    new HTMLWebpackPlugin({
+      filename: 'order.html',
+      template: './order.html',
+    }),
     new CopyWebpackPlugin({
       patterns: [
         {
@@ -110,6 +122,10 @@ const plugins = () => {
         {
           from: path.resolve(__dirname, 'src/assets/images'),
           to: path.resolve(__dirname, 'build', 'assets/images'),
+        },
+        {
+          from: path.resolve(__dirname, 'src/assets/fonts'),
+          to: path.resolve(__dirname, 'build', 'assets/fonts'),
         },
       ],
     }),

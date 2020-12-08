@@ -1,6 +1,12 @@
 @import '@/styles/scss/_vars.scss';
 @import '@/styles/scss/_fonts.scss';
 @import '@/styles/scss/_global.scss';
+@import '@/styles/scss/button.scss';
+@import '@/styles/scss/breadcrumbs.scss';
+@import '@/styles/scss/card.scss';
+@import '@/styles/scss/lineInfo.scss';
+@import '@/styles/scss/formFooter.scss';
+@import '@/styles/scss/emptyDiv.scss';
 @import '@/styles/scss/sidebar.scss';
 @import '@/styles/scss/cardProduct.scss';
 @import '@/styles/scss/about.scss';
@@ -8,6 +14,10 @@
 @import '@/styles/scss/catalog.scss';
 @import '@/styles/scss/venetianMirrors.scss';
 @import '@/styles/scss/customSelect.scss';
+@import '@/styles/scss/basket.scss';
+@import '@/styles/scss/thanks.scss';
+@import '@/styles/scss/order.scss';
+
 
 // start header
 .header {
@@ -89,6 +99,9 @@
     & nav ul {
       display: flex;
     }
+    & nav ul li {
+      transition: all .3s;
+    }
     & nav ul li + li {
       padding-left: 22px;
     }
@@ -104,6 +117,9 @@
     & nav ul li .red {
       color: $red;
     }
+    & nav ul li:hover {
+      color: $beige;
+    }
   }
   &__categories {
     display: flex;
@@ -114,6 +130,10 @@
     & li {
       padding: 23px 12px;
       transition: all .5s;
+    }
+    &-item:hover {
+      background-color: $lightBeige;
+      color: $white;
     }
     & li a {
       text-transform: uppercase;
@@ -256,11 +276,8 @@
 
 // start products-slider
 .products-slider {
-  padding: 50px 0;
+  padding: 50px 0 0;
   font-size: 16px;
-  &.popular-models {
-    margin-bottom: 50px;
-  }
   &__item {
     max-width: 224px;
     width: 100%;
@@ -381,6 +398,7 @@
 
 // start banner
 .banner {
+  padding-top: 50px;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -496,4 +514,4 @@
 
 
 
-@import '@/styles/scss/_media.scss';
+@import '@/styles/scss/media/_media.scss';

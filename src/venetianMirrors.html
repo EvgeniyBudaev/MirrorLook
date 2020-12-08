@@ -55,7 +55,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="./basket.html ">
                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="0.6">
                         <path d="M16.1676 13.5417H7.65404V11.4584H16.1676L19.0613 6.25002H5.45508V4.16669H20.8322C21.2009 4.16669 21.5426 4.36252 21.7301 4.68023C21.9176 4.99898 21.9228 5.39169 21.7426 5.7146L17.9895 12.4698C17.6228 13.1302 16.9249 13.5417 16.1676 13.5417Z" fill="black"/>
@@ -82,12 +82,12 @@
           </div>
         </div>
         <ul class="header__categories">
-          <li class="header__categories-item active"><a href="./venetianMirrors.html">ВЕНЕЦИАНСКИЕ ЗЕРКАЛА</a></li>
-          <li class="header__categories-item"><a href="#">НАПОЛЬНЫЕ ЗЕРКАЛА</a></li>
-          <li class="header__categories-item"><a href="#">ЗЕРКАЛА В РАМАХ</a></li>
-          <li class="header__categories-item"><a href="#">ЗЕРКАЛЬНЫЕ ПАННО</a></li>
-          <li class="header__categories-item"><a href="#">ЗЕРКАЛО-СОЛНЦЕ</a></li>
-          <li class="header__categories-item"><a href="#">КОНСОЛИ</a></li>
+          <a href="./venetianMirrors.html"><li class="header__categories-item active">ВЕНЕЦИАНСКИЕ ЗЕРКАЛА</li></a>
+          <a href="#"><li class="header__categories-item">НАПОЛЬНЫЕ ЗЕРКАЛА</li></a>
+          <a href="#"><li class="header__categories-item">ЗЕРКАЛА В РАМАХ</li></a>
+          <a href="#"><li class="header__categories-item">ЗЕРКАЛЬНЫЕ ПАННО</li></a>
+          <a href="#"><li class="header__categories-item">ЗЕРКАЛО-СОЛНЦЕ</li></a>
+          <a href="#"><li class="header__categories-item">КОНСОЛИ</li></a>
         </ul>
       </div>
     </header>
@@ -116,338 +116,351 @@
     <section class="catalog">
       <div class="container">
         <div class="catalog-top">
-          <h2 class="catalog-top__title title">
-            Венецианские зеркала
+          <div class="catalog-top__title">
+            <h2 class="title">Венецианские зеркала</h2>
             <span class="catalog-top__amount">1-13 из 600 товаров</span>
-          </h2>
+          </div>
         </div>
 
         <div class="catalog__inner">
           <aside class="catalog__inner-aside aside-filter">
-            <form class="aside-filter__form">
-              <ul class="aside-filter__list">
+            <button class="aside-filter__button" data-aside-filter-button="">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.5 15H8.125M9.375 3.75C9.04348 3.75 8.72554 3.8817 8.49112 4.11612C8.2567 4.35054 8.125 4.66848 8.125 5C8.125 5.33152 8.2567 5.64946 8.49112 5.88388C8.72554 6.1183 9.04348 6.25 9.375 6.25C9.70652 6.25 10.0245 6.1183 10.2589 5.88388C10.4933 5.64946 10.625 5.33152 10.625 5C10.625 4.66848 10.4933 4.35054 10.2589 4.11612C10.0245 3.8817 9.70652 3.75 9.375 3.75V3.75ZM13.75 8.75C13.4185 8.75 13.1005 8.8817 12.8661 9.11612C12.6317 9.35054 12.5 9.66848 12.5 10C12.5 10.3315 12.6317 10.6495 12.8661 10.8839C13.1005 11.1183 13.4185 11.25 13.75 11.25C14.0815 11.25 14.3995 11.1183 14.6339 10.8839C14.8683 10.6495 15 10.3315 15 10C15 9.66848 14.8683 9.35054 14.6339 9.11612C14.3995 8.8817 14.0815 8.75 13.75 8.75ZM6.875 13.75C6.54348 13.75 6.22554 13.8817 5.99112 14.1161C5.7567 14.3505 5.625 14.6685 5.625 15C5.625 15.3315 5.7567 15.6495 5.99112 15.8839C6.22554 16.1183 6.54348 16.25 6.875 16.25C7.20652 16.25 7.52446 16.1183 7.75888 15.8839C7.9933 15.6495 8.125 15.3315 8.125 15C8.125 14.6685 7.9933 14.3505 7.75888 14.1161C7.52446 13.8817 7.20652 13.75 6.875 13.75ZM17.5 10H15H17.5ZM12.5 10H2.5H12.5ZM5.625 15H2.5H5.625ZM17.5 5H10.625H17.5ZM8.125 5H2.5H8.125Z" stroke="#B0976A" stroke-width="1.25" stroke-miterlimit="10"/>
+              </svg>
+            </button>
+            <div class="aside-filter__wrapper" data-aside-filter-wrapper="">
+              <form class="aside-filter__form">
+                <ul class="aside-filter__list">
 
-                <li class="aside-filter__item-drop">
-                  <div class="aside-filter__item-header filter__item-drop active">
-                    <p class="aside-filter__item-title">Форма</p>
-                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
-                    </svg>
-                  </div>
-                  <div class="aside-filter__content">
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-circular">
-                      <label class="aside-filter__content-label" for="form-circular">Круглая</label>
+                  <li class="aside-filter__item-drop">
+                    <div class="aside-filter__item-header filter__item-drop active">
+                      <p class="aside-filter__item-title">Форма</p>
+                      <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
+                      </svg>
                     </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-oval">
-                      <label class="aside-filter__content-label" for="form-oval">Овальная</label>
+                    <div class="aside-filter__content">
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-circular">
+                        <label class="aside-filter__content-label" for="form-circular">Круглая</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-oval">
+                        <label class="aside-filter__content-label" for="form-oval">Овальная</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-rectangular">
+                        <label class="aside-filter__content-label" for="form-rectangular">Прямоугольная</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-figured">
+                        <label class="aside-filter__content-label" for="form-figured">Фигурная</label>
+                      </div>
                     </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-rectangular">
-                      <label class="aside-filter__content-label" for="form-rectangular">Прямоугольная</label>
-                    </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-figured">
-                      <label class="aside-filter__content-label" for="form-figured">Фигурная</label>
-                    </div>
-                  </div>
-                </li>
+                  </li>
 
-                <li class="aside-filter__item-drop">
-                  <div class="aside-filter__item-header filter__item-drop active">
-                    <p class="aside-filter__item-title">Тип навески</p>
-                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
-                    </svg>
-                  </div>
-                  <div class="aside-filter__content">
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-vertical">
-                      <label class="aside-filter__content-label" for="form-vertical">Вертикальная</label>
+                  <li class="aside-filter__item-drop">
+                    <div class="aside-filter__item-header filter__item-drop active">
+                      <p class="aside-filter__item-title">Тип навески</p>
+                      <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
+                      </svg>
                     </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-horizontal">
-                      <label class="aside-filter__content-label" for="form-horizontal">Горизонтальная</label>
+                    <div class="aside-filter__content">
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-vertical">
+                        <label class="aside-filter__content-label" for="form-vertical">Вертикальная</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-horizontal">
+                        <label class="aside-filter__content-label" for="form-horizontal">Горизонтальная</label>
+                      </div>
                     </div>
-                  </div>
-                </li>
+                  </li>
 
-                <li class="aside-filter__item-drop">
-                  <div class="aside-filter__item-header filter__item-drop active">
-                    <p class="aside-filter__item-title">Тип крепления</p>
-                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
-                    </svg>
-                  </div>
-                  <div class="aside-filter__content">
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-wall">
-                      <label class="aside-filter__content-label" for="form-wall">Настенное</label>
+                  <li class="aside-filter__item-drop">
+                    <div class="aside-filter__item-header filter__item-drop active">
+                      <p class="aside-filter__item-title">Тип крепления</p>
+                      <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
+                      </svg>
                     </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-mounted">
-                      <label class="aside-filter__content-label" for="form-mounted">Навесное</label>
+                    <div class="aside-filter__content">
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-wall">
+                        <label class="aside-filter__content-label" for="form-wall">Настенное</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-mounted">
+                        <label class="aside-filter__content-label" for="form-mounted">Навесное</label>
+                      </div>
                     </div>
-                  </div>
-                </li>
+                  </li>
 
-                <li class="aside-filter__item-drop">
-                  <div class="aside-filter__item-header filter__item-drop active">
-                    <p class="aside-filter__item-title">Цвет рамы</p>
-                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
-                    </svg>
-                  </div>
-                  <div class="aside-filter__content">
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-antique-gold">
-                      <label class="aside-filter__content-label" for="form-antique-gold">Античное золото</label>
+                  <li class="aside-filter__item-drop">
+                    <div class="aside-filter__item-header filter__item-drop active">
+                      <p class="aside-filter__item-title">Цвет рамы</p>
+                      <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
+                      </svg>
                     </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-antique-silver">
-                      <label class="aside-filter__content-label" for="form-antique-silver">Античное серебро</label>
+                    <div class="aside-filter__content">
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-antique-gold">
+                        <label class="aside-filter__content-label" for="form-antique-gold">Античное золото</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-antique-silver">
+                        <label class="aside-filter__content-label" for="form-antique-silver">Античное серебро</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-silver">
+                        <label class="aside-filter__content-label" for="form-silver">Серебро</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-gold">
+                        <label class="aside-filter__content-label" for="form-gold">Золото</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-brass">
+                        <label class="aside-filter__content-label" for="form-brass">Латунь</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-chromium">
+                        <label class="aside-filter__content-label" for="form-chromium">Хром</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-nickel">
+                        <label class="aside-filter__content-label" for="form-nickel">Никель</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-bronze">
+                        <label class="aside-filter__content-label" for="form-bronze">Бронза</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-champagne">
+                        <label class="aside-filter__content-label" for="form-champagne">Шампань</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-turquoise">
+                        <label class="aside-filter__content-label" for="form-turquoise">Бирюза</label>
+                      </div>
                     </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-silver">
-                      <label class="aside-filter__content-label" for="form-silver">Серебро</label>
-                    </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-gold">
-                      <label class="aside-filter__content-label" for="form-gold">Золото</label>
-                    </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-brass">
-                      <label class="aside-filter__content-label" for="form-brass">Латунь</label>
-                    </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-chromium">
-                      <label class="aside-filter__content-label" for="form-chromium">Хром</label>
-                    </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-nickel">
-                      <label class="aside-filter__content-label" for="form-nickel">Никель</label>
-                    </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-bronze">
-                      <label class="aside-filter__content-label" for="form-bronze">Бронза</label>
-                    </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-champagne">
-                      <label class="aside-filter__content-label" for="form-champagne">Шампань</label>
-                    </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-turquoise">
-                      <label class="aside-filter__content-label" for="form-turquoise">Бирюза</label>
-                    </div>
-                  </div>
-                </li>
+                  </li>
 
-                <li class="aside-filter__item-drop">
-                  <div class="aside-filter__item-header filter__item-drop active">
-                    <p class="aside-filter__item-title">Материал рамы</p>
-                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
-                    </svg>
-                  </div>
-                  <div class="aside-filter__content">
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-mdf">
-                      <label class="aside-filter__content-label" for="form-mdf">МДФ</label>
+                  <li class="aside-filter__item-drop">
+                    <div class="aside-filter__item-header filter__item-drop active">
+                      <p class="aside-filter__item-title">Материал рамы</p>
+                      <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
+                      </svg>
                     </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-mirror">
-                      <label class="aside-filter__content-label" for="form-mirror">Зеркало</label>
+                    <div class="aside-filter__content">
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-mdf">
+                        <label class="aside-filter__content-label" for="form-mdf">МДФ</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-mirror">
+                        <label class="aside-filter__content-label" for="form-mirror">Зеркало</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-tree">
+                        <label class="aside-filter__content-label" for="form-tree">Дерево</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-metal">
+                        <label class="aside-filter__content-label" for="form-metal">Металл</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-polyresin">
+                        <label class="aside-filter__content-label" for="form-polyresin">Полирезин</label>
+                      </div>
                     </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-tree">
-                      <label class="aside-filter__content-label" for="form-tree">Дерево</label>
-                    </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-metal">
-                      <label class="aside-filter__content-label" for="form-metal">Металл</label>
-                    </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-polyresin">
-                      <label class="aside-filter__content-label" for="form-polyresin">Полирезин</label>
-                    </div>
-                  </div>
-                </li>
+                  </li>
 
-                <li class="aside-filter__item-drop">
-                  <div class="aside-filter__item-header filter__item-drop active">
-                    <p class="aside-filter__item-title">Цена</p>
-                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
-                    </svg>
-                  </div>
-                  <div class="aside-filter__content">
-                    <div class="aside-filter__content-box aside-filter__content-rangeSlider">
-                      <input type="text" class="js-range-slider" name="my_range" value=""
-                             data-min="20000"
-                             data-max="100000"
-                             data-from="20000"
-                             data-to="60000"
-                             data-grid="false"
-                      />
+                  <li class="aside-filter__item-drop">
+                    <div class="aside-filter__item-header filter__item-drop active">
+                      <p class="aside-filter__item-title">Цена</p>
+                      <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
+                      </svg>
                     </div>
-                  </div>
-                </li>
+                    <div class="aside-filter__content">
+                      <div class="aside-filter__content-box aside-filter__content-rangeSlider">
+                        <input type="text" class="js-range-slider" name="my_range" value=""
+                               data-min="20000"
+                               data-max="100000"
+                               data-from="20000"
+                               data-to="60000"
+                               data-grid="false"
+                        />
+                      </div>
+                    </div>
+                  </li>
 
-                <li class="aside-filter__item-drop">
-                  <div class="aside-filter__item-header filter__item-drop active">
-                    <p class="aside-filter__item-title">Назначение</p>
-                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
-                    </svg>
-                  </div>
-                  <div class="aside-filter__content">
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-bathroom">
-                      <label class="aside-filter__content-label" for="form-bathroom">Ванная</label>
+                  <li class="aside-filter__item-drop">
+                    <div class="aside-filter__item-header filter__item-drop active">
+                      <p class="aside-filter__item-title">Назначение</p>
+                      <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
+                      </svg>
                     </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-living-room">
-                      <label class="aside-filter__content-label" for="form-living-room">Гостинная</label>
+                    <div class="aside-filter__content">
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-bathroom">
+                        <label class="aside-filter__content-label" for="form-bathroom">Ванная</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-living-room">
+                        <label class="aside-filter__content-label" for="form-living-room">Гостинная</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-hallway">
+                        <label class="aside-filter__content-label" for="form-hallway">Прихожая</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-bedroom">
+                        <label class="aside-filter__content-label" for="form-bedroom">Спальня</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-hall">
+                        <label class="aside-filter__content-label" for="form-hall">Холл</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="checkbox"
+                               id="form-fireplace">
+                        <label class="aside-filter__content-label" for="form-fireplace">Под камин</label>
+                      </div>
                     </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-hallway">
-                      <label class="aside-filter__content-label" for="form-hallway">Прихожая</label>
-                    </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-bedroom">
-                      <label class="aside-filter__content-label" for="form-bedroom">Спальня</label>
-                    </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-hall">
-                      <label class="aside-filter__content-label" for="form-hall">Холл</label>
-                    </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="checkbox"
-                             id="form-fireplace">
-                      <label class="aside-filter__content-label" for="form-fireplace">Под камин</label>
-                    </div>
-                  </div>
-                </li>
+                  </li>
 
-                <li class="aside-filter__item-drop">
-                  <div class="aside-filter__item-header filter__item-drop active">
-                    <p class="aside-filter__item-title">Наличие фацета</p>
-                    <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
-                    </svg>
-                  </div>
-                  <div class="aside-filter__content">
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="radio"
-                             id="form-yes" value="form-yes" name="form-yes-or-no" checked>
-                      <label class="aside-filter__content-label" for="form-yes">Да</label>
+                  <li class="aside-filter__item-drop">
+                    <div class="aside-filter__item-header filter__item-drop active">
+                      <p class="aside-filter__item-title">Наличие фацета</p>
+                      <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
+                      </svg>
                     </div>
-                    <div class="aside-filter__content-box">
-                      <input class="aside-filter__content-input custom-input" type="radio"
-                             id="form-no" value="form-no" name="form-yes-or-no">
-                      <label class="aside-filter__content-label" for="form-no">Нет</label>
+                    <div class="aside-filter__content">
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="radio"
+                               id="form-yes" value="form-yes" name="form-yes-or-no" checked>
+                        <label class="aside-filter__content-label" for="form-yes">Да</label>
+                      </div>
+                      <div class="aside-filter__content-box">
+                        <input class="aside-filter__content-input custom-input" type="radio"
+                               id="form-no" value="form-no" name="form-yes-or-no">
+                        <label class="aside-filter__content-label" for="form-no">Нет</label>
+                      </div>
                     </div>
-                  </div>
-                </li>
+                  </li>
 
-              </ul>
-            </form>
+                </ul>
+              </form>
+            </div>
           </aside>
           <div class="catalog__inner-content">
             <div class="catalog__filter">
 
 
                 <ul class="catalog__filter-selects">
-                  <li
-                    class="catalog__filter-element"><p class="catalog__filter-name catalog__filter-item">Сортировать по</p></li>
-                  <form class="catalog__filter-element">
-                  <li>
+                  <button class="catalog__filter-selects__button" data-catalog-btn-sort="">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.125 13.25H6.375M0.125 7H10.125H0.125ZM0.125 3.875H12H0.125ZM0.125 10.125H8.25H0.125ZM0.125 0.75H13.875H0.125Z" stroke="#B0976A" stroke-width="1.25" stroke-miterlimit="10"/>
+                    </svg>
+                  </button>
+                  <div class="catalog__filter-selects__wrapper" data-catalog-filter-selects-wrapper="">
+                    <li
+                      class="catalog__filter-element"><p class="catalog__filter-name catalog__filter-item">Сортировать по</p></li>
+                    <form class="catalog__filter-element">
+                      <li>
 
-                    <!--                  <div class="select" id="select-1">-->
-                    <!--                    <div class="select__backdrop" data-select="backdrop"></div>-->
-                    <!--                    <button type="button" class="select__trigger" data-select="trigger">-->
-                    <!--                      возрастанию цены-->
-                    <!--                    </button>-->
-                    <!--                    <div class="select__dropdown">-->
-                    <!--                      <ul class="select__items">-->
-                    <!--                        <li class="select__item select__item_selected" data-select="item">возрастанию цены</li>-->
-                    <!--                        <li class="select__item" data-select="item">убыванию цены</li>-->
-                    <!--                      </ul>-->
-                    <!--                    </div>-->
-                    <!--                  </div>-->
+                        <!--                  <div class="select" id="select-1">-->
+                        <!--                    <div class="select__backdrop" data-select="backdrop"></div>-->
+                        <!--                    <button type="button" class="select__trigger" data-select="trigger">-->
+                        <!--                      возрастанию цены-->
+                        <!--                    </button>-->
+                        <!--                    <div class="select__dropdown">-->
+                        <!--                      <ul class="select__items">-->
+                        <!--                        <li class="select__item select__item_selected" data-select="item">возрастанию цены</li>-->
+                        <!--                        <li class="select__item" data-select="item">убыванию цены</li>-->
+                        <!--                      </ul>-->
+                        <!--                    </div>-->
+                        <!--                  </div>-->
 
-                    <div id="select" data-type="select">
-                      <div class="select__backdrop" data-type="backdrop"></div>
-                      <div class="select__input" data-type="input">
-                        <span data-type="value">возрастанию цены</span>
-                        <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg" data-type="arrow">
-                          <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
-                        </svg>
-                      </div>
-                      <div class="select__dropdown">
-                        <ul class="select__list">
-                          <li class="select__item" data-type="item">возрастанию цены</li>
-                          <li class="select__item" data-type="item">убыванию цены</li>
-                        </ul>
-                      </div>
-                    </div>
+                        <div class="select select__price" id="select" data-type="select">
+                          <div class="select__backdrop" data-type="backdrop"></div>
+                          <div class="select__input" data-type="input">
+                            <span class="select__firstValue" data-type="value">возрастанию цены</span>
+                            <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg" data-type="arrow">
+                              <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
+                            </svg>
+                          </div>
+                          <div class="select__dropdown select__dropdown-price">
+                            <ul class="select__list select__list-price">
+                              <li class="select__item" data-type="item">возрастанию цены</li>
+                              <li class="select__item" data-type="item">убыванию цены</li>
+                            </ul>
+                          </div>
+                        </div>
 
-                  </li>
-                    <input type="hidden" data-input="hidden" name="inputHidden" value="">
-                  </form>
+                      </li>
+                      <input type="hidden" data-input="hidden" name="inputHidden" value="">
+                    </form>
 
                     <li class="catalog__filter-element"><p class="catalog__filter-name catalog__filter-item">На странице</p></li>
 
-                  <form class="catalog__filter-element">
-                    <li>
-                      <div id="catalog-select2" data-type="select">
-                        <div class="select__backdrop" data-type="backdrop"></div>
-                        <div class="select__input" data-type="input">
-                          <span data-type="value">16</span>
-                          <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg" data-type="arrow">
-                            <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
-                          </svg>
+                    <form class="catalog__filter-element">
+                      <li>
+                        <div class="select" id="catalog-select2" data-type="select">
+                          <div class="select__backdrop" data-type="backdrop"></div>
+                          <div class="select__input" data-type="input">
+                            <span class="select__firstValue" data-type="value">16</span>
+                            <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg" data-type="arrow">
+                              <path opacity="0.8" d="M1.4303 0L0 1.21337L8 8L16 1.21337L14.5697 0L8 5.57326L1.4303 0Z" fill="black" fill-opacity="0.8"/>
+                            </svg>
+                          </div>
+                          <div class="select__dropdown">
+                            <ul class="select__list">
+                              <li class="select__item" data-type="item">16</li>
+                              <li class="select__item" data-type="item">32</li>
+                            </ul>
+                          </div>
                         </div>
-                        <div class="select__dropdown">
-                          <ul class="select__list">
-                            <li class="select__item" data-type="item">16</li>
-                            <li class="select__item" data-type="item">32</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <input type="hidden" data-input="hidden" name="inputHidden" value="">
-                  </form>
-
+                      </li>
+                      <input type="hidden" data-input="hidden" name="inputHidden" value="">
+                    </form>
+                  </div>
                 </ul>
 
               <div class="catalog__filter-btn">
@@ -481,7 +494,9 @@
                       </svg>
                     </button>
                     <div class="card__content-img">
-                      <img src="./assets/images/content/venetianMirrors-1.jpg" alt="images">
+                      <a  href="./cardProduct.html">
+                        <img src="./assets/images/content/venetianMirrors-1.jpg" alt="images">
+                      </a>
                     </div>
                     <div class="card__content__description">
                       <p class="card__content__title">Зеркало в металлической раме Kitech (Китех)</p>
@@ -522,7 +537,9 @@
                       </svg>
                     </button>
                     <div class="card__content-img">
-                      <img src="./assets/images/content/venetianMirrors-2.jpg" alt="images">
+                      <a href="#">
+                        <img src="./assets/images/content/venetianMirrors-2.jpg" alt="images">
+                      </a>
                     </div>
                     <div class="card__content__description">
                       <p class="card__content__title">Зеркало в металлической раме Hi-Tech (Хайтэк)</p>
@@ -563,7 +580,9 @@
                       </svg>
                     </button>
                     <div class="card__content-img">
-                      <img src="./assets/images/content/venetianMirrors-3.jpg" alt="images">
+                      <a href="#">
+                        <img src="./assets/images/content/venetianMirrors-3.jpg" alt="images">
+                      </a>
                     </div>
                     <div class="card__content__description">
                       <p class="card__content__title">Зеркало в металлической раме Sequoia (Секвойя)</p>
@@ -604,7 +623,9 @@
                       </svg>
                     </button>
                     <div class="card__content-img">
-                      <img src="./assets/images/content/venetianMirrors-4.jpg" alt="images">
+                      <a href="#">
+                        <img src="./assets/images/content/venetianMirrors-4.jpg" alt="images">
+                      </a>
                     </div>
                     <div class="card__content__description">
                       <p class="card__content__title">Зеркало в металлической раме Hi-Tech (Хайтэк)</p>
@@ -645,7 +666,9 @@
                       </svg>
                     </button>
                     <div class="card__content-img">
-                      <img src="./assets/images/content/venetianMirrors-5.jpg" alt="images">
+                      <a href="#">
+                        <img src="./assets/images/content/venetianMirrors-5.jpg" alt="images">
+                      </a>
                     </div>
                     <div class="card__content__description">
                       <p class="card__content__title">Зеркало в металлической раме Abstract (Абстракт)</p>
@@ -686,7 +709,9 @@
                       </svg>
                     </button>
                     <div class="card__content-img">
-                      <img src="./assets/images/content/venetianMirrors-6.jpg" alt="images">
+                      <a href="#">
+                        <img src="./assets/images/content/venetianMirrors-6.jpg" alt="images">
+                      </a>
                     </div>
                     <div class="card__content__description">
                       <p class="card__content__title">Зеркало в металлической раме Bavaro (Баваро)</p>
@@ -727,7 +752,9 @@
                       </svg>
                     </button>
                     <div class="card__content-img">
-                      <img src="./assets/images/content/venetianMirrors-7.jpg" alt="images">
+                      <a href="#">
+                        <img src="./assets/images/content/venetianMirrors-7.jpg" alt="images">
+                      </a>
                     </div>
                     <div class="card__content__description">
                       <p class="card__content__title">Зеркало-солнце в металлической раме Helios (Гелиос)</p>
@@ -768,7 +795,9 @@
                       </svg>
                     </button>
                     <div class="card__content-img">
-                      <img src="./assets/images/content/venetianMirrors-8.jpg" alt="images">
+                      <a href="#">
+                        <img src="./assets/images/content/venetianMirrors-8.jpg" alt="images">
+                      </a>
                     </div>
                     <div class="card__content__description">
                       <p class="card__content__title">Зеркало-солнце в металлической раме Cassiopeia (Кассиопея)</p>
@@ -809,7 +838,9 @@
                       </svg>
                     </button>
                     <div class="card__content-img">
-                      <img src="./assets/images/content/venetianMirrors-9.jpg" alt="images">
+                      <a href="#">
+                        <img src="./assets/images/content/venetianMirrors-9.jpg" alt="images">
+                      </a>
                     </div>
                     <div class="card__content__description">
                       <p class="card__content__title">Зеркало-солнце в металлической раме Bang Brass (Бэнг)</p>
@@ -850,7 +881,9 @@
                       </svg>
                     </button>
                     <div class="card__content-img">
-                      <img src="./assets/images/content/venetianMirrors-10.jpg" alt="images">
+                      <a href="#">
+                        <img src="./assets/images/content/venetianMirrors-10.jpg" alt="images">
+                      </a>
                     </div>
                     <div class="card__content__description">
                       <p class="card__content__title">Зеркало-солнце в металлической раме Bang Brass (Бэнг)</p>
@@ -891,7 +924,9 @@
                       </svg>
                     </button>
                     <div class="card__content-img">
-                      <img src="./assets/images/content/venetianMirrors-11.jpg" alt="images">
+                      <a href="#">
+                        <img src="./assets/images/content/venetianMirrors-11.jpg" alt="images">
+                      </a>
                     </div>
                     <div class="card__content__description">
                       <p class="card__content__title">Зеркало-солнце в металлической раме Crochet (Кроше)</p>
@@ -932,7 +967,9 @@
                       </svg>
                     </button>
                     <div class="card__content-img">
-                      <img src="./assets/images/content/venetianMirrors-12.jpg" alt="images">
+                      <a href="#">
+                        <img src="./assets/images/content/venetianMirrors-12.jpg" alt="images">
+                      </a>
                     </div>
                     <div class="card__content__description">
                       <p class="card__content__title">Зеркало-солнце в металлической раме Raindrops (Рейндропс)</p>
@@ -977,8 +1014,6 @@
                 <a href="#"><li class="pagination-list__item active">1</li></a>
                 <a href="#"><li class="pagination-list__item">2</li></a>
                 <a href="#"><li class="pagination-list__item">3</li></a>
-                <a href="#"><li class="pagination-list__item">4</li></a>
-                <a href="#"><li class="pagination-list__item">5</li></a>
                 <li class="pagination-list__item disabled">...</li>
                 <a href="#"><li class="pagination-list__item">10</li></a>
                 <a href="#">

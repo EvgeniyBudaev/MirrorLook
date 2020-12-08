@@ -1,0 +1,140 @@
+@import '@/styles/scss/_vars.scss';
+@import '@/styles/scss/_fonts.scss';
+@import '@/styles/scss/_global.scss';
+@import '@/styles/scss/sidebar.scss';
+
+// start basket
+.basket {
+  &__title {
+    text-align: center;
+  }
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $gray;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);
+    transition: all .3s;
+    padding: 20px 65px;
+    margin-bottom: 30px;
+    &-description {
+      max-width: 200px;
+      width: 100%;
+      position: relative;
+      top: -20px;
+    }
+    &-description__article {
+      font-family: "Montserrat-Medium";
+      margin-bottom: 10px;
+    }
+    &-description__title {
+    }
+    &-unit__price {
+      font-size: 24px;
+      line-height: 1;
+    }
+    &-total__price {
+      font-size: 24px;
+      font-family: "Montserrat-SemiBold";
+    }
+    &-unit__text,
+    &-amount__text,
+    &-total__price {
+      margin-bottom: 10px;
+    }
+    &-unit,
+    &-amount,
+    &-total {
+      text-align: center;
+    }
+    &-amount__number {
+      border: 1px solid $beige;
+      max-width: 25px;
+      width: 100%;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+    &-total__button {
+      background-color: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      cursor: pointer;
+      & p {
+        padding-left: 20px;
+      }
+    }
+  }
+  &__card:hover {
+    box-shadow: 0 0 5px 5px rgba(170, 170, 170, 0.7);
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    &-left a {
+      color: $beige;
+      position: relative;
+      transition: all .3s;
+    }
+    &-left a::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 0;
+      height: 1px;
+      background-color: $beige;
+      transition: all .3s;
+    }
+    &-left a:hover {
+      color: $lightBeige;
+
+    }
+    &-left a:hover::before {
+      width: 100%;
+      background-color: $lightBeige;
+    }
+    &-right {
+      text-align: end;
+    }
+    &-right__info {
+      margin-bottom: 50px;
+      max-width: 370px;
+      width: 100%;
+    }
+    &-right__info p + p {
+      margin-top: 10px;
+    }
+    &-right__info span.semibold {
+      font-family: "Montserrat-SemiBold";
+    }
+    &-right__info span.uppercase{
+      text-transform: uppercase;
+    }
+    &-right__info a {
+      color: $beige;
+      position: relative;
+      transition: all .3s;
+    }
+    &-right__info a::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $beige;
+      transition: all .3s;
+    }
+    &-right__info a:hover {
+      color: $lightBeige;
+    }
+    &-right__info a:hover::before {
+      background-color: $lightBeige;
+    }
+  }
+}
+// end basket
+@import '@/styles/scss/media/media_basket.scss';

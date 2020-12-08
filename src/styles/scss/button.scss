@@ -1,0 +1,18 @@
+@import '@/styles/scss/_vars.scss';
+@import '@/styles/scss/_fonts.scss';
+
+// start button
+.button {
+  background-color: $butttonBg;
+  color: $white;
+  border: 2px solid $beige;
+  padding: 10px 30px;
+  font-family: "Montserrat-Regular";
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  transition: all .3s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: $beige;
+}
+// end button

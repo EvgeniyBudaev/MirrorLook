@@ -36,6 +36,9 @@ $height: 29px;
     cursor: pointer;
     z-index: 1;
   }
+  &__firstValue {
+    margin-right: 10px;
+  }
   &__dropdown {
     // display: none;
     position: absolute;
@@ -55,7 +58,7 @@ $height: 29px;
     padding: 0;
     margin: 0;
     list-style: none;
-    z-index: 10;
+    z-index: 1;
     background-color: $white;
     animation: fadeEffect .4s;
   }

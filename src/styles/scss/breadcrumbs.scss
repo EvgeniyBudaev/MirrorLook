@@ -1,0 +1,70 @@
+@import '@/styles/scss/_vars.scss';
+@import '@/styles/scss/_fonts.scss';
+
+/*start breadcrumbs*/
+.breadcrumbs {
+  padding-bottom: 50px;
+  &__list {
+    background-color: $white;
+    display: inline-block;
+    padding: 2px 8px;
+    position: relative;
+  }
+  &__list::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 98%;
+    background-color: $beige;
+    bottom: -20px;
+  }
+  &__list-item {
+    display: inline-block;
+    padding-right: 16px;
+    margin-right: 10px;
+    position: relative;
+    font-family: "Montserrat-Regular";
+    color: $black;
+    text-transform: none;
+  }
+  &__list-item a {
+    text-transform: none;
+    transition: all .3s;
+    position: relative;
+    font-family: "Montserrat-ExtraLight";
+  }
+  &__list-item a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    //background-color: $burgundy;
+    transition: all .3s;
+  }
+  &__list-item:last-child {
+    margin-right: 0;
+    padding-right: 0;
+  }
+  &__list-item::after {
+    content: '/';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: $black;
+    font-family: "Montserrat-ExtraLight";
+  }
+  &__list-item:last-child::after {
+    display: none;
+  }
+  &__list-item a:hover {
+    //color: $burgundy;
+  }
+  &__list-item a:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+}
+/*end breadcrumbs*/

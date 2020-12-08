@@ -1,16 +1,16 @@
 @media (max-width: 630px) {
-  .catalog__inner {
+  .categories__inner {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     //grid-auto-rows: minmax(200px, auto);
   }
-  .catalog__card-content img {
+  .categories__card-content img {
     width: 100%;
     height: auto;
   }
 }
 
 @media (max-width: 500px) {
-  .catalog__inner {
+  .categories__inner {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 }
