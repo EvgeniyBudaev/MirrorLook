@@ -75,11 +75,3 @@ class Sidebar {
 
 new Sidebar()
 
-
-//   $('ul.main-menu li').click(function () {
-//     if ($(this).siblings('li').find('ul.sidebar__submenu:visible').length) {
-//       $('ul.sidebar__submenu').slideUp('normal')
-//     }
-//     $(this).find('ul.sidebar__submenu').slideToggle('normal')
-//     $('.main-menu-item__linkWrapper svg').toggleClass('active')
-//   })
