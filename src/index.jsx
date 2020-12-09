@@ -28,9 +28,6 @@ import './js/toggle.js'
 //         <h1>Hello World!</h1>
 //       </div>
 //
-//       <div className="less">
-//         <h2 className="less__title">LESS</h2>
-//       </div>
 //
 //       <div className="scss">
 //         <h2 className="scss__title">SCSS</h2>
