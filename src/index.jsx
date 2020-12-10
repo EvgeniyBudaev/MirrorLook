@@ -29,10 +29,6 @@ import './js/toggle.js'
 //       </div>
 //
 //
-//       <div className="scss">
-//         <h2 className="scss__title">SCSS</h2>
-//       </div>
-//
 //       <div className={classes.card}>
 //         <h2 className={classes.card__title}>This is module CSS</h2>
 //       </div>
