@@ -15,6 +15,7 @@ import './js/customSelect.js'
 import './js/catalogAsideFilter.js'
 import './js/catalogSortBtn.js'
 import './js/toggle.js'
+import './js/preloader.js'
 
 
 

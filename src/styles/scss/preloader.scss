@@ -1,0 +1,23 @@
+@import '@/styles/scss/_vars.scss';
+
+// start preloader
+.mask {
+  width: 100%;
+  height: 100%;
+  background: $white;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mask.hide {
+  opacity: 0;
+}
+.mask svg {
+  width: 240px;
+  height: 240px;
+}
+//end preloader
