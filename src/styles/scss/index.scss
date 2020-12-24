@@ -1,20 +1,20 @@
 @import '@/styles/scss/_vars.scss';
 @import '@/styles/scss/_fonts.scss';
 @import '@/styles/scss/_global.scss';
-@import '@/styles/scss/preloader.scss';
-@import '@/styles/scss/button.scss';
-@import '@/styles/scss/breadcrumbs.scss';
-@import '@/styles/scss/card.scss';
-@import '@/styles/scss/lineInfo.scss';
-@import '@/styles/scss/formFooter.scss';
-@import '@/styles/scss/emptyDiv.scss';
-@import '@/styles/scss/sidebar.scss';
+@import '@/styles/scss/layouts/preloader.scss';
+@import '@/styles/scss/layouts/button.scss';
+@import '@/styles/scss/layouts/breadcrumbs.scss';
+@import '@/styles/scss/layouts/card.scss';
+@import '@/styles/scss/layouts/lineInfo.scss';
+@import '@/styles/scss/layouts/formFooter.scss';
+@import '@/styles/scss/layouts/emptyDiv.scss';
+@import '@/styles/scss/layouts/sidebar.scss';
 @import '@/styles/scss/cardProduct.scss';
 @import '@/styles/scss/about.scss';
 @import '@/styles/scss/categories.scss';
 @import '@/styles/scss/catalog.scss';
 @import '@/styles/scss/venetianMirrors.scss';
-@import '@/styles/scss/customSelect.scss';
+@import '@/styles/scss/layouts/customSelect.scss';
 @import '@/styles/scss/basket.scss';
 @import '@/styles/scss/thanks.scss';
 @import '@/styles/scss/order.scss';
@@ -111,7 +111,9 @@
       line-height: $lh;
     }
     & nav ul li a.active {
-      font-family: "Montserrat-Medium";
+      //font-family: "Montserrat-Medium";
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
       pointer-events: none;
       cursor: default;
     }
@@ -134,7 +136,7 @@
     }
     &-item:hover {
       background-color: $lightBeige;
-      color: $white;
+      color: $black;
     }
     & li a {
       text-transform: uppercase;
@@ -338,7 +340,9 @@
       display: flex;
       justify-content: space-between;
       &-num {
-        font-family: "Montserrat-SemiBold";
+        //font-family: "Montserrat-SemiBold";
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
       }
       &-status {
         color: $beige;
@@ -408,7 +412,9 @@
     &-text {
       font-size: 30px;
       line-height: $lh;
-      font-family: "Montserrat-Medium";
+      //font-family: "Montserrat-Medium";
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
       text-transform: uppercase;
       text-align: center;
       margin: 49px 0 18px;
@@ -416,7 +422,9 @@
     &-discount {
       font-size: 45px;
       line-height: $lh;
-      font-family: "Montserrat-Bold";
+      //font-family: "Montserrat-Bold";
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
       text-transform: uppercase;
       color: $red;
       text-align: center;
@@ -443,11 +451,15 @@
       padding-left: 15px;
     }
     & h4 {
-      font-family: "Montserrat-Medium";
+      //font-family: "Montserrat-Medium";
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
       margin-bottom: 20px;
     }
     & ul li a {
-      font-family: "Montserrat-Regular";
+      //font-family: "Montserrat-Regular";
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
       margin-bottom: 7px;
       transition: all .3s;
     }
@@ -455,7 +467,9 @@
       color: $gray;
     }
     & p {
-      font-family: "Montserrat-Regular";
+      //font-family: "Montserrat-Regular";
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
     }
   }
   &__form {
@@ -466,7 +480,9 @@
     text-align: center;
     margin-bottom: 40px;
     &-title {
-      font-family: "Montserrat-Regular";
+      //font-family: "Montserrat-Regular";
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
       max-width: 311px;
       width: 100%;
       margin-bottom: 40px;
@@ -493,7 +509,9 @@
     }
   }
   &__politics {
-    font-family: "Montserrat-Regular";
+    //font-family: "Montserrat-Regular";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     max-width: 240px;
     width: 100%;
     margin: 0 auto;

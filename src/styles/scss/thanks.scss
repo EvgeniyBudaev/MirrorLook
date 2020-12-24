@@ -1,7 +1,7 @@
 @import '@/styles/scss/_vars.scss';
 @import '@/styles/scss/_fonts.scss';
 @import '@/styles/scss/_global.scss';
-@import '@/styles/scss/sidebar.scss';
+@import '@/styles/scss/layouts/sidebar.scss';
 
 // start thanks
 .thanks {
@@ -23,7 +23,9 @@
   &__number {
     font-size: 24px;
     text-align: center;
-    font-family: "Montserrat-Regular";
+    //font-family: "Montserrat-Regular";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     margin-bottom: 50px;
   }
   &__card {
@@ -45,7 +47,9 @@
       margin-left: 50px;
     }
     &-description__article {
-      font-family: "Montserrat-Medium";
+      //font-family: "Montserrat-Medium";
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
     }
     &-description__title {
       margin-top: 20px;
@@ -53,7 +57,9 @@
     }
     &-total__price {
       font-size: 24px;
-      font-family: "Montserrat-SemiBold";
+      //font-family: "Montserrat-SemiBold";
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
       text-align: center;
     }
   }

@@ -64,7 +64,9 @@
       justify-content: space-between;
     }
     &-bottom__num {
-      font-family: "Montserrat-SemiBold";
+      //font-family: "Montserrat-SemiBold";
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
     }
     &-bottom__status {
       color: #b0976a;
@@ -106,7 +108,9 @@
       margin-left: 50px;
     }
     &.active .card__content__title {
-      font-family: "Montserrat-Medium";
+      //font-family: "Montserrat-Medium";
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
       margin-bottom: 20px;
     }
     &.active .card__content__description {

@@ -1,12 +1,14 @@
 @import '@/styles/scss/_vars.scss';
 @import '@/styles/scss/_fonts.scss';
 @import '@/styles/scss/_global.scss';
-@import '@/styles/scss/sidebar.scss';
+@import '@/styles/scss/layouts/sidebar.scss';
 
 // start categories
 .categories {
   & h2 {
-    font-family: "Montserrat-Regular";
+    //font-family: "Montserrat-Regular";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     margin-bottom: 20px;
     max-width: 140px;
     width: 100%;

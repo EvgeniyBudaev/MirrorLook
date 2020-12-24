@@ -1,7 +1,7 @@
 @import '@/styles/scss/_vars.scss';
 @import '@/styles/scss/_fonts.scss';
 @import '@/styles/scss/_global.scss';
-@import '@/styles/scss/sidebar.scss';
+@import '@/styles/scss/layouts/sidebar.scss';
 
 // start basket
 .basket {
@@ -24,7 +24,9 @@
       top: -20px;
     }
     &-description__article {
-      font-family: "Montserrat-Medium";
+      //font-family: "Montserrat-Medium";
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
       margin-bottom: 10px;
     }
     &-description__title {
@@ -35,7 +37,9 @@
     }
     &-total__price {
       font-size: 24px;
-      font-family: "Montserrat-SemiBold";
+      //font-family: "Montserrat-SemiBold";
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
     }
     &-unit__text,
     &-amount__text,
@@ -109,7 +113,9 @@
       margin-top: 10px;
     }
     &-right__info span.semibold {
-      font-family: "Montserrat-SemiBold";
+      //font-family: "Montserrat-SemiBold";
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
     }
     &-right__info span.uppercase{
       text-transform: uppercase;

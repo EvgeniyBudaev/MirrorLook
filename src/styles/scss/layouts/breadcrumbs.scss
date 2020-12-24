@@ -23,7 +23,9 @@
     padding-right: 16px;
     margin-right: 10px;
     position: relative;
-    font-family: "Montserrat-Regular";
+    //font-family: "Montserrat-Regular";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     color: $black;
     text-transform: none;
   }
@@ -31,7 +33,9 @@
     text-transform: none;
     transition: all .3s;
     position: relative;
-    font-family: "Montserrat-ExtraLight";
+    //font-family: "Montserrat-ExtraLight";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
   }
   &__list-item a::before {
     content: '';
@@ -53,7 +57,9 @@
     top: 0;
     bottom: 0;
     color: $black;
-    font-family: "Montserrat-ExtraLight";
+    //font-family: "Montserrat-ExtraLight";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
   }
   &__list-item:last-child::after {
     display: none;

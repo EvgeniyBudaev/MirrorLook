@@ -1,7 +1,7 @@
 @import '@/styles/scss/_vars.scss';
 @import '@/styles/scss/_fonts.scss';
 @import '@/styles/scss/_global.scss';
-@import '@/styles/scss/sidebar.scss';
+@import '@/styles/scss/layouts/sidebar.scss';
 
 // use jQuery Form Styler plugin
 // use ion.rangeslider plugin
@@ -12,7 +12,9 @@
   &-top__title {
     display: flex;
     & .title {
-      font-family: "Montserrat-Bold";
+      //font-family: "Montserrat-Bold";
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
     }
     & span {
       margin-left: 50px;
@@ -169,7 +171,9 @@
     }
   }
   &__item-title {
-    font-family: "Montserrat-SemiBold";
+    //font-family: "Montserrat-SemiBold";
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
   }
   &__content {
     padding-left: 15px;
