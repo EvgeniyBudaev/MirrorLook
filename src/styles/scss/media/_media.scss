@@ -99,7 +99,11 @@
 }
 
 @media (max-width: 760px) {
-  body {
+  body,
+  .card__content__title,
+  .card__footer-top__label,
+  .card__footer-bottom__num,
+  .card__footer-bottom__status {
     font-size: 12px;
   }
   .title,

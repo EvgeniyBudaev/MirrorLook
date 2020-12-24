@@ -70,7 +70,7 @@ p {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .container {
@@ -97,6 +97,10 @@ p {
   margin: 0 auto;
 }
 
+section {
+  margin: 50px 0;
+}
+
 .title {
   font-size: 24px;
   //font-family: "Montserrat-Regular";
@@ -110,7 +114,6 @@ button {
   cursor: pointer;
   outline: none;
 }
-
 
 
 
