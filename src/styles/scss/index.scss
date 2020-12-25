@@ -72,10 +72,30 @@
     &__buttons li + li {
       padding-left: 15px;
     }
+    &__buttons svg {
+      fill: none;
+      transition: all .3s;
+    }
+    &__buttons svg path.search0 {
+      fill: black;
+    }
+    &__buttons svg path.search1 {
+      stroke: black;
+    }
+    &__buttons svg:hover path.search0 {
+      fill: $beige;
+    }
+    &__buttons svg:hover path.search1 {
+      stroke: $beige;
+    }
     &__tel {
       font-size: 18px;
       line-height: $lh;
-      margin: 0 110px;  
+      margin: 0 110px;
+      transition: all .3s;
+    }
+    &__tel:hover {
+      color: $beige;
     }
     &__city {
       font-size: 18px;
@@ -100,17 +120,17 @@
     & nav ul {
       display: flex;
     }
-    & nav ul li {
-      transition: all .3s;
-    }
     & nav ul li + li {
       padding-left: 22px;
     }
-    & nav ul li a {
+    & nav ul li a:not(.active) {
       font-size: 18px;
       line-height: $lh;
+      transition: all .3s;
     }
     & nav ul li a.active {
+      font-size: 18px;
+      line-height: $lh;
       //font-family: "Montserrat-Medium";
       font-family: 'Montserrat', sans-serif;
       font-weight: 500;
@@ -120,7 +140,7 @@
     & nav ul li .red {
       color: $red;
     }
-    & nav ul li:hover {
+    & nav ul li a:not(.active):hover {
       color: $beige;
     }
   }
