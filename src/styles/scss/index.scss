@@ -58,6 +58,26 @@
     justify-content: space-between;
     transition: all .5s;
   }
+  &__menu svg {
+    fill: none;
+  }
+  &__menu svg,
+  &__menu svg path.icon0,
+  &__menu svg path.icon1 {
+    transition: all .3s;
+  }
+  &__menu svg path.icon0 {
+    fill: black;
+  }
+  &__menu svg path.icon1 {
+    stroke: black;
+  }
+  &__menu svg:hover path.icon0 {
+    fill: $beige;
+  }
+  &__menu svg:hover path.icon1 {
+    stroke: $beige;
+  }
   &__menu.displayOff {
     display: none;
   }
@@ -72,22 +92,6 @@
     &__buttons li + li {
       padding-left: 15px;
     }
-    &__buttons svg {
-      fill: none;
-      transition: all .3s;
-    }
-    &__buttons svg path.search0 {
-      fill: black;
-    }
-    &__buttons svg path.search1 {
-      stroke: black;
-    }
-    &__buttons svg:hover path.search0 {
-      fill: $beige;
-    }
-    &__buttons svg:hover path.search1 {
-      stroke: $beige;
-    }
     &__tel {
       font-size: 18px;
       line-height: $lh;
@@ -100,18 +104,17 @@
     &__city {
       font-size: 18px;
       line-height: $lh;
-      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: all .3s;
     }
-    &__city::before {
-      content: '';
-      position: absolute;
-      background-image: url('../../assets/images/icon-city.svg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 25px;
-      height: 25px;
-      left: -28px;
-      top: 0;
+    &__city:hover {
+      color: $beige;
+    }
+    &__city:hover svg path.icon0 {
+      fill: $beige;
     }
   }
   &__menu-bottom {
