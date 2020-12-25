@@ -1,6 +1,5 @@
 import $ from 'jquery'
 import 'slick-carousel'
-
 // Slider home page
 
 $('.slider-for').slick({
@@ -17,14 +16,27 @@ $('.slider-nav').slick({
   asNavFor: '.slider-for',
   arrows: false,
   dots: true,
-  // centerMode: false,
-  // focusOnSelect: true,
-  // variableWidth: true,
+  centerMode: true,
+  //focusOnSelect: true,
+  variableWidth: false,
   responsive: [
     {
-      breakpoint: 1050,
+      breakpoint: 1200,
       settings: {
         slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+    {
+      breakpoint: 470,
+      settings: {
+        slidesToShow: 1,
+        centerMode: false,
       }
     },
   ]

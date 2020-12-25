@@ -275,6 +275,7 @@
   }
 }
 
+
 // end slider
 
 
@@ -529,7 +530,14 @@
 
 // end footer
 
-
-
+//.slider-nav .slick-track .slick-slide + .slick-slide {
+//  margin-right: 25px;
+//}
+//
+//.slider-nav .slick-track .item-nav {
+//  height: auto;
+//  max-width: 333px !important;;
+//  width: 100% !important;
+//}
 
 @import '@/styles/scss/media/_media.scss';

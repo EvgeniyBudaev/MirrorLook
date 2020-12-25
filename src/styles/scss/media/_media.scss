@@ -162,6 +162,10 @@
   .menu.open .header__menu-top__buttons {
     display: none;
   }
+  .slider .slider-nav.slick-initialized .slick-slide {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 350px) {
